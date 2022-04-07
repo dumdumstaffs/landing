@@ -1,0 +1,80 @@
+.app-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.app-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.app-logo span {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-left: 8px;
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+
+.app-logo span .small {
+  font-size: 10px;
+  margin-left: 1px;
+}
+
+.app-logo,
+.header-scrolled span {
+  color: black;
+}
+
+#app-nav ul {
+  align-items: center;
+}
+
+#app-nav ul .btn-log {
+  margin: 0 0 0 16px;
+}
+
+.mobile-nav-toggle {
+  right: 18px;
+  top: 18px;
+}
+
+.mobile-nav-toggle i {
+  color: white;
+}
+
+.mobile-nav-toggle,
+.header-scrolled i {
+  color: black;
+}
+
+.carousel-content p {
+  font-size: 16px !important;
+}
+
+#about {
+  background: none;
+}
+
+.btn-get-started,
+.btn-log {
+  letter-spacing: 0px !important;
+  font-size: 14px !important;
+  border-radius: 2px !important;
+}
+
+.app-btn {
+  width: 160px;
+}
+
+.app-btn + .invert {
+  background-color: white !important;
+  color: black !important;
+}
+
+#about .section-header h3 {
+  text-transform: none;
+  font-size: 22px;
+}

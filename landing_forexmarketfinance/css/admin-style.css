@@ -1,0 +1,928 @@
+
+/*creating css custom font for trajan*/
+
+@import url(//db.onlinewebfonts.com/c/15a9075ddf4ff1158eb03abbc873a3a4?family=Frank-Light);
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Frank-Light;
+	text-align: center;
+}
+p{
+
+	text-align: center;
+}
+
+ul li a {
+	color: #efefef!important;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	font-family: 'Frank-Light',sans-serif;
+	overflow-x: hidden;
+	transition: 0.5s all;
+	font-size: .9em;
+	font-weight: 500;
+}
+img{
+	max-height: 100%;
+	max-width: 100%;
+}
+.no-cursor{
+	cursor: not-allowed;
+}
+.lefttext{
+	display: none!important;
+}
+.disallow-cursor{
+	cursor:not-allowed!important;
+}
+
+/*=================================================styling for the dashboard section starts here============================================================================*/
+.dash-wrapper{
+	background: #efefef;
+	height: 100vh; 
+}
+.dash-side-nav{
+	background: linear-gradient(#6fbf52, #7cca5f); 
+	height: auto; 
+	position: relative;
+	z-index: 1;
+	width: 20%;
+}
+.dash-logo{
+	margin: 20px auto;
+	width: 190px;
+	padding: 10px; 
+	border-bottom: .8px solid #fff;
+}
+
+.profile-pics{
+	border-radius: 100%;
+	border: 2px solid #efefef; 
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+	background: green;
+	overflow: hidden;
+}
+.referal-code{
+	width: 170px; 
+	height: 35px; 
+	border-radius: 30px;
+	background: #fff; 
+	margin: 10px auto; 
+	color: #6fbf52 ;
+	padding: 7px; 
+}
+.referal-code p{
+	font-weight: 600;
+}
+.user-dash-side{
+	width: 100%;
+	display: block;
+	background: #6fbf52 ;
+	margin: 20px 0;
+}
+.user-dash-side ul li{
+	padding: 10px 30px ;
+}
+.user-dash-side ul li a{
+	/*text-align: center;*/
+	padding: 10px;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.user-dash-side ul li{
+	position: relative;
+	margin-left: -3em;
+	border-radius: 5px;
+	transition: .7s ease-in-out;
+	
+}
+.user-dash-side ul li:hover{
+	background: #7cca5f;
+}
+.dash-icon{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+.dash-main{
+	height: auto;
+	/*margin: -5px;*/
+	width: 80%;
+	background:  url(../images/dashboard/abstract-background.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+.dash-main-top h3{
+	padding: 20px; 
+	text-align: left;
+	width: auto; 
+	float: left;
+}
+.dash-main-2{
+	background: #fff;
+	padding: 13px;
+	height: 15vh;
+}
+.dash-min-sme{
+	background: #6fbf52;
+	margin: 10px 1.7em; 
+	text-align: center;
+	border-radius: 20px;
+	padding: 10px; 
+	color: #fff;
+	cursor: pointer;
+	border: 2px solid #6fbf52;
+	transition: .4s ease-in;
+	width: 190px;
+	float: right;
+	overflow: hidden!important;
+	position: relative;
+
+}
+.main-col-sec{
+	height: 80vh;
+	background: #b6c7ff;
+}
+.col-small-top-icon{
+	float: right;
+
+}
+
+.col-img{
+	z-index: 4;
+	float: left;
+	margin: 5px 20px 0 2px;
+	position: fixed;
+	display: none;
+}
+.side-gif{
+	width: 130px; 
+}
+.col-md-ct{
+	width: 80%;
+	margin: 35px;
+}
+.col-md-ct h2{
+	text-align: left;
+}
+
+.col-social-media{
+	background: #fff;
+	padding: 14px; 
+	height: 15vh; 
+	border-radius: 30px; 
+	margin: 20px auto; 
+	width: 95%;
+}
+.font-icon-sm{
+	color: blue; 
+	font-size: 3em;
+}
+.col-social-media ul li {
+	display: inline-block;
+}
+.wel-graphic{
+	margin: -8em 0 0 0;
+	display: block;
+
+}
+
+/*four colum section styling starts here */
+.col-sec-4{
+	height: 14vh;
+	background: #6fbf52 ;
+	color: #fff;
+	padding: 20px; 
+	transition: .6s ease-in-out;
+	margin: 20px auto; 
+}
+.col-sec-4:hover{
+	background: #efefef;
+	border: 2px solid  #6fbf52 ;
+	color:  #6fbf52 ;
+}
+.col-sec-4 h4 a{
+	margin: 30px;
+	font-size: .7em;
+	text-decoration: none;
+	color:inherit; 
+	text-align: center;
+}
+
+.col-details{
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+
+.col-details ul li{
+	list-style: none;
+	display: inline-block;
+	width: 10em;
+	padding: 10px;
+	}
+.col-details ul li > button{
+	font-size: .8em;
+}
+.card-2, .card-3{
+	display: none;
+}
+.col-per-info{
+	padding: 10px; 
+	/*background: red;*/
+	border-bottom: 2px #efefef solid;
+}
+.col-3v-icon{
+	background: #fff;
+	height: 18vh;
+	padding: 10px;
+}
+.col-e-icon{
+	margin-bottom: 20px;
+}
+.col-ref{
+	background: #fff;
+	margin-bottom: 20px; 
+	padding: 40px;
+	border-radius: 20px;
+}
+.col-ref-code{
+	width: auto; 
+	border: 2px solid #efefef; 
+	border-radius:10px; 
+	padding: 30px;
+}
+/*=======================styling for the deposit pagge starts here*/
+.col-deposit{
+	background: #fff;
+	margin: 80px 0;
+	/*height: 80vh; */
+	padding: 50px;
+
+}
+.col-deposit-2{
+	margin: 5px auto; 
+	background: #efefef;
+	padding: 15px; 
+	border-radius: 10px;
+}
+.ash{
+	background: #efefef;
+}
+.bit-add {
+	width: 100%;
+	background: #efefef;
+	border: 0;
+	border-bottom: 1.5px solid blue;
+	padding: 5px; 
+}
+
+.col-v-one{
+	background: #fff;
+	padding: 20px; 
+	margin: 0 30px;
+
+}
+.col-fpv{
+	width: 80%; 
+	height: 30px; 
+	border: 0;
+	border-bottom: 1px solid blue;
+	margin: 20px auto; 
+
+}
+.col-wallet{
+	padding: 40px; 
+	background: white;
+	margin: 50px;
+}
+.t-color-1{
+	background: #1fb05c;
+}
+.hide{
+	display: none;
+}
+
+/**/
+
+
+/*=====================================================================this the styling of the dash board section ===================================================*/
+.dash-top-nav{
+	background: #0d0d0d;
+}
+.header-bg{
+	background:url(../images/header-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 75px;
+}
+
+.dash-uname{
+	background:transparent!important;
+	color: #0d0d0d;
+	border: transparent;
+	outline: none;
+	float: right;
+	padding: 30px 15px;
+}
+.container-fluid{
+	padding: 0!important;
+}
+.dtn-logo{
+	width: 200px;
+	margin: auto;
+}
+
+.dtn-profile-pics{
+	width: 60px; 
+	height:60px; 
+	border-width: 2px;
+	float: right;
+	margin: 10px;
+}
+.header-bg > div > div > span a{
+	color: #0d0d0d;
+}
+.header-bg > div > div > span{
+	padding: 29px;
+	font-size: 1.1em;
+}
+
+.col-sidenav{
+	background: #262626;
+	color: #fff;
+	padding: 0;
+}
+.clear-fix{
+	clear: both;
+}
+.mid-topNav{
+	background: #262626;
+	padding: 20px; 	
+}
+
+.cus-title{
+	width: 140px;
+	margin: 9px auto;
+}
+.cus-title h6{
+	font-size: .9em;
+}
+.cus-title p{
+	font-size: .9em;
+}
+.col-sidenav ul {
+	padding: 0;
+}
+.col-sidenav ul li{
+	list-style: none;
+	color: #fff;
+	padding: 10px;
+	border-top: .8px solid #949494;
+	padding-left: 20px;
+	transition: .4s ease;
+}
+.col-sidenav ul li:last-child{
+	border-bottom: .8px solid #949494;
+}
+.col-sidenav ul li:hover{
+	background: #363636;
+	border-left: 20px solid #52afee;
+}
+
+.col-sidenav ul li a{
+	color: #fff;
+	font-size: .9em;
+	text-decoration: none;
+	padding-left: 15px;
+
+}
+.fas-color{
+	color: #52afee;
+	margin-left: 8px;
+}
+.dash-wrapper{
+	background: #555555;
+}
+
+.inner-wrapper{
+	background: #efefef;
+	padding-left: 0;
+}
+.col-traderDash{
+	padding: 10px;
+	border-bottom: solid 3px #52afee;
+	width: 12em;
+}
+.col-traderDash h5{
+	color: #fff;
+	text-align: center;
+}
+.col-deposit-btn,.col-withdraw-btn{
+	color: #fff!important; 
+	
+	float: right;
+	width: 140px; 
+	border-radius: 140px;
+	margin:10px;	
+	text-transform: uppercase;
+	font-size: .9em;
+}
+.col-withdraw-btn{
+	background: #bb3131;
+	border: 1px solid #bb3131;
+}
+
+.col-deposit-btn{
+	background: #399946;
+	border: 1px solid #399946;
+}
+
+.dtn-profile-pics2{
+	width: 60px; 
+	height:60px; 
+	border-width: 2px;
+	float: right;
+	margin-top: -4em;
+}
+.dtn-profile-pics6{
+	width: 60px; 
+	height:60px; 
+	border-width: 2px;
+	float: right;
+	margin-top: -1em;
+}
+.cus-title-txt{
+	text-align:center;
+}
+.res-pimg{
+	display: none;
+}
+.ham{
+	float: right;
+	margin: 20px 20px;
+	display: none;
+}
+.dark-blue{
+	color:#00a6d8;
+}
+
+.con-acc-bc{
+	padding: 20px;
+}
+.col-acc-box1,.col-acc-box2,.col-acc-box3,.col-acc-box4{
+	height: 15vh;
+	border-radius: 5px;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+
+}
+.col-acc-box1{
+	background: #28bf59;
+}
+.col-acc-box2{
+	background: #01c1f0;
+}
+.col-acc-box3{
+	background: #ff841a;
+}
+.col-acc-box4{
+	background: #f44141;
+}
+.col-acc-box1::after{
+	content: '';
+	background: #2ab557; 
+	width: 100%; 
+	height: 50px; 
+	display: block;
+}
+.col-acc-box2::after{
+	content: '';
+	background: #01acd8; 
+	width: 100%; 
+	height: 50px; 
+	display: block;
+}
+.col-acc-box3::after{
+	content: '';
+	background: #cb6915; 
+	width: 100%; 
+	height: 50px; 
+	display: block;
+}
+.col-acc-box4::after{
+	content: '';
+	background: #bb3131; 
+	width: 100%; 
+	height: 50px; 
+	display: block;
+}
+.p-l-10{
+	padding-left: 10px;
+}
+.p-10{
+	padding: 10px;
+}
+
+.pa-5{
+	padding: 5px;
+}
+
+.icon-size-20{
+	font-size: 20px;
+	margin: 0 10px;
+}
+.spark::before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(120deg, transparent, rgba(225,225,225, .3), transparent);
+	transition: all 650ms; 
+}
+.spark:hover::before{
+	left: 100%;
+}
+.ny-det{
+	background:#fff;
+	border-radius: 10px;
+}
+.ny-det-head{
+	border-bottom: .9px solid #efefef;
+	padding: 15px;
+}
+.ny-det-footer{
+	border-top: 1px solid #dedede;
+	padding: 23px;
+}
+.ny-det-body{
+	padding: 5px 20px;
+	border-bottom: .9px solid #efefef;
+}
+.trans-mode{
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.ny-det-body ul li{
+	list-style: none;
+	border-bottom: .9px solid #efefef;
+	padding-top: 15px;
+}
+.ny-det-body ul{
+	list-style: none;
+	border-bottom: .9px solid #efefef;
+	padding:0;
+}
+.ny-det-h4{
+	padding-right: 100px;
+}
+.ny-det-p{
+	text-align: left;
+	color: #515151;
+	font-weight: 470;
+	font-family: fra;
+}
+.ny-det-p-trans{
+	text-align: right;
+	color: #515151;
+	font-weight: 700;
+	font-family: raleway;
+	font-size: .9em;
+}
+.trans-note{
+	font-size: .8em;
+	color:#888787;
+	letter-spacing: .8px;
+}
+/*transfer section starrs here */
+.col-trans{
+	background: #fff;
+	border-radius: 10px;
+}
+.ny-ava-bal{
+	padding: 10px 20px;
+	border-bottom: .9px solid #efefef;
+}
+.ny-ava-bal h5{
+	float: left; 
+	padding-right: 5em;
+}
+.text-success{
+	color: #28a745;
+}
+.text-failed{
+	color: #dc3545!important;
+}
+.text-important{
+	color: #ec8600!important;
+}
+.text-blue {
+	color: #03a3e1 !important;
+}
+.form-wrapper{
+	padding: 40px 0 ;
+}
+.rules ul{
+	padding: 0;
+}
+.rules ul ol{
+	color: #515151;
+	padding: 10px;
+}
+.input-group-text{
+	width: 47px!important;
+}
+
+.t-submit{
+	position: relative;
+	overflow: hidden;
+}
+.current-nav{
+	background: #363636!important;
+}
+#message2{
+	width: 100px;
+}
+
+
+.dash-footer{
+	background: #262626;
+	padding: 20px; 
+
+}
+.dash-footer p{
+	font-size: .8em; 
+	color: #fff; 
+}
+
+/*======================this is for the withdrawing =====================*/
+  .progress{
+    height: 30px;
+  }
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#myBar {
+  width: 0;
+  height: 100px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+#success,#failed,#errorbal{
+	display: none;
+}
+.non{
+	cursor: not-allowed;
+}
+.btc-price-mobile{
+	display: none;
+}
+
+/*=======this is the design of the admin about upload =======================*/
+
+.upload-about{
+	background: #fff;
+	padding: 20px; 
+	margin: 10px; 
+	border-radius: 10px;
+}
+.upload-image-con{
+	border-radius: 20px; 
+	width: 20vh; 
+	margin: auto; 
+}
+.upload-image-con img{
+	border-radius: 100%;
+}
+.user-info{
+		background: #fff; 
+		border-radius: 5px; 
+		padding: 10px; 
+		margin: 20px 0;
+	}
+
+.cust-name-info{
+	font-size: 1.1em; 
+	color: #28bf59;
+	font-weight: bold;
+
+}
+.cust-basic-info{
+	color: #6a6a6a;
+	font-size: .9em ;
+}
+.action{
+	font-size:.8em;
+}
+#gen_code{
+	cursor: pointer
+}
+.tran-copy{
+	background: #fff;
+	border:none; 
+	width: 100%;
+	margin: 5px auto;
+	font-size: 1.5em;
+	text-align: center;
+
+}
+.margin-auto{
+	margin: auto;
+}
+.t-approve,.t-delete{
+	font-size:.9em;
+	padding: 5px;
+	margin: -22px 0 0 19px;
+}
+.pagi{
+	margin: -2px;
+	width: 40px;
+
+	display: inline-block;
+
+	border: 1px solid #03b6eb;
+
+	padding: 10px;
+
+	text-align: center;
+
+	margin-bottom: 10px;
+}
+.padi-wrap{
+	display: block;
+	margin: 20px;
+}
+/*===============styling fr the responsive method starts herer =================*/
+@media screen and (max-width:914px ){
+	.no-padding{
+		padding: 0;
+	}
+	.cus-title{
+		margin: 12px 15px;
+		float:left;
+	}
+	.dash-side-nav{
+		position: absolute;
+		z-index: 3;
+		width: 50%;
+		transition: .5s ease-in;
+		margin-left: -60%;
+	}
+	.col-deposit{
+		margin: 40px 0;
+		padding: 10px;
+
+	}
+	.col-wallet{
+		padding: 10px; 
+		margin: 0;
+	}
+	.dash-top-nav{
+		background: #fff;
+		
+	}
+	.dtn-logo{
+		float: left;
+		margin: 3px; 
+	}
+	.ham{
+		display: block!important;
+		width: 30px;
+		float: right;
+		
+	}
+
+	.hide-lera{
+		display: none;
+	}
+	.dtn-profile-pics{
+		float: left;
+	}
+	.cus-title p{
+		text-align: left;
+		padding: 0 25px;
+	}
+	.ul-sideNav{
+		height: 0;
+		margin: 0;
+		transition: .5s ease-in-out;
+	}
+	.show-sideNav{
+		height: 100vh!important;
+	}
+	.header-bg{
+		background: #fff;
+	}
+	.btc-price-mobile{
+		display: block;
+	}
+	.mobile-none{
+		display:none;
+	}
+	.mobile-border-bottom{
+		border-bottom: 1px solid #efefef;
+	}
+	.cust-name-info{
+		font-size: 1.1em;
+	}
+	.no-mobile-padding-right{
+		padding-right: 0!important;
+	}
+	.t-approve,.t-delete{
+		margin: 1px;
+	} 
+	.con-acc-bc{
+		padding: 2px;
+	}
+	
+}
+	
+
+@media screen and (max-width:576px ){
+	.dash-side-nav{
+		position: absolute;
+		z-index: 3;
+		width: 50%;
+		transition: .5s ease-in;
+		margin-left: -60%;
+	}
+	.nav-show{
+		margin-left: 0;
+	}
+
+	.col-img{
+		display: block;
+	}
+		.col-small-top-icon{
+		display: none;
+	}
+	.dash-main {
+		width: 100%;
+	}
+	.dash-main-2{
+		height: 10vh;
+	}
+	.dash-main-top h3{
+		padding: 0; 
+		text-align: center;
+		margin-left: 3em;	
+		font-size: 1.5em;
+	}
+	.col-md-ct {
+		margin: -6em 0 0 10em;
+	}
+	.col-md-ct h2{
+		font-size: 1em;
+	}
+	.side-gif{
+		float: left;
+	}
+	.wel-graphic{
+		display: none;
+
+	}
+	.col-social-media{
+		padding: 5px; 
+		width: 100%;
+		height: auto;
+	}
+	.font-icon-sm{
+		color: blue; 
+		font-size: 2em;
+	}
+
+	.col-sec-4{
+		margin: 10px auto; 
+		width: 100%!important;
+	}
+
+	.col-details ul li{
+		display: inline;
+	}
+	.mobile-100{
+		width: 100%;
+	}
+	.col-deposit-btn,.col-withdraw-btn{
+		margin: 0 auto 5px;
+		float: none;
+	}
+	
+
+}

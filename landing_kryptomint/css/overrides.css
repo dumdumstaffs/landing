@@ -1,0 +1,89 @@
+:root {
+  --theme-home: #7b7fcd;
+  --theme-home-brand: #ffffff;
+  --theme-home-brand-secondary: #af9b9b;
+}
+
+/* Home styles */
+.uk-text-primary {
+  color: var(--theme-home) !important;
+}
+.uk-link,
+a {
+  color: var(--theme-home);
+}
+.in-icon-wrap {
+  color: var(--theme-home);
+}
+.uk-link-toggle:focus .uk-link,
+.uk-link-toggle:hover .uk-link,
+.uk-link:hover,
+a:hover {
+  color: var(--theme-home);
+}
+
+.uk-button-primary {
+  background: var(--theme-home);
+}
+.uk-section-primary {
+  background: var(--theme-home);
+}
+.in-totop {
+  background: var(--theme-home);
+}
+body > div.in-loader div {
+  background: var(--theme-home);
+}
+
+.in-wave-6 .uk-card-default {
+  border: 1px solid var(--theme-home);
+}
+
+.in-wave-3 .uk-card-default {
+  border: 1px solid var(--theme-home);
+}
+
+.in-wave-4 .in-wave-pricing div:last-child .uk-card-default {
+  border-color: var(--theme-home);
+}
+
+/* Home Brand styles */
+.home-brand {
+  text-transform: uppercase;
+  color: var(--theme-home-brand) !important;
+  mix-blend-mode: difference;
+}
+.home-brand-secondary {
+  text-transform: uppercase;
+  color: var(--theme-home-brand-secondary) !important;
+}
+
+/* Home Dark styles */
+/* html body.home {
+    background: #313131;
+    color: #cecece;
+}
+.black-white-button {
+    background: white;
+    color: black;
+    font-weight: 500;
+}
+.uk-section h1,
+.uk-section h2 {
+    color: #f5f5f5;
+}
+.in-wave-2 .uk-card-default h1 {
+    color: #333333;
+}
+.in-wave-4 .uk-card-default h2 {
+    color: #333333;
+}
+.uk-section-muted h1 {
+    color: #313131;
+}
+.uk-section-muted p {
+    color: #333;
+}
+.uk-section-muted .uk-button {
+    color: #727272;
+} */

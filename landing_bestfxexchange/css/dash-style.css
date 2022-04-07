@@ -1,0 +1,896 @@
+
+/*creating css custom font for trajan*/
+
+@import url(//db.onlinewebfonts.com/c/15a9075ddf4ff1158eb03abbc873a3a4?family=Frank-Light);
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Frank-Light;
+	text-align: center;
+}
+.lite_blue{
+	color: #8e98b3;
+}
+p{
+
+	text-align: center;
+}
+
+ul li a {
+	color: #efefef;
+	transition: .2s ease-in-out;
+}
+ul li a:hover{
+	color: #007bff;
+}
+a{
+	color: #2597c7;
+	text-decoration: none;
+}
+.white{
+	color: #fff;
+}
+.dark-blue{
+	background: #1a212c;
+}
+.form-dark-blue{
+	background: #2d3344!important;
+}
+.border-none{
+	border: none!important;
+}
+
+body{
+	font-family: 'Frank-Light',sans-serif;
+	overflow-x: hidden!important;
+	transition: 0.5s all;
+	font-size: .9em;
+	font-weight: 500;
+}
+img{
+	max-height: 100%;
+	max-width: 100%;
+}
+ul li{
+	list-style: none;
+}
+ul{
+	padding: 0;
+}
+.m-14{
+	margin: 14px;
+}
+.dash-wrapper{
+	overflow: hidden;
+}
+.container-fluid{
+	padding: 0!important;
+}
+.no-cursor{
+	cursor: not-allowed;
+}
+.dash-top-nav {
+	background: #232835;
+	padding: 10px 0;
+	color: #fff; 
+}
+.dash-top-nav > div{
+	padding: 0 5em;
+}
+.phone_icon{
+	filter: brightness(0.7);
+	cursor: pointer;
+	padding: 0 20px;
+	transition: .1s ease-in-out;
+}
+.phone_icon img{
+	width: 15px;
+}
+.phone_icon:hover{
+	filter: none;
+}
+.fa-icons{
+	color: #fff;
+}
+.cursor-pointer{
+	cursor: pointer;
+}
+.top-icon{
+	margin: 0 2em 0 0;
+}
+
+.blinkgreen{
+	animation: blinkgreenText 2s infinite;
+
+}
+@keyframes slidein {
+  from { transform: translateX(-20em); }
+  to   { transform: translateX(100em); }
+}
+@keyframes blinkgreenText {
+	from { color: #0f0;}
+	to{ color: rgb(1, 134, 1);}
+}
+.col-power{
+	font-size: 12px; 
+	transition: .2s ease-in-out;
+	margin-top: 2px;
+}
+.col-power:hover{
+	color:#ff5523;
+}
+.acc-fund{
+	background: #232835;
+	color: #fff; 
+	font-size: 12px;
+}
+.sub_drop,.state_drop,.setting_drop{
+	background: #2e3344; 
+	width: 180px; 
+	border-radius: 5px; 
+	position: absolute;
+	height: 100px; 
+	padding: 10px; 
+	z-index: 2;
+	overflow: hidden;
+	opacity: 0;
+	transition: .3s ease-in-out;
+		
+}
+.sub_drop {
+	margin: -4px -19px;
+}
+.sub_drop ul ,.state_drop ul,.setting_drop ul{
+	display: block!important;
+}
+.sub_drop ul li,.state_drop ul li,.setting_drop ul li{
+	padding: 3px!important;
+	margin-bottom: 11px;
+}
+.show_opa{
+	opacity: 1;
+}
+.custom-acc-funding{
+	font-size: 12px; 
+	padding: 3px;
+	height: 25px;
+	width: 12em;
+}
+.custom-select{
+	font-size: 12px;
+	background:transparent;
+	border: none;
+	width: 90px; 
+	height: 35px;
+	color:#fff;
+	margin: -7px 0 0 0;
+	outline: none;
+}
+
+/* ================================================second header==================================== */
+.second-head{
+	background: #1f232e;
+}
+.list-icon ul{
+	flex-direction:row;
+	display: inline-flex;
+	margin-left: 2em;
+}
+.list-icon ul li{
+	width: 50px; 
+	padding: 10px 20px; 
+}
+
+.list-nav ul {
+	flex-direction:row;
+	display: inline-flex;
+}
+.list-nav ul li{
+	padding: 10px;
+}
+
+.list-nav ul li a{
+	text-decoration: none;
+}
+.col-live-forex{
+	background: #1a212c;
+}
+.live-forex-title{
+	background: #2a3040;
+	color: #787b86;
+}
+.live-forex-title h6{
+	line-height: 2; 
+	font-weight: bold;
+	padding-top: 6px;
+}
+.main_forex{
+	cursor: pointer;
+}
+
+.category,.per_info{
+	background: #2e3444;
+	padding: 10px; 
+	border-radius: 0 5px 5px 0;
+	color: #9da2b5;
+	height: 60px;
+}
+.category{
+	width: 100%;
+}
+.per_info{
+	border-radius: 5px 0 0 0;
+}
+.arrow-down::before{
+	content:'';
+	display: inline-block;
+	border: 5px solid transparent;
+	border-top-color: #2597C7;
+}
+.live_forex_drop_down{
+	transform: rotateX(90deg);
+}
+
+.live_forex_drop ul{
+	background: #394053;
+	border-radius: 0 5px 5px 0;
+	position: absolute;
+	width: 200px;
+	z-index: 1;
+	transition: .5s ease;
+}
+.live_forex_drop ul li{
+	background: #2a3040;
+	padding: 5px 10px;
+	transition: .3s ease-in-out;
+}
+.live_forex_drop ul li:hover,.option_type ul li:hover,.time_type ul li:hover,.drop_amount ul li:hover{
+	background: #1f232e;
+}
+.hide-deg{
+	transform: rotateX(0deg)!important;
+}
+.hide{
+	display:none;
+}
+.personal_section{
+	background: #1a212c;
+	color: #2a3142;
+}
+.option_type_head,.time_head,.drop_amount{
+	padding: 10px; 
+	border-radius: 5px 5px 0 0; 
+	background: #272d3c;
+	margin: 0 5px 0 0; 
+	cursor: pointer;
+}
+.option_type ul ,.time_type ul,.drop_amount ul{
+	margin: 0 5px 0 0; 
+	background: #2a3040;
+	transition: .3s ease-in-out;
+	z-index: 1;
+	position: absolute; 
+
+}
+.option_type ul li,.time_type ul li,.drop_amount ul li{
+	color: #fff; 
+	padding: 5px 10px;
+	border-radius: 0 0 5px 5px;
+	cursor:pointer;
+	width: 187px;
+	
+}
+.drop_amount{
+	padding: 0!important;
+}
+.time_drop{
+	height: 193px;
+	overflow-y: scroll;
+}
+
+.live_option_drop{
+	transform: rotateX(90deg);
+}
+.time_drop{
+	transform: rotateX(90deg);
+}
+.red{
+	color: red;
+}
+.button_switch{
+	width: 65px;
+	border-radius:2px ; 
+	height: 10px; 
+	background: #272d3c; 
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	transition: .3s ease-in-out;
+	margin: 5px;
+}
+.btn_toggle{
+	background: #2597c7; 
+	height: 10px; 
+	width: 32px;
+	display: block;
+	border-radius:2px ; 
+	cursor: pointer;
+	position: absolute;
+	
+}
+.move{
+	background: #445877;
+	right: 2px;
+}
+.input_num_box input{
+	background: #272d3c;
+
+	border: none;
+
+	color: #fff;
+
+	padding: 10px;
+
+	border-radius: 5px;
+
+	width: 190px;
+}
+#profit{
+	color: #03b28b;
+	font-weight: bold;
+	
+}
+.success_green{
+	background: #02b28c;
+}
+.success_red{
+	background: #f7495c;
+}
+.call{
+	width: 190px; 
+	padding: 1em ; 
+	border-radius: 5px;
+	color: #fff; 
+	
+	margin-bottom: 10px; 
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.call  span{
+	cursor: pointer;
+}
+.clear-fix{
+	clear: both; 
+	padding: 2px; 
+}
+.sparkle::before{
+	content:'';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(120deg, transparent, rgba(225,225,225, .3), transparent);
+	transition: all 650ms; 
+}.sparkle:hover::before{
+	left: 100%;
+}
+.trading_history{
+	background: #232835;
+	padding: 20px 0;
+}
+.trading_history table {
+	background: #2e3445;
+	color: #fff; 
+	text-align: center;
+}
+
+.no-border{
+	border:none!important;
+}
+.dark-mode{
+	background: #232835
+}
+.dash-footer{
+	color: #58627c;
+	padding: 20px 0;
+}
+/*========================================styling for the dashboard section starts here============================================================================*/
+.desktop-none{
+	display:none;
+}
+.ham,.ham2{
+	width: 50px; 
+	float: right;
+}
+.ham2{
+	margin: 20px 0;
+}
+.ham span,.ham2 span{
+	width: 30px; 
+	padding: 1.5px; 
+	background: #057eea;
+	float: right;
+	margin: 2px;
+}
+.forex-wrap{
+	padding: 0 15px;
+}
+.display{
+	display:block!important;
+}
+/* =============================== this is the design of the chart section in the dashboard */
+.top-bg,.fund-bg{
+	background: url('../images/dashboard/type-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center; 
+	width: 100%; 
+	padding: 30px; 
+}
+.top-bg{
+	height: 30vh; 
+}
+.fund-bg{
+	height: 50vh;
+}
+.blue-arrow{
+	background: url('../images/dashboard//icon/blue-arrow.svg') center center no-repeat;
+	width: 36px; 
+	height: 35px; 
+	display: block; 
+	position: absolute;
+	left: 49%; 
+	margin-top: -10px; 
+}
+
+.chart-widget{
+	max-width: 100%;
+}
+.chart-widget > div {
+	margin: auto; 
+	width: 1066px;
+}
+/* ===========================styling for funding ====================== */
+.fun-wit ul {
+	text-align: center;
+}
+.fun-wit ul li{
+	display:inline-block;
+	padding: 20px; 
+	background:#2a3040;
+	width: 190px;
+	font-size: 1.1em;
+	border-bottom: 4px solid #2a3040;
+	transition: .3s ease-in-out;
+}
+.fun-wit ul li a{
+	text-decoration: none;
+}
+.active{
+	background: #252a38!important;
+	
+	border-bottom: 4px solid #2697c7!important;
+}
+.active a {
+	color: #2597c7!important;
+}
+.fun-wit ul li:hover{
+	background: #252a38!important;
+	border-bottom: 4px solid #2697c7!important;
+}
+.fund-meth ul li{
+	display:inline-block;
+	position: relative;
+	background:#2a3040;
+	color: #fff;
+	border-bottom: 4px solid #3d4457;
+	transition: .3s ease-in-out;
+	
+}
+#loaderIcon img{
+	width: 30px;
+}
+.fund-meth ul li a{
+	padding: 30px; 
+	display:inline-block;
+	text-align: center;
+}
+.fund-meth ul{
+	width: 100%;
+	margin: 10px auto;
+}
+.fund-meth ul li:hover{
+	background: #252a38!important;
+}
+.recommend{
+	display: inline-block;
+
+	background: #2697c7;
+
+	width: 100%;
+
+	text-align: center;
+}
+.recomend-no{
+	display: inline-block;
+
+}
+.cash-active{
+	border-bottom: 4px solid #252a38;
+	
+}
+
+.method-active::before{
+	content: "";
+	position: absolute;
+	border: 6px solid transparent;
+	border-top-color: #2597C7;
+	bottom: -16px;
+	left: 45%;
+}
+
+.method-active2{
+	border-bottom: 4px solid #2597C7!important;
+	background: #252a38!important; 
+}
+.funding-head{
+	display:none!important;
+}
+.dep_section{
+	width: 100%; 
+	padding: 40px; 
+	background: #252a38;
+	border-radius: 10px;
+	color: #6f7d93;
+}
+#myinput{
+	width: 200px;
+	color: #00FF00;
+	background: #2d3344;
+	border: none;
+	padding: 10px;
+	height: 60px;
+	border-radius: 3px;
+}
+.fund-usd{
+	font-size: 1.3em;
+	color: #00FF00;
+}
+.dep_section_btn{
+	background: #2d3344;
+	border-radius: 3px;
+	margin: 10px auto;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+}
+
+.display-none{
+	display:none;
+}
+.display-block{
+	display: block;
+}
+.btc-fund-logo{
+	width: 200px; 
+	margin: 10px auto;
+	padding: 0 78px;
+}
+.lemon-green{
+	color: #00FF00;
+}
+.fund-amt-span{
+	float: left;
+	line-height: 2.5;
+
+}
+.bit-add{
+	width: 100%;
+	color: #fff;
+	background: #2d3344;
+	border: none;
+	padding: 20px;
+	height: 40px;
+	border-radius: 3px;
+}
+.copy-btc{
+	width: 100px; 
+	margin: 2px auto;
+}
+.barcode-btc{
+	margin: 0 auto;
+}
+
+/* =============STYLING FOR THE WITHDRAWAL PROCESS STARTS HERE ================ */
+.withdraw-btc-card{
+	background:#2a3040;
+	padding: 15px;
+}
+.withdraw-btc-card-2{
+	background:#252a38;
+	padding: 15px;
+}
+.with-btc-btn{
+	background: #2597c7;
+	border-radius: 3px;
+	margin: 10px auto;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	display: block;
+}
+.w-200{
+	width: 200px;
+}
+.w-100-percent{
+	width: 100%;
+}
+.btc-wit-input{
+	color: #fff;
+	background: #2d3344;
+	border: none;
+	padding: 10px;
+	height: 45px;
+	border-radius: 3px;
+}
+
+
+/* this is the start of the personal form styling ===================== */
+.personal-form-wrap{
+	max-width: 618px;
+	/* background: red; */
+	margin: 10px auto; 
+}
+.personal-form input{
+	color:#b0b8cc;
+	background: #2d3344;
+	border: none;
+	padding: 10px;
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 3px;
+}
+.button-ui{
+	color:#fff;
+	border: none;
+	padding: 10px;
+	width: 100%;
+	margin: 10px auto;
+	border-radius: 3px;
+	max-width: 175px;
+}
+.red-bg{
+	background: #DB2828;
+}
+.green-bg{
+	background: #00d853
+}
+.form-doc-browse{
+	color:#b0b8cc;
+	background: #007bff;
+	border: none;
+	padding: 10px;
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 3px;
+}
+.file-upload{
+	position: relative;
+}
+.form-doc input[type = 'file']{
+	margin: auto;
+	opacity: 0;
+	position: absolute;
+}
+.form-doc p {
+	cursor: pointer;
+}
+.personal-form textarea{
+	background: #2d3344;
+	-moz-appearance: none;
+	min-height: 150px;
+	border:none;
+	border-radius: 3px;
+	color: #fff;
+	padding: 5px;
+	width: 100%;
+}
+.policies {
+	color: #48688f;
+	line-height :2 ;
+	font-size: 1.1em;
+}
+
+.pagi{
+	margin: -2px;
+	width: 40px;
+
+	display: inline-block;
+
+	border: 1px solid #03b6eb;
+
+	padding: 10px;
+
+	text-align: center;
+
+	margin-bottom: 10px;
+}
+.padi-wrap{
+	display: block;
+	margin: 20px;
+}
+.blocked{
+	background: linear-gradient(rgba(225,255,225,0.9),rgba(225,225,225,0.9));
+	position: fixed;
+	z-index: 1000000000000000000000;
+	width: 100vw;
+	height: 100vh;
+
+}
+.block-btn{
+	display: block;
+	margin: 10px auto;
+}
+/*===============styling fr the responsive method starts herer =================*/
+@media screen and (max-width:914px ){
+
+	.mobile_per_money_others{
+		transition: .4s ease-in-out;
+   		position: absolute;
+	}
+	.dash-top-nav > div{
+		padding: 0 1em;
+	}
+	.list-nav2{
+		z-index: 3; 
+		
+	}
+
+	.list-nav{
+		position: absolute;
+		padding: 0;
+		overflow:hidden!important;
+	}
+	.list-nav ul{
+		display: block;
+		background: #262B39;
+		float:right;
+		width: 80%;
+		transform: translateX(25em);
+		transition: .4s ease-in-out;
+	}
+	.nav-show{
+		transform: translateX(0)!important;
+	}
+	.list-nav ul li{
+		text-align: left;
+		padding-left: 25px;
+	}
+	.list-icon{
+		display:none;
+	}
+	.second-head{
+		padding: 0 14px!important;
+	}
+	.desktop-none{
+		display: block;
+	}
+	.mobile-none{
+		display:none!important;
+	}
+	.phone_icon{
+		padding: 0 3px;
+	}
+	.top-icon{
+		margin: 0 1em 0 0;
+	}
+	.mobile-sm-50{
+		width: 50%!important;
+	}
+	.live-forex-title{
+		width: 25%;
+	}
+	.live-forex-title h6{
+		line-height: 3;
+		padding-top: 13px;
+	}
+	.tradeview_liv_price{
+		width: 75%;
+	}
+	.hide-deg{
+		transform: rotateX(0deg)!important;
+	}
+	.category{
+		width: 50%;
+	}
+	.tr-forex{
+		display:none;
+	}
+	.category{
+		display: none;
+	}
+	.input_num_box input{
+		width:100%;
+	}
+	.call {
+		width: 100%;
+	}
+	/* === chart section === */
+	.mobile-overflow-scroll{
+		overflow-y: scroll;
+	}
+	.blue-arrow{
+		left: 45%;
+	}
+
+	/* ==========this is for the funding section styling ================== */
+	.fund-meth  ul li div img{
+		display: none;
+	}
+	.fund-meth  ul{
+		width: 95%;
+		position: absolute;
+		transform: rotateX(90deg);
+		transition: .3s ease-in-out;
+		z-index: 5;
+	}
+	.fund-meth  ul li{
+		display: list-item;
+	}
+	.fund-meth  ul li div a {
+		padding: 0 15px;
+		line-height: 0;
+		font-size: 1.2em;
+		cursor: pointer;
+	}
+	.fund-meth  ul li div span{
+		display: none;
+	}
+
+	.funding-head{
+		display:block!important;
+		background: #2a3040;
+		padding: 7px 13px;
+		margin-bottom: -10px;
+		border-bottom: 4px solid #2597C7!important;
+	}
+	.funding-head span {
+		font-size: 1.2em;
+	} 
+	.method-active2{
+		border-bottom: 4px solid #3d4457!important;
+	}
+	.dep-amount-h3{
+		font-size: 1.3em; 
+
+	}
+	.fund-amt-span{
+		line-height: 2;
+	}
+	.top-bg, .fund-bg{
+		padding: 0;
+	}
+	.dep_section{
+		padding: 15px;
+	}
+	#myinput{
+		width: 98%;
+		height: 45px;
+	}
+
+	.btc-wit-input{
+		width: 100%!important;
+		margin: 10px 0!important;
+	}
+
+}
+	
+
+@media screen and (max-width:576px ){
+	.live-forex-title h6{
+		line-height: 2;
+		padding: 0;
+		font-size:1em;
+	}
+
+}

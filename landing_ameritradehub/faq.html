@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>AmeriTrade Hub - Cryptocurrency Trade and Investment</title>
+<link rel="stylesheet" href="home_files/bootstrap.css">
+<link href="home_files/animate.css" rel="stylesheet" type="text/css">
+<link href="home_files/custom.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<script src="faq_files/jquery.js"></script>
+<script src="faq_files/setting2.js" type="text/javascript"></script>
+<script src="faq_files/bootstrap.js"></script>
+<script src="faq_files/wow_002.js"></script>
+<script src="faq_files/wow.js"></script>
+
+<script type="text/javascript">
+	var tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+	var tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+	function GetClock() {
+		var tzOffset = 0;//set this to the number of hours offset from UTC
+
+		var d = new Date();
+		var dx = d.toGMTString();
+		dx = dx.substr(0, dx.length - 3);
+		d.setTime(Date.parse(dx))
+		d.setHours(d.getHours() + tzOffset);
+		var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate();
+		var nhour = d.getHours(), nmin = d.getMinutes(), ap;
+		if (nhour == 0) { ap = " AM"; nhour = 12; }
+		else if (nhour < 12) { ap = " AM"; }
+		else if (nhour == 12) { ap = " PM"; }
+		else if (nhour > 12) { ap = " PM"; nhour -= 12; }
+
+		if (nmin <= 9) nmin = "0" + nmin;
+
+		document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + " " + nhour + ":" + nmin + ap + "";
+	}
+
+	window.onload = function () {
+		GetClock();
+		setInterval(GetClock, 1000);
+	}
+</script>
+
+
+</head>
+
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+		(function () {
+			var options = {
+				whatsapp: "+18564374872",
+				text: "Hello, how may we help you? Just send us a message now to get assistance.",
+				abid: "+18564374872",// WhatsApp number
+
+				call_to_action: "Message us", // Call to action
+				position: "left", // Position may be 'right' or 'left'
+			};
+			var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+			var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+			s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+			var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+		})();
+</script>
+<!-- /WhatsHelp.io widget -->
+<script src="//code.tidio.co/s1p3w6lqm8wb45fc1seidv7vb0a5brbe.js" async></script>
+
+<body>
+	<div class="wrapper">
+		<div class="header_top">
+			<div class="content" style="display: flex; justify-content: space-between;">
+				<div class="fadeInDown wow" style="visibility: visible; animation-name: fadeInDown; flex-grow: 1">
+					<a href="/" style="display: flex; justify-content: space-between; align-items: center">
+						<img src="assets/favicon.png" height="60" alt="">
+						<span
+							style="font-size: 18px; font-weight: 900; text-transform: uppercase; color: #477fc1; margin-left: 8px; white-space: nowrap">Ameritrade
+							Hub</span>
+					</a>
+				</div>
+				<div class="main_nav fadeInDown wow" style="visibility: visible; animation-name: fadeInDown;">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="about.html">about us</a></li>
+						<li><a href="plans.html">Investment</a></li>
+						<li><a href="faq.html">FAQ </a></li>
+						<li><a href="news.html">News </a></li>
+						<li><a href="rate.html">Rate us </a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="login"><a href="https://app.ameritradehub.com/account/login">Login</a></li>
+						<li class="signup"><a href="https://app.ameritradehub.com/account/register">signup</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="content">
+				<div class="header_social fadeInUp wow" style="visibility: visible; animation-name: fadeInUp;"><span><a
+							target="_blank" href="#"><img src="faq_files/facebook.png" alt=""></a></span> <span><a
+							target="_blank" href="#"><img src="faq_files/sendmail.png" alt=""></a></span> <span><a
+							target="_blank" href="#"><img src="faq_files/twitter.png" alt=""></a></span></div>
+				<div class="header_contacts fadeInUp wow" style="visibility: visible; animation-name: fadeInUp;">
+
+					<div class="email"><span>support@ameritradehub.com
+						</span></div>
+				</div>
+				<div class="headerproof fadeInUp wow" style="visibility: visible; animation-name: fadeInUp;"><a
+						href="signup.html">payment<br>
+						proofs</a></div>
+			</div>
+			<div class="content">
+				<div class="bannerinside">
+					<div class="bannertop insideheaders">
+						<div class="bannerleft ">
+							<h1 class="bounceInUp wow" style="visibility: visible; animation-name: bounceInUp;">FAQ</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="inside_wrap faq">
+			<div class="inside_inner">
+
+
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#general" aria-controls="home" role="tab"
+							data-toggle="tab"><i class="fas fa-briefcase"></i> General</a></li>
+					<li role="presentation" class=""><a href="#investment" aria-controls="profile" role="tab"
+							data-toggle="tab"><i class="fas fa-coins"></i> Technical</a></li>
+					<li role="presentation" class=""><a href="#withdraw" aria-controls="profile" role="tab"
+							data-toggle="tab"><i class="fas fa-wallet"></i> Financial</a></li>
+					<li role="presentation" class=""><a href="#affiliate" aria-controls="profile" role="tab"
+							data-toggle="tab"><i class="fas fa-users"></i> Affiliate</a></li>
+
+				</ul>
+
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="general">
+
+						<div class="panel-group one" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+											aria-controls="collapseOne">Is ameritradehub.com
+											a registered company?</a> </h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingOne">
+									<div class="panel-body">Yes, ameritradehub.com
+										is registered in the United Kingdom as "Ameritrade Hub LIMITED" with a
+										registration number of 12128084</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+											aria-controls="collapseTwo"> What are the <b>ameritradehub.com
+											</b> Company's
+											activities?</a> </h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingTwo">
+									<div class="panel-body">ameritradehub.com
+										is engaged in trading
+										activities on the forex and crypto-currency market. The company's income
+										is generated by successfully executed trades on the currency market.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+											aria-controls="collapseThree">Why does the company attract additional
+											investments from
+											private individuals?</a> </h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingThree">
+									<div class="panel-body">Additional investments will allow to increase the number of
+										transactions executed on the currency
+										market, and thus will increase the overall profitability of the company.
+										Investors in turn will
+										receive certain percentage of profit depending on the amount of funds invested.
+									</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingSix">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+											aria-controls="collapseSix">What are the advantages of the
+											ameritradehub.com
+
+											Company over competitors?</a> </h4>
+								</div>
+								<div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingSix">
+									<div class="panel-body"> Our goal is not to conduct the tough competition, but to
+										receive a stable profit on the
+										crypto-currency market using our own strategy. We have developed special
+										investment packages with
+										optimum service plans and affiliate program for passive income for investors.
+									</div>
+								</div>
+							</div>
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingSeven">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+											aria-controls="collapseSeven">What are the risks for ameritradehub.com
+											company's
+											investors?</a> </h4>
+								</div>
+								<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingSeven">
+									<div class="panel-body"> The risks for our investors are minimized due to the
+										professional team and our experience. Each
+										company's investor will receive a daily profit according to the terms of the
+										investment plan that was
+										chosen.</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingEleven">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseEleven" aria-expanded="false"
+											aria-controls="collapseEleven">What do I need in order to start?</a> </h4>
+								</div>
+								<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingEleven">
+									<div class="panel-body">First, you should register on our web-site. The registration
+										procedure is simple and will take just a
+										few minutes. Fill all required fields in registration form, login to account,
+										choose an optimum
+										investment plan and deposit your account. After that you'll become an official
+										investor of the
+										ameritradehub.com
+										Company and will receive a profit according to the service plan chosen.</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingTwelve">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseTwelve" aria-expanded="false"
+											aria-controls="collapseTwelve">Am I able to create multiple accounts on the
+											web-site?</a> </h4>
+								</div>
+								<div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingTwelve">
+									<div class="panel-body">No, the multiple registrations on the web-site are
+										forbidden. A single user can create only one
+										account.</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<!--end tab-->
+
+
+
+					<div role="tabpanel" class="tab-pane" id="investment">
+
+
+						<div class="panel-group one" id="accordion" role="tablist" aria-multiselectable="true">
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFour">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+											aria-controls="collapseFour"> Do I need to pass the identity authentication
+											procedure
+											after the registration on the web-site?</a> </h4>
+								</div>
+								<div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFour">
+									<div class="panel-body">No, the identity authentication is not required. However, we
+										are looking for you consciousness and
+										believe that you will provide authentic information about yourself.</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive1">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive1" aria-expanded="false"
+											aria-controls="collapseFive1">Can I change my personal data (login password,
+											wallet address
+											etc.)?</a> </h4>
+								</div>
+								<div id="collapseFive1" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive1">
+									<div class="panel-body">Yes, you can change some of your personal data through the
+										personal account by yourself.</div>
+								</div>
+							</div>
+
+
+
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive5">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive5" aria-expanded="false"
+											aria-controls="collapseFive5">I forgot my account's password. What do I need
+											to do?</a> </h4>
+								</div>
+								<div id="collapseFive5" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive5">
+									<div class="panel-body"> You can recover a password using the automatic password
+										recovery. You can also contact support.</div>
+								</div>
+							</div>
+
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingSix6">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseSix6" aria-expanded="false"
+											aria-controls="collapseSix6">What is the security level of the company's
+											web-site?</a> </h4>
+								</div>
+								<div id="collapseSix6" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingSix6">
+									<div class="panel-body"> We use an expensive dedicated server of the DDos Guard
+										company which protects our web-site from
+										any DDoS attack. Web-site is also provided with SSL Comodo - the high
+										reliability certificate that
+										provides the higher level of protection and security accreditation.</div>
+								</div>
+							</div>
+
+						</div>
+
+
+					</div>
+					<!--end tab-->
+
+
+					<div role="tabpanel" class="tab-pane" id="withdraw">
+
+						<div class="panel-group one" id="accordion" role="tablist" aria-multiselectable="true">
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+											aria-controls="collapseFive">How to deposit an account?</a> </h4>
+								</div>
+								<div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive">
+									<div class="panel-body"> Once you make a decision about deposit amount, please, use
+										one of the payment systems which cooperate
+										with the company.</div>
+								</div>
+							</div>
+
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive2">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive2" aria-expanded="false"
+											aria-controls="collapseFive2">What payment systems cooperate with the
+											company?</a> </h4>
+								</div>
+								<div id="collapseFive2" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive2">
+									<div class="panel-body">We cooperate with Perfect Money, Payeer and Bitcoin.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive3">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive3" aria-expanded="false"
+											aria-controls="collapseFive3">What is the basis of profit charging?</a>
+									</h4>
+								</div>
+								<div id="collapseFive3" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive3">
+									<div class="panel-body">Profit will be charged on your personal account according to
+										the investment plan that was chosen.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive4">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive4" aria-expanded="false"
+											aria-controls="collapseFive4">What is the minimum and maximum deposit
+											amount?</a> </h4>
+								</div>
+								<div id="collapseFive4" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive4">
+									<div class="panel-body">The minimum deposit amount is $25. Maximum - $100,000.</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive6">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive6" aria-expanded="false"
+											aria-controls="collapseFive6">What is the minimum withdrawal amount?</a>
+									</h4>
+								</div>
+								<div id="collapseFive6" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive6">
+									<div class="panel-body">The minimum withdrawal amount is $1</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive7">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive7" aria-expanded="false"
+											aria-controls="collapseFive7">Am I able to create several deposits at a time
+											and make
+											profit from two investment plans simultaneously?</a> </h4>
+								</div>
+								<div id="collapseFive7" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive7">
+									<div class="panel-body">Yes, you can place money on any number of deposits with a
+										single account and make profit from
+										multiple investment plans.</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive8">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive8" aria-expanded="false"
+											aria-controls="collapseFive8">Is it possible to place money using one
+											payment system
+											and withdraw them using another?</a> </h4>
+								</div>
+								<div id="collapseFive8" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive8">
+									<div class="panel-body">No, you can withdraw money only with the payment system that
+										was used to place them on deposit.</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive9">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive9" aria-expanded="false"
+											aria-controls="collapseFive9">Am I able to request the deposit withdrawal
+											before the
+											end of investment period?</a> </h4>
+								</div>
+								<div id="collapseFive9" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive9">
+									<div class="panel-body">No. The deposit can be withdrawn only after the end of
+										investment period which is specified in the
+										investment plan that was chosen.</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive10">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive10" aria-expanded="false"
+											aria-controls="collapseFive10">How quickly can the request of the money
+											withdrawal be
+											processed?</a> </h4>
+								</div>
+								<div id="collapseFive10" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive10">
+									<div class="panel-body">The withdraw request will be processed in manual mode and
+										withdraw should be received within 24 Hours.</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive11">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive11" aria-expanded="false"
+											aria-controls="collapseFive11">Do you have any hidden fees for money
+											deposit/withdrawal?</a> </h4>
+								</div>
+								<div id="collapseFive11" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive11">
+									<div class="panel-body">No, we don't have any hidden fees.</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive12">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive12" aria-expanded="false"
+											aria-controls="collapseFive12">What are the characteristics of the deposits
+											crediting
+											in the crypto-currency system?</a> </h4>
+								</div>
+								<div id="collapseFive12" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive12">
+									<div class="panel-body">Bitcoin, being a decentralized system, carries out
+										transactions on the basis of a certain number of confirmations in the blockchain
+										network, which are
+										required so that the transaction was considered complete. Deposits in the
+										ameritradehub.com
+										made
+										via crypto-currency system, require a minimum of 3 to 5 confirmations before
+										being recorded in the personal
+										account of the investor.</div>
+								</div>
+							</div>
+
+
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive13">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFive13" aria-expanded="false"
+											aria-controls="collapseFive13">Is the fixed rate of Bitcoin against the
+											dollar being
+											used by the ameritradehub.com
+											company?</a> </h4>
+								</div>
+								<div id="collapseFive13" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFive13">
+									<div class="panel-body">Yes, to minimize effects from the volatility of the exchange
+										rate of Bitcoin for our clients, we use
+										a fixed rate determined at $10,000/BTC. All deposits in Bitcoin by the clients
+										ameritradehub.com
+										,
+										are automatically converted at this rate.</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<!--end tab-->
+
+
+
+					<div role="tabpanel" class="tab-pane" id="affiliate">
+
+
+
+						<div class="panel-group one" id="accordion" role="tablist" aria-multiselectable="true">
+
+
+
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingEight">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseEight" aria-expanded="false"
+											aria-controls="collapseEight">Do you have an affiliate program? </a> </h4>
+								</div>
+								<div id="collapseEight" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingEight">
+									<div class="panel-body">Yes, we developed a single-level affiliate program according
+										to which a program beneficiary will be
+										charged with 5% of commission charge from the each of his/her partner deposit
+										amounts.</div>
+								</div>
+							</div>
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingNine">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseNine" aria-expanded="false"
+											aria-controls="collapseNine">Is it possible to make profit from the
+											affiliate program
+											without placing a deposit?</a> </h4>
+								</div>
+								<div id="collapseNine" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingNine">
+									<div class="panel-body">Yes, you can gain a passive income with no direct
+										investments.</div>
+								</div>
+							</div>
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingTen">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseTen" aria-expanded="false"
+											aria-controls="collapseTen">How can I use money which was gained via the
+											affiliate
+											program participation?</a> </h4>
+								</div>
+								<div id="collapseTen" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingTen">
+									<div class="panel-body"> You can withdraw them or use to invest in our project.
+									</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingThirteen">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseThirteen" aria-expanded="false"
+											aria-controls="collapseThirteen">How can I attract new partners?</a> </h4>
+								</div>
+								<div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingThirteen">
+									<div class="panel-body"> You can use special promotional materials to attract
+										partners.</div>
+								</div>
+							</div>
+
+							<div class="panel panel-default two">
+								<div class="panel-heading" role="tab" id="headingFourteen">
+									<h4 class="panel-title"> <a class="collapsed" role="button" data-toggle="collapse"
+											data-parent="#accordion" href="#collapseFourteen" aria-expanded="false"
+											aria-controls="collapseFourteen">Do you pay a referral commission for a
+											deposit from a
+											balance account?</a> </h4>
+								</div>
+								<div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel"
+									aria-labelledby="headingFourteen">
+									<div class="panel-body"> No. You receive referral commission only for deposits from
+										payment systems.</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+
+
+					</div>
+					<!--end tab-->
+				</div>
+			</div>
+		</div>
+		<div class="footer_wrap">
+			<div class="footer_top">
+				<div class="content">
+					<div class="left bounceIn wow" style="visibility: visible; animation-name: bounceIn;">
+						<h2>We accept the following:</h2>
+					</div>
+					<div class="right bounceIn wow" style="visibility: visible; animation-name: bounceIn;"><span><img
+								src="faq_files/footerbitcoin.png" alt=""></span> <span><img
+								src="faq_files/footerpayeer.png" alt=""></span> <span><img src="faq_files/footerpm.png"
+								alt=""></span></div>
+				</div>
+			</div>
+			<div class="footer_mid">
+				<div class="content">
+					<div class="footer_logo">
+						<h4>
+							<a href="/">
+								<img src="assets/favicon.png" height="60" alt="">
+								<span
+									style="font-size: 18px; font-weight: 900; text-transform: uppercase; color: white; margin-left: 8px;">Ameritrade
+									Hub</span>
+							</a>
+						</h4>
+						<p>© 2019-2021. ameritradehub.com
+							. All Rights Reserved</p>
+					</div>
+					<div class="footer_address">
+						<h4>AmeriTrade Hub Limited <span>#12128084</span></h4>
+						<p>32 Harrington Square Camden Town, London<br>
+							United Kingdom, NW1 2JN</p>
+					</div>
+					<div class="footer_email">
+						<h4>support e-mail</h4>
+						<p>support@ameritradehub.com
+						</p>
+					</div>
+					<div class="footer_socail"><span><a target="_blank" href="#"><img src="home_files/facebook.png"
+									alt=""></a></span> <span><a target="_blank" href="#"><img
+									src="home_files/sendmail.png" alt=""></a></span> <span><a target="_blank"
+								href="#"><img src="home_files/twitter.png" alt=""></a></span></div>
+				</div>
+			</div>
+			<div class="footer_bottom">
+				<div class="content">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="about.html">About Us </a></li>
+						<li><a href="plans.html">plans</a></li>
+						<li><a href="terms.html">terms and conditions</a></li>
+
+						<li><a href="rate.html">Rate us</a></li>
+						<li><a href="faq.html">faq</a></li>
+						<li><a href="contact.html">support</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+
+</html>

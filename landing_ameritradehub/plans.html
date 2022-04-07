@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+<meta https-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>AmeriTrade Hub - Cryptocurrency Trade and Investment</title>
+<link rel="stylesheet" href="home_files/bootstrap.css">
+<link href="home_files/animate.css" rel="stylesheet" type="text/css">
+<link href="home_files/custom.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<script src="plans_files/jquery.js"></script>
+<script src="plans_files/setting2.js" type="text/javascript"></script>
+<script src="plans_files/bootstrap.js"></script>
+<script src="plans_files/wow_002.js"></script>
+<script src="plans_files/wow.js"></script>
+
+<script type="text/javascript">
+  var tday = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+  var tmonth = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+  function GetClock() {
+    var tzOffset = 0;//set this to the number of hours offset from UTC
+
+    var d = new Date();
+    var dx = d.toGMTString();
+    dx = dx.substr(0, dx.length - 3);
+    d.setTime(Date.parse(dx))
+    d.setHours(d.getHours() + tzOffset);
+    var nday = d.getDay(), nmonth = d.getMonth(), ndate = d.getDate();
+    var nhour = d.getHours(), nmin = d.getMinutes(), ap;
+    if (nhour == 0) { ap = " AM"; nhour = 12; }
+    else if (nhour < 12) { ap = " AM"; }
+    else if (nhour == 12) { ap = " PM"; }
+    else if (nhour > 12) { ap = " PM"; nhour -= 12; }
+
+    if (nmin <= 9) nmin = "0" + nmin;
+
+    document.getElementById('clockbox').innerHTML = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + " " + nhour + ":" + nmin + ap + "";
+  }
+
+  window.onload = function () {
+    GetClock();
+    setInterval(GetClock, 1000);
+  }
+</script>
+
+
+</head>
+
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+      var options = {
+        whatsapp: "+18564374872",
+        text: "Hello, how may we help you? Just send us a message now to get assistance.",
+        abid: "+18564374872",// WhatsApp number
+
+        call_to_action: "Message us", // Call to action
+        position: "left", // Position may be 'right' or 'left'
+      };
+      var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
+<script src="//code.tidio.co/s1p3w6lqm8wb45fc1seidv7vb0a5brbe.js" async></script>
+
+<body>
+  <div class="wrapper">
+    <div class="header_top">
+      <div class="content" style="display: flex; justify-content: space-between;">
+        <div class="fadeInDown wow" style="visibility: visible; animation-name: fadeInDown; flex-grow: 1">
+          <a href="/" style="display: flex; justify-content: space-between; align-items: center">
+            <img src="assets/favicon.png" height="60" alt="">
+            <span
+              style="font-size: 18px; font-weight: 900; text-transform: uppercase; color: #477fc1; margin-left: 8px; white-space: nowrap">Ameritrade
+              Hub</span>
+          </a>
+        </div>
+        <div class="main_nav fadeInDown wow" style="visibility: visible; animation-name: fadeInDown;">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="plans.html">Investment</a></li>
+            <li><a href="faq.html">FAQ </a></li>
+            <li><a href="news.html">News </a></li>
+            <li><a href="rate.html">Rate us </a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="login"><a href="https://app.ameritradehub.com/account/login">Login</a></li>
+            <li class="signup"><a href="https://app.ameritradehub.com/account/register">signup</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="content">
+        <div class="header_social fadeInUp wow" style="visibility: visible; animation-name: fadeInUp;"><span><a
+              target="_blank" href="#"><img src="plans_files/facebook.png" alt=""></a></span> <span><a target="_blank"
+              href="#"><img src="plans_files/sendmail.png" alt=""></a></span> <span><a target="_blank" href="#"><img
+                src="plans_files/twitter.png" alt=""></a></span></div>
+        <div class="header_contacts fadeInUp wow" style="visibility: visible; animation-name: fadeInUp;">
+
+          <div class="email"><span>support@ameritradehub.com</span></div>
+        </div>
+        <div class="headerproof fadeInUp wow" style="visibility: visible; animation-name: fadeInUp;"><a
+            href="signup.html">payment<br>
+            proofs</a></div>
+      </div>
+      <div class="content">
+        <div class="bannerinside">
+          <div class="bannertop insideheaders">
+            <div class="bannerleft ">
+              <h1 class="bounceInUp wow" style="visibility: visible; animation-name: bounceInUp;"> Investment
+                <span>Plans</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="plan_wrap">
+      <div class="content">
+        <h2 class="zoomInUp wow" style="visibility: visible; animation-name: zoomInUp;">investment <span>plans</span>
+        </h2>
+        <div class="planscroller">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span><img
+                  src="plans_files/ctn-bot-sil5.png"></span></a> <a class="right carousel-control" href="#myCarousel"
+              data-slide="next"><span><img src="plans_files/ctn-bot-sil6.png"></span></a>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="ctn-Referral">
+                  <div class="ctn-referral-part referral-part1">
+                    <h3>Starter</h3>
+                    <div class="info">
+                      <h4>125%</h4>
+                      <ul>
+                        <li>After 1 day</li>
+                        <li>Minimum Deposit:<br>
+                          $25.00</li>
+                        <li>Maximum Deposit:<br>
+                          $100000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                  <div class="ctn-referral-part referral-part2">
+                    <h3>Advanced</h3>
+                    <div class="info">
+                      <h4>200%</h4>
+                      <ul>
+                        <li>After 3 days</li>
+                        <li>Minimum Deposit:<br>
+                          $25.00</li>
+                        <li>Maximum Deposit:<br>
+                          $100000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                  <div class="ctn-referral-part referral-part3">
+                    <h3>Business</h3>
+                    <div class="info">
+                      <h4>300%</h4>
+                      <ul>
+                        <li>After 5 days</li>
+                        <li>Minimum Deposit:<br>
+                          $25.00</li>
+                        <li>Maximum Deposit:<br>
+                          $100000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                  <div class="ctn-referral-part referral-part4">
+                    <h3>Premium</h3>
+                    <div class="info">
+                      <h4>450%</h4>
+                      <ul>
+                        <li>After 7 days</li>
+                        <li>Minimum Deposit:<br>
+                          $25.00</li>
+                        <li>Maximum Deposit:<br>
+                          $100000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="ctn-Referral">
+                  <div class="ctn-referral-part referral-part1">
+                    <h3>Enterprise</h3>
+                    <div class="info">
+                      <h4>1400%</h4>
+                      <ul>
+                        <li>After 21 days</li>
+                        <li>Minimum Deposit:<br>
+                          $25.00</li>
+                        <li>Maximum Deposit:<br>
+                          $100000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                  <div class="ctn-referral-part referral-part2">
+                    <h3>Vip 1</h3>
+                    <div class="info">
+                      <h4>600%</h4>
+                      <ul>
+                        <li>After 5 days</li>
+                        <li>Minimum Deposit:<br>
+                          $5000</li>
+                        <li>Maximum Deposit:<br>
+                          $50000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                  <div class="ctn-referral-part referral-part3">
+                    <h3>Vip 2</h3>
+                    <div class="info">
+                      <h4>1500%</h4>
+                      <ul>
+                        <li>After 10 days</li>
+                        <li>Minimum Deposit:<br>
+                          $500</li>
+                        <li>Maximum Deposit:<br>
+                          $10000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                  <div class="ctn-referral-part referral-part4">
+                    <h3>Vip 3</h3>
+                    <div class="info">
+                      <h4>2000%</h4>
+                      <ul>
+                        <li>After 15 days</li>
+                        <li>Minimum Deposit:<br>
+                          $100</li>
+                        <li>Maximum Deposit:<br>
+                          $10000</li>
+                      </ul>
+                    </div>
+                    <a href="signup.html">Deposit now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="calculatorwrap">
+          <div class="calculator_left zoomIn wow" style="visibility: visible; animation-name: zoomIn;">
+            <h3>calculate profit</h3>
+            <span class="icon"><img src="plans_files/calculateicon.png" alt=""></span>
+          </div>
+          <div class="calculator_right">
+            <div class="calcbox fadeInRight wow" style="visibility: visible; animation-name: fadeInRight;">
+              <label>select plan:</label>
+              <span class="results">
+                <select id="Ultra">
+                  <option value="0" selected="selected">125% after 1 day</option>
+                  <option value="1">200% after 3 days</option>
+                  <option value="2">300% after 5 days</option>
+                  <option value="3">450% after 7 days</option>
+                  <option value="4">1400% after 21 days</option>
+                  <option value="5">600% after 5 days</option>
+                  <option value="6">1500% after 10 days</option>
+                  <option value="7">2000% after 15 days</option>
+                </select>
+              </span>
+            </div>
+            <div class="calcbox fadeInRight wow" style="visibility: visible; animation-name: fadeInRight;">
+              <label>enter amount ($)</label>
+              <span class="results">
+                <input type="text" name="money" id="money" value="100">
+              </span>
+            </div>
+            <div class="calcbox fadeInRight wow" style="visibility: visible; animation-name: fadeInRight;">
+              <label>total returned</label>
+              <span class="results">$ <span id="profitDaily">103.00</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="affiliate_wrap">
+      <div class="content">
+        <div class="affiliate_left"><img src="plans_files/affiliationthumb.png" alt=""></div>
+        <div class="affiliate_right">
+          <div class="affi_top">
+            <div class="left">
+              <h2>affiliate program</h2>
+            </div>
+            <div class="right">5<span>%</span></div>
+          </div>
+          <div class="affi_bot">
+            <p>Concerning participation in our partner program, your own deposit is not required. You earn referral
+              commission
+              without investment and is paid directly into your e-currency account instantly. </p>
+            <a href="signup.html">join us now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_wrap">
+      <div class="footer_top">
+        <div class="content">
+          <div class="left bounceIn wow" style="visibility: visible; animation-name: bounceIn;">
+            <h2>We accept the following:</h2>
+          </div>
+          <div class="right bounceIn wow" style="visibility: visible; animation-name: bounceIn;"><span><img
+                src="plans_files/footerbitcoin.png" alt=""></span> <span><img src="plans_files/footerpayeer.png"
+                alt=""></span> <span><img src="plans_files/footerpm.png" alt=""></span></div>
+        </div>
+      </div>
+      <div class="footer_mid">
+        <div class="content">
+          <div class="footer_logo">
+            <h4>
+              <a href="/">
+                <img src="assets/favicon.png" height="60" alt="">
+                <span
+                  style="font-size: 18px; font-weight: 900; text-transform: uppercase; color: white; margin-left: 8px;">Ameritrade
+                  Hub</span>
+              </a>
+            </h4>
+            <p>© 2019-2021. ameritradehub.com
+              . All Rights Reserved</p>
+          </div>
+          <div class="footer_address">
+            <h4>AmeriTrade Hub Limited <span>#12128084</span></h4>
+            <p>32 Harrington Square Camden Town, London<br>
+              United Kingdom, NW1 2JN</p>
+          </div>
+          <div class="footer_email">
+            <h4>support e-mail</h4>
+            <p>support@ameritradehub.com
+            </p>
+          </div>
+          <div class="footer_socail"><span><a target="_blank" href="#"><img src="home_files/facebook.png"
+                  alt=""></a></span> <span><a target="_blank" href="#"><img src="home_files/sendmail.png"
+                  alt=""></a></span> <span><a target="_blank" href="#"><img src="home_files/twitter.png"
+                  alt=""></a></span></div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="content">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About Us </a></li>
+            <li><a href="plans.html">plans</a></li>
+            <li><a href="terms.html">terms and conditions</a></li>
+
+            <li><a href="rate.html">Rate us</a></li>
+            <li><a href="faq.html">faq</a></li>
+            <li><a href="contact.html">support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

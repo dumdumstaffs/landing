@@ -1,0 +1,40 @@
+.brand-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 14px;
+  border-radius: 4px;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  top:-32px;
+  left: 2px;
+  color: black;
+}
+
+.brand-name span {
+  color: #ec0203
+}
+
+.team-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media only screen and (max-width: 1023px) {
+  .brand-name {
+    top: 24px;
+    left: 8px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main-header .top-right {
+    display: none;
+  }
+}
