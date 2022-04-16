@@ -12565,6 +12565,8 @@ ol.commentlist li::after {
 ======================================*/
 .wt-our-team .wt-team-media img{
 	width:100%;
+	aspect-ratio: 1/1;
+	object-fit: cover;
 }
 /*======================================
 54. Language Select
