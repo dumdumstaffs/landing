@@ -616,7 +616,7 @@
         async function getWhatsApp() {
             const origins = ["app." + window.location.host, "localhost:5000"]
         
-            const get = (origin) => fetch(new URL("/api/support", document.location.protocol + origin)).then(res => res.json())
+            const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
 
             for (let [index, origin] of origins.entries()) {
                 try {
