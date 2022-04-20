@@ -4309,7 +4309,7 @@ button.scroll-top:focus {
 }
 
 .scroll-top.open {
-    bottom: 30px;
+    bottom: 140px;
 }
 
 .scroll-top {
@@ -4318,7 +4318,7 @@ button.scroll-top:focus {
     line-height: 50px;
     position: fixed;
     bottom: 105%;
-    right: 50px;
+    right: 35px;
     font-size: 16px;
     border-radius: 50%;
     z-index: 99;
