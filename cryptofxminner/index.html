@@ -922,7 +922,8 @@
     <!-- Bitbank WhatsApp widget -->
     <script type="text/javascript">
         async function getWhatsApp() {
-            const origins = ["app." + window.location.host, "localhost:5000"]
+            const appUrl = "app." + window.location.host.replace("www.", "")
+            const origins = [appUrl, "localhost:5000"]
         
             const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
 
