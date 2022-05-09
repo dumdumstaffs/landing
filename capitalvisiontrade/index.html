@@ -39,6 +39,7 @@
 
   <!-- Main Stylesheet File -->
   <link href="temp/css/frontend_style_blue.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/popup.css">
 
 </head>
 
@@ -830,7 +831,7 @@ TradingView Widget END -->
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>PHONE NUMBER</h3>
-              <p><a href="tel: +1 (320) 216 1809"> +1 (320) 216 1809</a></p>
+              <p id="contact-num-1"></p>
             </div>
           </div>
 
@@ -910,7 +911,7 @@ TradingView Widget END -->
             <p>
               2953 Higgins St
               Oceanside, New York(NY), 11572 <br>
-              <a href="#" class="text-white"><strong>Phone:</strong> +1 (320) 216 1809<br></a>
+              <a href="#" class="text-white" id="contact-num-2"></a>
               <a href="#" class="text-white"><strong>Email:</strong> support@capitalvisiontrade.com<br></a>
             </p>
 
@@ -938,6 +939,11 @@ TradingView Widget END -->
 
   <!-- Back to top -->
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <div id="trade-popup" class="trade-popup">
+    <i class="close-icon fa fa-close" id="close-icon"></i>
+    <p class="content"></p>
+  </div>
 
   <script type="text/javascript">
     var scrH = screen.availHeight / 1.5;
@@ -1083,6 +1089,7 @@ TradingView Widget END -->
   <script src="temp/lib/venobox/venobox.min.js"></script>
   <script src="temp/lib/owl.carousel/owl.carousel.min.js"></script>
   <script src="temp/lib/aos/aos.js"></script>
+  <script src="js/popup.min.js"></script>
 
   <script src="//code.tidio.co/y3v23xujj9bh4acsvegf3ihyocwkikyb.js" async></script>
 
@@ -1121,6 +1128,9 @@ TradingView Widget END -->
     }
     (function () {
       getWhatsApp().then((number) => {
+        document.getElementById("contact-num-1").innerHTML = `<a href="tel: ${number}"> ${number}</a>`
+        document.getElementById("contact-num-2").innerHTML = `<strong>Phone:</strong> ${number}<br>`
+
         var options = {
           whatsapp: number, // WhatsApp number
           call_to_action: "Message us", // Call to action
