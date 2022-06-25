@@ -590,7 +590,12 @@
             function removeWaterMark() {
                 var interval = setInterval(() => {
                     var anchor = document.querySelectorAll('[size="50"][type="link"]')[0]
-                    if (anchor) { anchor.innerHTML = ""; clearInterval(interval) }
+                    if (anchor) anchor.innerHTML = ""
+
+                    var div = document.querySelectorAll('div[size="50"]')[0]
+                    if (div) div.innerHTML = ""
+
+                    if (anchor || div) clearInterval(interval)
                 }, 200)
             }
             (function () {
