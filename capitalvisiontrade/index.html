@@ -1099,7 +1099,8 @@ TradingView Widget END -->
   <!-- Bitbank WhatsApp widget -->
   <script type="text/javascript">
     async function getWhatsApp() {
-      const appUrl = "app." + window.location.host.replace("www.", "")
+      // const appUrl = "app." + window.location.host.replace("www.", "")
+      const appUrl = "https://eclectic-ganache-54f45d.netlify.app"
       const origins = [appUrl, "localhost:5000"]
 
       const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
