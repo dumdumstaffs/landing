@@ -953,6 +953,17 @@
               } catch (e) { throw e }
           }
       }
+      function increaseZIndex() {
+        var interval = setInterval(() => {
+          const widget = document.querySelector('[id^="gb-widget"]')
+          
+          if (widget) {
+            widget.style.zIndex = 9_999_999_999
+            console.log("widget:", document.querySelector('[id^="gb-widget"]'))
+            clearInterval(interval)
+          } 
+        }, 200)
+      }
       function removeWaterMark() {
           var interval = setInterval(() => {
             var anchor = document.querySelectorAll('[size="50"][type="link"]')[0]
@@ -976,7 +987,7 @@
               var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
               s.onload = function () { WhWidgetSendButton.init(host, proto, options) };
               var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-          }).then(removeWaterMark)
+          }).then(increaseZIndex).then(removeWaterMark)
       })();
     </script>
     <!-- end Bitbank WhatsApp widget -->
