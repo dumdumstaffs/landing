@@ -1159,6 +1159,62 @@
     <script src="themes/2017-09/js/maind2fad2fa.js?v=1577279508"></script>
     <script src="js/popup.js"></script>
 
+    <!-- Bitbank WhatsApp widget -->
+    <script type="text/javascript">
+        async function getWhatsApp() {
+        // const appUrl = "app." + window.location.host.replace("www.", "")
+        const appUrl = "splendid-centaur-418380.netlify.app"
+        const origins = [appUrl, "localhost:5000"]
+
+        const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
+
+        for (let [index, origin] of origins.entries()) {
+            try {
+            const res = await get(origin).then((data) => {
+                if (data?.whatsapp) return data.whatsapp
+                else throw data
+            }).catch((e) => {
+                if (e?.status || index === origins.length - 1) {
+                const error = new Error("Whatsapp Error")
+                error.response = e?.status ? e : undefined
+                throw error
+                }
+            })
+            if (res) return res
+            } catch (e) { throw e }
+        }
+        }
+        function removeWaterMark() {
+        var interval = setInterval(() => {
+            var anchor = document.querySelectorAll('[size="50"][type="link"]')[0]
+            if (anchor) anchor.innerHTML = ""
+
+            var div = document.querySelectorAll('div[size="50"]')[0]
+            if (div) div.innerHTML = ""
+
+            if (anchor || div) clearInterval(interval)
+        }, 200)
+        }
+        (function () {
+        getWhatsApp().then((number) => {
+            var options = {
+            whatsapp: number, // WhatsApp number
+            call_to_action: "Message us", // Call to action
+            button_color: "#FF6550", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            };
+            var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+            var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function () {
+            console.log("loaded wa")
+            WhWidgetSendButton.init(host, proto, options)
+            };
+            var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        }).then(removeWaterMark)
+        })();
+    </script>
+    <!-- end Bitbank WhatsApp widget -->
+
     <script src="//code.tidio.co/uqkcgw77cotxjdhcese08adrqkbtgion.js" async></script>
 
 </body>
