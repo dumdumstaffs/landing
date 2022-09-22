@@ -456,7 +456,7 @@ Best, Bitcoin, Trader, Investment, Plartform, Broker, Legit, Funding, Grow your 
                <div class="col-1-padding">
                   <div id="wb_Text2">
                      <span style="color:#7B68EE;font-family:Arial;font-size:13px;">
-                        <strong id="wa-number">Call back&nbsp; +1 (603) 369-2985</strong>
+                        <strong id="wa-number"></strong>
                      </span>
                   </div>
                </div>
@@ -1600,6 +1600,10 @@ Best, Bitcoin, Trader, Investment, Plartform, Broker, Legit, Funding, Grow your 
             if (anchor || div) clearInterval(interval)
          }, 200)
       }
+      function replaceWaNumber(number) {
+         const waNumber = document.getElementById("wa-number")
+         waNumber.innerText = `Call back&nbsp; ${number}`
+      }
       (function () {
          getWhatsApp().then((number) => {
             var options = {
@@ -1612,6 +1616,7 @@ Best, Bitcoin, Trader, Investment, Plartform, Broker, Legit, Funding, Grow your 
             var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
             s.onload = function () { WhWidgetSendButton.init(host, proto, options) };
             var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            replaceWaNumber(number)
          }).then(removeWaterMark)
       })();
    </script>
