@@ -360,70 +360,7 @@
                     <!-- TITLE END -->
                     
                     <div class="section-content">
-                        <div class="row">
-                        
-                            <!-- COLUMNS 1 -->
-                            <div class="col-md-4 col-sm-4  m-tb15">
-                                <div class="wt-team-one bg-white">
-                                    <div class="wt-team-media">
-                                        <a href="javascript:void(0);"><img src="images/our-team/pic1.jpg"  class="" alt=""></a>
-                                    </div>
-                                    <div class="wt-team-info text-center bg-white p-a10">
-                                        <h4 class="wt-team-title"><a href="javascript:void(0);">Ann Zulu</a></h4>
-                                        <p>Consultant</p>
-                                        <ul class="social-icons social-square social-dark">
-                                            <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- COLUMNS 2 -->
-                            <div class="col-md-4 col-sm-4 m-tb15">
-                                <div class="wt-team-one bg-white">
-                                    <div class="wt-team-media ">
-                                        <a href="javascript:void(0);"><img src="images/our-team/pic2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="wt-team-info text-center bg-white p-a10">
-                                        <h4 class="wt-team-title"><a href="javascript:void(0);">Richard Wagner</a></h4>
-                                        <p>Ceo & Founder</p>
-                                        <ul class="social-icons social-square social-dark">
-                                            <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- COLUMNS 3 -->
-                            <div class="col-md-4 col-sm-4  m-tb15">
-                                <div class="wt-team-one  bg-white">
-                                    <div class="wt-team-media">
-                                        <a href="javascript:void(0);"><img src="images/our-team/pic3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="wt-team-info text-center bg-white p-a10">
-                                        <h4 class="wt-team-title"><a href="javascript:void(0);">Jessica Atkins</a></h4>
-                                        <p>Manager</p>
-                                        <ul class="social-icons social-square social-dark">
-                                            <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
-                                            <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
+                        <div id="staff-row" class="row"></div>
                     </div>
                 
                 </div>
@@ -597,6 +534,55 @@
 <script   src="js/switcher.js"></script><!-- SWITCHER FUCTIONS  -->
 <script  src="js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
 <script  src="js/tickerNews.min.js"></script><!-- TICKERNEWS-->
+
+<script>
+    async function fetchApi(url) {
+        const appUrl = "tranquil-sunshine-dc8c4f.netlify.app"
+        const protocol = document.location.protocol
+        let origin = "localhost:5000"
+
+        if (protocol === "https:") origin = appUrl
+
+        return fetch(`${protocol}//${origin}/${url}`).then(res => res.json())
+    }
+
+    async function populateStaff() {
+        const staff = await fetchApi("api/staff").catch(() => {
+            console.log("error fetching staff")
+            return []
+        })
+
+        const staffRow = document.getElementById("staff-row")
+
+        staffRow.innerHTML = ""
+        
+        for ({ name, role, image} of staff) {
+            staffRow.innerHTML += `
+                <div class="col-md-4 col-sm-4  m-tb15" data-name="${name}">
+                    <div class="wt-team-one bg-white">
+                        <div class="wt-team-media">
+                            <a href="javascript:void(0);"><img src="${image}"  class="" alt=""></a>
+                        </div>
+                        <div class="wt-team-info text-center bg-white p-a10">
+                            <h4 class="wt-team-title"><a href="javascript:void(0);">${name}</a></h4>
+                            <p>${role}</p>
+                            <ul class="social-icons social-square social-dark">
+                                <li><a href="javascript:void(0);" class="fa fa-facebook"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-twitter"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-linkedin"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-rss"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-youtube"></a></li>
+                                <li><a href="javascript:void(0);" class="fa fa-instagram"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            `
+        }
+    }
+
+    populateStaff()
+</script>
 
 <script src="//code.tidio.co/lwmopep2ixxls9apai38uugk3nfcsodj.js" async></script>
 
