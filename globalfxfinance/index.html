@@ -1608,7 +1608,7 @@
 
         <!-- Bitbank WhatsApp widget -->
     <script type="text/javascript">
-        async function getWhatsApp() {
+        async function getSupport() {
             // const appUrl = "app." + window.location.host.replace("www.", "")
             const appUrl = "polite-figolla-159515.netlify.app"
             const origins = [appUrl, "localhost:5000"]
@@ -1618,11 +1618,12 @@
             for (let [index, origin] of origins.entries()) {
                 try {
                     const res = await get(origin).then((data) => {
-                        if (data?.whatsapp) return data.whatsapp
-                        else throw data
+                        // if (data?.whatsapp) return data
+                        // else throw data
+                        return data
                     }).catch((e) => {
                         if (e?.status || index === origins.length - 1) {
-                            const error = new Error("Whatsapp Error")
+                            const error = new Error("Support Error")
                             error.response = e?.status ? e : undefined
                             throw error
                         }
@@ -1643,12 +1644,14 @@
             }, 200)
         }
         (function () {
-            getWhatsApp().then((number) => {
+            getSupport().then((support) => {
                 var options = {
-                    whatsapp: number, // WhatsApp number
+                    telegram: support.telegram, // Telegram bot username
+                    whatsapp: support.whatsapp, // WhatsApp number
                     call_to_action: "Message us", // Call to action
-                    button_color: "#FF6550", // Color of button
+                    button_color: "#25D366", // Color of button
                     position: "left", // Position may be 'right' or 'left'
+                    order: "whatsapp,telegram", // Order of buttons
                 };
                 var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
                 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
