@@ -1490,15 +1490,18 @@
                 const appUrl = "polite-faloodeh-36d9e1.netlify.app"
                 const origins = [appUrl, "localhost:5000"]
             
-                const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
+                const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`)
+                .then(async res => {
+                    const data = await res.json()
+                    if (!res.ok) return Promise.reject(data)
+                    return data
+                })
     
                 for (let [index, origin] of origins.entries()) {
                     try {
                         const res = await get(origin).catch((e) => {
                             if (e?.status || index === origins.length - 1) {
-                                const error = new Error("Support Error")
-                                error.response = e?.status ? e : undefined
-                                throw error
+                                throw e
                             }
                         })
                         if (res) return res
