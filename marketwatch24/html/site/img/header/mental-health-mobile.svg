@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2431" data-name="Ellipse 2431" cx="18" cy="18" r="18" fill="#eaeff4"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_19408" data-name="Rectangle 19408" width="24" height="24" fill="#5d676e" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_119105" data-name="Mask Group 119105" clip-path="url(#clip-path)">
+    <g id="Group_117564" data-name="Group 117564">
+      <circle id="Ellipse_2393" data-name="Ellipse 2393" cx="18" cy="18" r="18" fill="#eaeff4"/>
+      <g id="Mask_Group_835" data-name="Mask Group 835" transform="translate(6 6)" clip-path="url(#clip-path-2)">
+        <g id="mental-health" transform="translate(4.565 3.687)">
+          <path id="Path_87113" data-name="Path 87113" d="M134.4,124.239q.275.23.573.48.3-.251.573-.48c1.466-1.223,2.35-1.962,2.35-2.9A1.257,1.257,0,0,0,136.678,120a1.468,1.468,0,0,0-1.256.871v0h-.9a1.469,1.469,0,0,0-1.257-.872,1.257,1.257,0,0,0-1.218,1.343C132.05,122.277,132.934,123.015,134.4,124.239Z" transform="translate(-128.64 -116.103)" fill="#5d676e"/>
+          <path id="Path_87114" data-name="Path 87114" d="M35.818,16.627V13.639h2.436a1.463,1.463,0,0,0,1.461-1.461V10.531l2.2-1.087L39.713,6.182A6.332,6.332,0,1,0,29,10.9v5.725Zm-4.141-13.7a2.238,2.238,0,0,1,1.7.784,2.211,2.211,0,0,1,3.9,1.534c0,1.39-1.074,2.286-2.7,3.643-.277.231-1.2,1.014-1.2,1.014s-.921-.783-1.2-1.014c-1.625-1.357-2.7-2.253-2.7-3.643a2.233,2.233,0,0,1,2.192-2.318Z" transform="translate(-27.05 0)" fill="#5d676e"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
