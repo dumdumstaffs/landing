@@ -22,14 +22,39 @@
     letter-spacing: 0.3px;
 }
 
-@media screen and (max-width: 978px) {
+@media (max-width: 1280px) {
+    #alison_logo::before {
+        content: "";
+    }
+}
+
+@media (max-width: 977px) {
+    .header .header__search #alison_logo {
+        display: block;
+    }
+
     #alison_logo img {
         width: 24px;
         height: 24px;
         margin-bottom: 12px;
     }
 
-    #alison_logo::before {
-        content: "";
+    .header__user .login-button {
+        white-space: nowrap;
+        padding: 0 12px;
+    }
+
+    .header__user .header__user-register {
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 540px) {
+    .header .header__search #alison_logo {
+        display: none;
     }
 }
