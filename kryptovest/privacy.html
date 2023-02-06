@@ -97,7 +97,7 @@
                                     <p>Trading involves substantial risk and may result in the loss of your invested/greater that your invested capital, respectively.</p>
                                 </div>
                                 <div class="uk-width-expand@m uk-text-center uk-text-right@m">
-                                    <a class="uk-margin-right" href="https://tawk.to/chat/61169e2fd6e7610a49b01249/1fd05jqts"><i class="fas fa-comment-alt uk-margin-small-right"></i>Live Chat</a>
+                                    <a id="cta-whatsapp" class="uk-margin-right"><i class="fas fa-comment-alt uk-margin-small-right"></i>WhatsApp Chat</a>
                                 </div>
                             </div>
                         </div>
@@ -318,19 +318,31 @@ Kryptovest is committed to safeguarding your Personal Data by adhering to strict
     <script src="js\vendors\indonez.min.js"></script>
     <script src="js\config-theme.js"></script>
 	
-    <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/61169e2fd6e7610a49b01249/1fd05jqts';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
+        async function getSupport() {
+            const appUrl = "sage-malasada-11c8a0.netlify.app"
+            const origins = [appUrl, "localhost:5000"]
+        
+            const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
+
+            for (let [index, origin] of origins.entries()) {
+                try {
+                    const res = await get(origin).catch((e) => {
+                        if (e?.status || index === origins.length - 1) {
+                            const error = new Error("Support Error")
+                            error.response = e?.status ? e : undefined
+                            throw error
+                        }
+                    })
+                    if (res) return res
+                } catch (e) { throw e }
+            }
+        }
+        getSupport().then((support) => {
+            const whatsapp = document.getElementById("cta-whatsapp")
+            if (support.whatsapp) whatsapp.href = `https://wa.me/${support.whatsapp}`
+        })
     </script>
-    <!--End of Tawk.to Script-->
 </body>
 
 </html>
