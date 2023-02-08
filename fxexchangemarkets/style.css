@@ -4298,7 +4298,7 @@ body.date-20180212.exp-invert-logo {
   top: -20px;
   bottom: 0;
   border-radius: 20px;
-  background: #e05d5e;
+  /* background: #e05d5e; */
   z-index: 1;
 }
 .video-area .videos-heding .videos-box .video-js .vjs-control-bar {
