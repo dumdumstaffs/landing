@@ -521,26 +521,26 @@ body{
 .w1{
     flex:1 0 auto;
     padding:105px 0 0;
-    background:url("images/bg-w1.png") no-repeat 50% 0;
+    background:url("/assets/images/bg-w1.png") no-repeat 50% 0;
     background-size:cover
 }
 .home-page .w1{
     padding-top:0
 }
 .page-contactus .w1{
-    background:url("images/bg-w1-contactus.png") no-repeat 50% 0;
+    background:url("/assets/images/bg-w1-contactus.png") no-repeat 50% 0;
     background-size:cover
 }
 .page-account .w1{
-    background:url("images/bg-w1-account.png") no-repeat 50% 0;
+    background:url("/assets/images/bg-w1-account.png") no-repeat 50% 0;
     background-size:cover
 }
 .page-registration.real .w1{
-    background:url("images/bg-w1-reg-real.png") no-repeat 50% 0;
+    background:url("/assets/images/bg-w1-reg-real.png") no-repeat 50% 0;
     background-size:cover
 }
 .page-registration .w1{
-    background:url("images/bg-w1-reg-demo.png") no-repeat 50% 0;
+    background:url("/assets/images/bg-w1-reg-demo.png") no-repeat 50% 0;
     background-size:cover
 }
 .home-page .w1{
@@ -1945,7 +1945,7 @@ main{
     height:53px;
     overflow:hidden;
     text-indent:-9999px;
-    background:url(images/logo.png) no-repeat;
+    background:url("/assets/images/logo.png") no-repeat;
     background-size: contain;
     background-position: center;
 }
@@ -3956,7 +3956,7 @@ table.table,.table table{
     margin:0 10px
 }
 .hp-section02{
-    background:#292a2c url("images/bg-hp-section02.jpg") no-repeat 50% 0;
+    background:#292a2c url("/assets/images/bg-hp-section02.jpg") no-repeat 50% 0;
     background-size:cover;
     padding-top:120px;
     padding-bottom:65px
@@ -4074,7 +4074,7 @@ table.table,.table table{
     font-size:18px
 }
 .hp-section04{
-    background:#1d1e21 url("images/bg-hp-section04.jpg") no-repeat;
+    background:#1d1e21 url("/assets/images/bg-hp-section04.jpg") no-repeat;
     background-size:cover;
     padding-top:120px
 }
@@ -4175,7 +4175,7 @@ table.table,.table table{
     background:#2b2c2d
 }
 .hp-section06{
-    background:#1d1e21 url("images/bg-hp-section06.jpg") no-repeat;
+    background:#1d1e21 url("/assets/images/bg-hp-section06.jpg") no-repeat;
     background-size:cover;
     padding-top:120px;
     padding-bottom:110px
@@ -4230,7 +4230,7 @@ table.table,.table table{
     right:0;
     top:0;
     bottom:0;
-    background:url("images/bg-hp-steps-number.png") no-repeat
+    background:url("/assets/images/bg-hp-steps-number.png") no-repeat
 }
 .hp-section06 .item:nth-child(2) .number:before{
     background-position:-85px 0
@@ -4246,7 +4246,7 @@ table.table,.table table{
     right:100%;
     margin-right:50px;
     top:30px;
-    background:url("images/bg-hp-steps-arrow.png") no-repeat 100% 0;
+    background:url("/assets/images/bg-hp-steps-arrow.png") no-repeat 100% 0;
     height:15px
 }
 .hp-section06 .item:first-child .number:after{
@@ -8223,7 +8223,7 @@ table.table,.table table{
     .hp-section02{
         padding-top:70px;
         padding-bottom:40px;
-        background:#060d54 url("images/bg-hp-section02-sm.jpg") no-repeat 50% 0;
+        background:#060d54 url("/assets/images/bg-hp-section02-sm.jpg") no-repeat 50% 0;
         background-size:cover
     }
     .hp-section02 .items{
@@ -8255,7 +8255,7 @@ table.table,.table table{
     }
     .hp-section04{
         padding-bottom:50px;
-        background:#1d1e21 url("images/bg-hp-section04-sm.jpg") no-repeat;
+        background:#1d1e21 url("/assets/images/bg-hp-section04-sm.jpg") no-repeat;
         background-size:cover
     }
     .hp-section04 .item .box-content{
@@ -8284,7 +8284,7 @@ table.table,.table table{
     .hp-section06{
         padding-top:68px;
         padding-bottom:60px;
-        background:#1d1e21 url("images/bg-hp-section06-sm.jpg") no-repeat;
+        background:#1d1e21 url("/assets/images/bg-hp-section06-sm.jpg") no-repeat;
         background-size:cover
     }
     .hp-section06 h1,.hp-section06 .h1{
@@ -8480,7 +8480,7 @@ table.table,.table table{
         bottom:10px
     }
     .page-contactus .w1{
-        background:url("images/bg-w1-contactus-sm.png") no-repeat 50% 0;
+        background:url("/assets/images/bg-w1-contactus-sm.png") no-repeat 50% 0;
         background-size:cover
     }
     .btn-xs{
