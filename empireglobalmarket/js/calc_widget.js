@@ -4,6 +4,7 @@ function httpGet(theUrl)
 
     xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, false );
+    xhr.timeout = 2000
     xmlHttp.send( null );
     return xmlHttp.responseText;
 }
