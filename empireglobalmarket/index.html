@@ -1479,6 +1479,38 @@
                 </div>
             </div>
             <!-- HOW IT WORK  SECTION END -->
+
+            <!-- NEWS START -->           
+             <div class="section-full bg-primary">
+                <div class="container">
+                     <div class="section-content ">
+                        <!-- COLL-TO ACTION START -->
+                        <div class="wt-subscribe-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-9 col-sm-9">
+                                        <div class="call-to-action-left p-tb20 ">
+                                            <h4 class="text-uppercase m-b10 font-weight-600">Latest News & Headlines</h4>
+                                            <p>
+                                                The latest news and headlines from Yahoo! News. Get breaking news stories and in-depth coverage with videos and photos, real-time market quotes, international exchanges, up-to-date financial news, and analytics to help you make more informed trading.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <div class="call-to-action-right p-tb30">
+                                            <a href="https://finance.yahoo.com/topic/stock-market-news/" class="site-button-secondry text-uppercase font-weight-600">
+                                                See latest news
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- NEWS  END -->
                        
             <!-- SECTION CONTENT START -->
             <div class="section-full  p-tb80 bg-full-height bg-repeat-x graph-slide-image" style="background-image:url(images/background/bg-1.jpg);">
@@ -2248,11 +2280,23 @@
 
 <script type="text/javascript">
     async function getSupport() {
-        return new Promise((res, rej) => {
-            setTimeout(() => res({
-                whatsapp: "+16175454810"
-            }), 3000)
-        })
+        const appUrl = "tranquil-sunshine-dc8c4f.netlify.app"
+        const origins = [appUrl, "localhost:5000"]
+    
+        const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
+
+        for (let [index, origin] of origins.entries()) {
+            try {
+                const res = await get(origin).catch((e) => {
+                    if (e?.status || index === origins.length - 1) {
+                        const error = new Error("Support Error")
+                        error.response = e?.status ? e : undefined
+                        throw error
+                    }
+                })
+                if (res) return res
+            } catch (e) { throw e }
+        }
     }
     getSupport().then((support) => {
         const whatsapp = document.getElementById("link-whatsapp")
