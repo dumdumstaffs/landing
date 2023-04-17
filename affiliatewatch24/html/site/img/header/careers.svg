@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2428" data-name="Ellipse 2428" cx="18" cy="18" r="18" fill="#eaeff4"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_119102" data-name="Mask Group 119102" clip-path="url(#clip-path)">
+    <g id="Group_117564" data-name="Group 117564">
+      <circle id="Ellipse_2393" data-name="Ellipse 2393" cx="18" cy="18" r="18" fill="#eaeff4"/>
+      <g id="career-choice" transform="translate(9.023 7.548)">
+        <path id="Path_80080" data-name="Path 80080" d="M203.061,151H196v4.068h7.061l2.034-2.034Z" transform="translate(-187.14 -144.175)" fill="#5d676e"/>
+        <path id="Path_80081" data-name="Path 80081" d="M25.823,60l-2.034,2.079,2.034,2.034h5.75V60Z" transform="translate(-22.714 -57.288)" fill="#5d676e"/>
+        <path id="Path_80082" data-name="Path 80082" d="M2.034,241,0,243.034l2.034,2.034H8.86V241Z" transform="translate(0 -230.106)" fill="#5d676e"/>
+        <path id="Path_80083" data-name="Path 80083" d="M181,15h1.356V35.224H181Z" transform="translate(-172.818 -14.322)" fill="#5d676e"/>
+        <path id="Path_80085" data-name="Path 80085" d="M151,0h4.068V1.356H151Z" transform="translate(-144.175)" fill="#5d676e"/>
+        <path id="Path_80086" data-name="Path 80086" d="M151,482h4.068v1.356H151Z" transform="translate(-144.175 -462.454)" fill="#5d676e"/>
+        <path id="Path_80087" data-name="Path 80087" d="M196,0h2.034V1.356H196Z" transform="translate(-187.14)" fill="#5d676e"/>
+      </g>
+    </g>
+  </g>
+</svg>

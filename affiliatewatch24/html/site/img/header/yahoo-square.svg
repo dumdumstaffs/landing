@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_19555" data-name="Rectangle 19555" width="16" height="16" transform="translate(320 469)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_874" data-name="Mask Group 874" transform="translate(-320 -469)" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2" transform="translate(320 469)">
+      <g id="Color_Icon" data-name="Color Icon">
+        <g id="_80.Yahoo" data-name="80.Yahoo">
+          <rect id="Background" width="16" height="16" rx="2" fill="#6001d1"/>
+          <g id="Icon" transform="translate(3.475 3.789)">
+            <path id="Path_88113" data-name="Path 88113" d="M36.91,54.529,35.85,57.16l-1.026-2.632a.2.2,0,0,0-.187-.128H33.21a.2.2,0,0,0-.186.277l1.92,4.713L34.453,60.6a.2.2,0,0,0,.186.28h1.378a.2.2,0,0,0,.186-.125l2.458-6.078a.2.2,0,0,0-.18-.277H37.1A.2.2,0,0,0,36.91,54.529Z" transform="translate(-33.009 -52.463)" fill="#fff"/>
+            <path id="Path_88114" data-name="Path 88114" d="M89.7,36.125A.2.2,0,0,1,89.889,36h1.38a.2.2,0,0,1,.186.276l-1.461,3.592a.2.2,0,0,1-.186.126H88.43a.2.2,0,0,1-.186-.277Z" transform="translate(-82.416 -36)" fill="#fff"/>
+            <circle id="Ellipse_2410" data-name="Ellipse 2410" cx="1.115" cy="1.115" r="1.115" transform="translate(5.009 4.606)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

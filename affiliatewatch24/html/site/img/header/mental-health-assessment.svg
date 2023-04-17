@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_19409" data-name="Rectangle 19409" width="32" height="32" transform="translate(355 87.004)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_836" data-name="Mask Group 836" transform="translate(-355 -87.004)" clip-path="url(#clip-path)">
+    <g id="mental-health" transform="translate(333.449 90.922)">
+      <path id="Path_87113" data-name="Path 87113" d="M135.442,126.118q.4.332.827.694.429-.363.827-.694c2.116-1.765,3.392-2.832,3.392-4.179A1.814,1.814,0,0,0,138.73,120a2.118,2.118,0,0,0-1.813,1.257v0h-1.294A2.121,2.121,0,0,0,133.808,120a1.814,1.814,0,0,0-1.758,1.939C132.05,123.286,133.327,124.353,135.442,126.118Z" transform="translate(-100.078 -114.375)" fill="#f58220"/>
+      <path id="Path_87114" data-name="Path 87114" d="M39.707,24V19.688h3.516a2.112,2.112,0,0,0,2.109-2.109V15.2l3.183-1.568L45.329,8.924a9.141,9.141,0,1,0-15.466,6.813V24ZM33.73,4.219a3.23,3.23,0,0,1,2.461,1.132,3.191,3.191,0,0,1,5.625,2.214c0,2.006-1.55,3.3-3.9,5.259-.4.334-1.728,1.463-1.728,1.463s-1.329-1.13-1.728-1.463c-2.346-1.959-3.9-3.253-3.9-5.259A3.224,3.224,0,0,1,33.73,4.219Z" transform="translate(0)" fill="#f58220"/>
+    </g>
+  </g>
+</svg>
