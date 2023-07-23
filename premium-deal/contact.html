@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Contact Us - Premium Deal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <link rel="stylesheet"
+        href="A.font-awesome,,_css,,_all.css+fonts,,_material-icons.css,Mcc.GT6GcZrzjp.css.pagespeed.cf.8y5V3-Mt4n.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="css/A.bootstrap.min.css+magnific-popup.css+select2.min.css,Mcc.vr3-Fjio4o.css.pagespeed.cf.JvfUO682dU.css">
+
+
+    <link rel="stylesheet" href="css/A.style.css+skins,,_orange.css,Mcc.ocKxvaiCS9.css.pagespeed.cf.9likxNN0Kz.css">
+
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="orange"
+        href="css/skins/A.orange.css.pagespeed.cf.dcHmtHm5Xe.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blue"
+        href="css/skins/A.blue.css.pagespeed.cf.wLIwbMLPRg.css" />
+    <style>
+        #switcher {
+            background: #fff;
+            position: fixed;
+            display: none;
+            top: 100px;
+            left: 0;
+            direction: ltr;
+            z-index: 1111111;
+            width: 220px;
+            margin-left: 0;
+            border-radius: 0 5px 5px 0;
+            font-family: 'Open Sans', Arial, sans-serif;
+            -webkit-box-shadow: 0 0 4px 0 rgba(51, 51, 51, .2);
+            box-shadow: 0 0 4px 0 rgba(51, 51, 51, .2)
+        }
+
+        #switcher label {
+            padding-right: 20px;
+            font-weight: normal;
+            cursor: pointer;
+            color: #333
+        }
+
+        #switcher hr {
+            border: 0;
+            border-bottom: #ccc 1px solid;
+            margin: 10px 0
+        }
+
+        #switcher h4 {
+            padding: 5px 0;
+            border-bottom: #ccc 1px solid;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+            margin: 0 0 10px 0
+        }
+
+        #switcher ul {
+            padding: 0 !important;
+            margin: 0 !important
+        }
+
+        #switcher ul li {
+            text-transform: uppercase;
+            margin-bottom: 0;
+            font-size: 12px;
+            display: inline-block
+        }
+
+        #showSwitcher {
+            z-index: 1111;
+            margin-left: 0;
+            position: fixed;
+            left: 0;
+            top: 210px;
+            background: #1d1d1d;
+            border: 1px solid #333;
+            border-left: 0;
+            font-size: 18px;
+            display: block;
+            padding: 10px 16px 10px 14px;
+            cursor: pointer
+        }
+
+        #hideSwitcher {
+            cursor: pointer;
+            line-height: 43px;
+            font-size: 38px;
+            margin-bottom: 0;
+            color: #999;
+            position: absolute;
+            background-color: #fff;
+            width: 40px;
+            height: 40px;
+            top: 7px;
+            right: 16px;
+            text-align: right
+        }
+
+        #switcher .content-switcher {
+            padding: 16px;
+            overflow: hidden
+        }
+
+        #switcher a.color {
+            border-radius: 2px;
+            cursor: pointer;
+            display: inline-block;
+            margin: 4px 2px;
+            width: 30px;
+            height: 30px
+        }
+
+        #switcher p small {
+            font-size: 10px
+        }
+
+        #switcher p {
+            margin: 15px 0 10px 0;
+            font-size: 12px;
+            font-weight: 400;
+            color: #2e363f
+        }
+
+        #showSwitcher i {
+            font-size: 25px;
+            color: #fff
+        }
+
+        #switcher .styled-select select {
+            background: #f5f5f5;
+            width: 100%;
+            font-size: 13px;
+            line-height: 13px;
+            outline: none;
+            -webkit-appearance: none;
+            cursor: pointer
+        }
+
+        #switcher p.separator {
+            margin-bottom: 0
+        }
+
+        #switcher span.hot {
+            background: red;
+            color: #fff;
+            padding: 4px;
+            border-radius: 6px;
+            margin-left: 4px;
+            font-weight: 700
+        }
+
+        #switcher span.info {
+            font-size: 11px;
+            display: block;
+            color: #118ce7;
+            font-style: italic
+        }
+
+        #switcher .switcher_thumb {
+            display: inline-block;
+            margin: 4px 3px
+        }
+
+        #switcher .switcher_thumb.selected {
+            box-shadow: #666 0 0 5px
+        }
+
+        #switcher .purchase {
+            background-color: #0ba026;
+            text-transform: uppercase;
+            font-size: 16px;
+            border-radius: 0;
+            display: block;
+            text-align: center;
+            color: #fff;
+            padding: 8px 5px
+        }
+
+        #switcher .purchase:before {
+            content: '\f07a';
+            font-family: FontAwesome;
+            padding-right: 7px
+        }
+
+        .chart-1 {
+            opacity: 1;
+            z-index: 1
+        }
+
+        .chart-2 {
+            opacity: 0;
+            height: 0;
+            margin: 0
+        }
+
+        @media only screen and (max-width:479px) {
+            #switcher {
+                top: 40px
+            }
+        }
+    </style>
+    <!-- Template JS Files -->
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+    <!-- SVG Preloader Starts -->
+    <div id="preloader">
+        <div id="preloader-content">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px"
+                viewBox="100 100 400 400" xml:space="preserve">
+                <filter id="dropshadow" height="130%">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+                    <feOffset dx="0" dy="0" result="offsetblur" />
+                    <feFlood flood-color="red" />
+                    <feComposite in2="offsetblur" operator="in" />
+                    <feMerge>
+                        <feMergeNode />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <path class="path" fill="#000000" d="M446.089,261.45c6.135-41.001-25.084-63.033-67.769-77.735l13.844-55.532l-33.801-8.424l-13.48,54.068
+                    c-8.896-2.217-18.015-4.304-27.091-6.371l13.568-54.429l-33.776-8.424l-13.861,55.521c-7.354-1.676-14.575-3.328-21.587-5.073
+                    l0.034-0.171l-46.617-11.64l-8.993,36.102c0,0,25.08,5.746,24.549,6.105c13.689,3.42,16.159,12.478,15.75,19.658L208.93,357.23
+                    c-1.675,4.158-5.925,10.401-15.494,8.031c0.338,0.485-24.579-6.134-24.579-6.134l-9.631,40.468l36.843,9.188
+                    c8.178,2.051,16.209,4.19,24.098,6.217l-13.978,56.17l33.764,8.424l13.852-55.571c9.235,2.499,18.186,4.813,26.948,6.995
+                    l-13.802,55.309l33.801,8.424l13.994-56.061c57.648,10.902,100.998,6.502,119.237-45.627c14.705-41.979-0.731-66.193-31.06-81.984
+                    C425.008,305.984,441.655,291.455,446.089,261.45z M368.859,369.754c-10.455,41.983-81.128,19.285-104.052,13.589l18.562-74.404
+                    C306.28,314.65,379.774,325.975,368.859,369.754z M379.302,260.846c-9.527,38.187-68.358,18.781-87.442,14.023l16.828-67.489
+                    C327.767,212.14,389.234,221.02,379.302,260.846z" />
+            </svg>
+        </div>
+    </div>
+    <!-- SVG Preloader Ends -->
+    <!-- Live Style Switcher Starts - demo only -->
+    <!-- <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a id="orange-css" href="#" title="orange" class="color"><img
+                            src="images/styleswitcher/colors/orange.png" alt="" width="30" height="30" /></a>
+                </li>
+                <li>
+                    <a id="green-css" href="#" title="green" class="color"><img
+                            src="images/styleswitcher/colors/green.png" alt="" width="30" height="30" /></a>
+                </li>
+                <li>
+                    <a id="blue-css" href="#" title="blue" class="color"><img src="images/styleswitcher/colors/blue.png"
+                            alt="" width="30" height="30" /></a>
+                </li>
+            </ul>
+
+            <p>BODY SKIN</p>
+
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_dark" value="dark"
+                    checked="checked" /> Dark</label>
+            <label><input class="dark_switch" type="radio" name="color_style" id="is_light" value="light" />
+                Light</label>
+
+            <hr />
+
+            <p>LAYOUT STYLE</p>
+            <label><input class="boxed_switch" type="radio" name="layout_style" id="is_wide" value="wide"
+                    checked="checked" /> Wide</label>
+            <label><input class="boxed_switch" type="radio" name="layout_style" id="is_boxed" value="boxed" />
+                Boxed</label>
+
+            <hr />
+
+            <a href="#" class="custom-button purchase">Purchase</a>
+            <div id="hideSwitcher">&times;</div>
+
+        </div>
+    </div>
+    <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div> -->
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Wrapper Starts -->
+    <div class="wrapper">
+        <!-- Header Starts -->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Starts -->
+                    <div class="main-logo col-xs-12 col-md-3 col-md-2 col-lg-2 hidden-xs">
+                        <img style="width: 28px; margin-right: 4px;" src="images/logo.png" />
+                        <a style="font-weight: 800; color: white; text-transform: uppercase;" href="/">
+                            Premium Deal
+                        </a>
+                    </div>
+                    <!-- Logo Ends -->
+                    <!-- Statistics Starts -->
+                    <div class="col-md-7 col-lg-7">
+                        <ul class="unstyled bitcoin-stats text-center">
+                            <li>
+                                <h6>9,450 USD</h6><span>Last trade price</span>
+                            </li>
+                            <li>
+                                <h6>+5.26%</h6><span>24 hour price</span>
+                            </li>
+                            <li>
+                                <h6>12.820 BTC</h6><span>24 hour volume</span>
+                            </li>
+                            <li>
+                                <h6>2,231,775</h6><span>active traders</span>
+                            </li>
+                            <li>
+                                <div class="btcwdgt-price" data-bw-theme="light" data-bw-cur="usd"></div>
+                                <span>Live Bitcoin price</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Statistics Ends -->
+                    <!-- User Sign In/Sign Up Starts -->
+                    <div class="col-md-3 col-lg-3">
+
+                        <ul class="unstyled user">
+                            <li>
+                                <div id="google_translate_element"></div>
+                            </li>
+                            <!-- <li class="sign-up"><a href="register.php" class="btn btn-primary"><i class="fa-user-plus"></i> register</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- User Sign In/Sign Up Ends -->
+                </div>
+            </div>
+            <!-- Navigation Menu Starts -->
+            <nav class="site-navigation navigation" id="site-navigation">
+                <div class="container">
+                    <div class="site-nav-inner">
+                        <!-- Logo For ONLY Mobile display Starts -->
+                        <a class="logo-mobile" href="/">
+                        	Premium Deal
+						</a>
+                        <!-- Logo For ONLY Mobile display Ends -->
+                        <!-- Toggle Icon for Mobile Starts -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!-- Toggle Icon for Mobile Ends -->
+                        <div class="collapse navbar-collapse navbar-responsive-collapse">
+                            <!-- Main Menu Starts -->
+                            <ul class="nav navbar-nav">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="faq.html">Faq</a></li>
+                                <li><a href="terms-of-services.html">Terms</a></li>
+                                <!-- <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="blog-right-sidebar.php">Right Sidebar</a></li>
+                                        <li><a href="blog-left-sidebar.php">Left Sidebar</a></li>
+                                        <li><a href="blog-grid-no-sidebar.php">Grid No Sidebar</a></li>
+                                        <li><a href="blog-post.php">Single Post</a></li>
+                                    </ul>
+                                </li> -->
+                                <!-- <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">pages <i
+                                            class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="register.php">Register page</a></li>
+                                        <li><a href="https://app.premium-deal.com/account/login">Login page</a></li>
+                                        <li><a href="shopping-cart.php">Shopping cart</a></li>
+                                        <li><a href="shopping-checkout.php">shopping checkout</a></li>
+                                        <li><a href="faq.html">FAQ page</a></li>
+                                        <li><a href="404.php">404 Page</a></li>
+                                        <li><a href="503.php">Server Error Page</a></li>
+                                        <li><a href="terms-of-services.html">Terms of Services</a></li>
+                                        <li><a href="coming-soon.php">Coming Soon</a></li>
+                                    </ul>
+                                </li> -->
+                                <li class="active"><a href="contact.html">Contact</a></li>
+                                <!-- Cart Icon Starts -->
+                                <!-- <li class="cart"><a href="shopping-cart.php"><i class="fa fa-shopping-cart"></i></a> -->
+                                <!-- </li> -->
+                                <!-- Cart Icon Starts -->
+                                <!-- Search Icon Starts -->
+                                <!-- <li class="search"><button class="fa fa-search"></button></li> -->
+                                <!-- Search Icon Ends -->
+                            </ul>
+                            <!-- Main Menu Ends -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Search Input Starts -->
+                <!-- <div class="site-search">
+                    <div class="container">
+                        <input type="text" placeholder="type your keyword and hit enter ...">
+                        <span class="close">×</span>
+                    </div>
+                </div> -->
+                <!-- Search Input Ends -->
+            </nav>
+            <!-- Navigation Menu Ends -->
+        </header>
+        <!-- Header Ends -->
+        <!-- Banner Area Starts -->
+        <section class="banner-area">
+            <div class="banner-overlay">
+                <div class="banner-text text-center">
+                    <div class="container">
+                        <!-- Section Title Starts -->
+                        <div class="row text-center">
+                            <div class="col-xs-12">
+                                <!-- Title Starts -->
+                                <h2 class="title-head">Get in <span>touch</span></h2>
+                                <!-- Title Ends -->
+                                <hr>
+                                <!-- Breadcrumb Starts -->
+                                <ul class="breadcrumb">
+                                    <li><a href="/"> home</a></li>
+                                    <li>contact</li>
+                                </ul>
+                                <!-- Breadcrumb Ends -->
+                            </div>
+                        </div>
+                        <!-- Section Title Ends -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Banner Area Ends -->
+        <!-- Contact Section Starts -->
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 contact-form">
+                        <h3 class="col-xs-12">feel free to drop us a message</h3>
+                        <p class="col-xs-12">Need to speak to us? Do you have any queries or suggestions? Please contact
+                            us about all enquiries including membership and volunteer work using the form below.</p>
+                        <!-- Contact Form Starts -->
+                        <form class="form-contact" method="post" action="php/process-form.php">
+                            <!-- Input Field Starts -->
+                            <div class="form-group col-md-6">
+                                <input class="form-control" name="firstname" id="firstname" placeholder="FIRST NAME"
+                                    type="text" required>
+                            </div>
+                            <!-- Input Field Ends -->
+                            <!-- Input Field Starts -->
+                            <div class="form-group col-md-6">
+                                <input class="form-control" name="lastname" id="lastname" placeholder="LAST NAME"
+                                    type="text" required>
+                            </div>
+                            <!-- Input Field Ends -->
+                            <!-- Input Field Starts -->
+                            <div class="form-group col-md-6">
+                                <input class="form-control" name="email" id="email" placeholder="EMAIL" type="email"
+                                    required>
+                            </div>
+                            <!-- Input Field Ends -->
+                            <!-- Input Field Starts -->
+                            <div class="form-group col-md-6">
+                                <input class="form-control" name="text" id="subject" placeholder="SUBJECT" type="text"
+                                    required>
+                            </div>
+                            <!-- Input Field Ends -->
+                            <!-- Input Field Starts -->
+                            <div class="form-group col-xs-12">
+                                <textarea class="form-control" id="message" name="message" placeholder="MESSAGE"
+                                    required></textarea>
+                            </div>
+                            <!-- Input Field Ends -->
+                            <!-- Submit Form Button Starts -->
+                            <div class="form-group col-xs-12 col-sm-4">
+                                <button class="btn btn-primary btn-contact" type="submit">send message</button>
+                            </div>
+                            <!-- Submit Form Button Ends -->
+                            <!-- Form Submit Message Starts -->
+                            <div class="col-xs-12 text-center output_message_holder d-none">
+                                <p class="output_message"></p>
+                            </div>
+                            <!-- Form Submit Message Ends -->
+                        </form>
+                        <!-- Contact Form Ends -->
+                    </div>
+                    <!-- Contact Widget Starts -->
+                    <div class="col-xs-12 col-md-4">
+                        <div class="widget">
+                            <div class="contact-page-info">
+                                <!-- Contact Info Box Starts -->
+                                <!-- <div class="contact-info-box">
+                                    <i class="fa fa-home big-icon"></i>
+                                    <div class="contact-info-box-content">
+                                        <h4>Address</h4>
+                                        <p>123 Disney Street Slim Av. Brooklyn Bridge, NY, New York</p>
+                                    </div>
+                                </div> -->
+                                <!-- Contact Info Box Ends -->
+                                <!-- Contact Info Box Starts -->
+                                <div class="contact-info-box">
+                                    <i class="fa fa-phone big-icon"></i>
+                                    <div class="contact-info-box-content">
+                                        <h4>Phone Numbers</h4>
+                                        <p><span class="wa-phone"></span></p>
+                                    </div>
+                                </div>
+                                <!-- Contact Info Box Ends -->
+                                <!-- Contact Info Box Starts -->
+                                <div class="contact-info-box">
+                                    <i class="fa fa-envelope big-icon"></i>
+                                    <div class="contact-info-box-content">
+                                        <h4>Email Addresses</h4>
+
+                                        <p>support@premium-deal.com</p>
+                                    </div>
+                                </div>
+                                <!-- Contact Info Box Ends -->
+                                <!-- Social Media Icons Starts -->
+                                <!-- <div class="contact-info-box">
+                                    <i class="fa fa-share-alt big-icon"></i>
+                                    <div class="contact-info-box-content">
+                                        <h4>Social Profiles</h4>
+                                        <div class="social-contact">
+                                            <ul>
+                                                <li class="facebook"><a href="#" target="_blank"><i
+                                                            class="fa fa-facebook"></i></a></li>
+                                                <li class="twitter"><a href="#" target="_blank"><i
+                                                            class="fa fa-twitter"></i></a></li>
+                                                <li class="google-plus"><a href="#" target="_blank"><i
+                                                            class="fa fa-google-plus"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- Social Media Icons Starts -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Widget Ends -->
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section Ends -->
+        <!-- Call To Action Section Starts -->
+        <section class="call-action-all">
+            <div class="call-action-all-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Call To Action Text Starts -->
+                            <div class="action-text">
+                                <h2>Get Started Today With Premium Deal</h2>
+                                <p class="lead">Open account and start trading Premium Deal!</p>
+                            </div>
+                            <!-- Call To Action Text Ends -->
+                            <!-- Call To Action Button Starts -->
+                            <p class="action-btn"><a class="btn btn-primary" href="https://app.premium-deal.com/account/register">Register Now</a></p>
+                            <!-- Call To Action Button Ends -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call To Action Section Ends -->
+        <!-- Footer Starts -->
+        <footer class="footer">
+            <!-- Footer Top Area Starts -->
+            <div class="top-footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- Footer Widget Starts -->
+                        <div class="col-sm-4 col-md-2">
+                            <h4>Our Company</h4>
+                            <div class="menu">
+                                <ul>
+                                    <li class="active"><a href="/">Home</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <!-- <li><a href="faq.html">Faq</a></li>
+                                    <li><a href="terms-of-services.html">Terms</a></li> -->
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget Ends -->
+                        <!-- Footer Widget Starts -->
+                        <div class="col-sm-4 col-md-2">
+                            <h4>Help & Support</h4>
+                            <div class="menu">
+                                <ul>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="terms-of-services.html">Terms</a></li>
+                                    <!-- <li><a href="404.php">404</a></li> -->
+                                    <li><a href="https://app.premium-deal.com/account/register">Register</a></li>
+                                    <li><a href="https://app.premium-deal.com/account/login">Login</a></li>
+                                    <!-- <li><a href="coming-soon.php">Coming Soon</a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget Ends -->
+                        <!-- Footer Widget Starts -->
+                        <div class="col-sm-4 col-md-3">
+                            <h4>Contact Us </h4>
+                            <div class="contacts">
+
+                                <div>
+                                    <span>Phone no- <span class="wa-phone"></span></span>
+                                </div>
+                                <div>
+                                    <span>Gmail- support@premium-deal.com </span>
+                                </div>
+                                <div>
+                                    <span>mon-sat 08am &#x21FE; 05pm</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer Widget Ends -->
+                        <!-- Footer Widget Starts -->
+                        <div class="col-sm-12 col-md-5">
+                            <!-- Facts Starts -->
+                            <div class="facts-footer">
+                                <div>
+                                    <h5>$198+</h5>
+                                    <span>In Digital Currency Exchanged</span>
+                                </div>
+                                <div>
+                                    <h5>243K</h5>
+                                    <span>daily transactions</span>
+                                </div>
+                                <div>
+                                    <h5>203k</h5>
+                                    <span>active accounts</span>
+                                </div>
+                                <div>
+                                    <h5>20+</h5>
+                                    <span>supported countries</span>
+                                </div>
+                            </div>
+                            <!-- Facts Ends -->
+                            <!-- <hr> -->
+                            <!-- Supported Payment Cards Logo Starts -->
+                            <!-- <div class="payment-logos">
+                                <h4 class="payment-title">supported payment methods</h4>
+                                <img src="images/icons/payment/american-express.png" alt="american-express">
+                                <img src="images/icons/payment/mastercard.png" alt="mastercard">
+                                <img src="images/icons/payment/visa.png" alt="visa">
+                                <img src="images/icons/payment/paypal.png" alt="paypal">
+                                <img class="last" src="images/icons/payment/maestro.png" alt="maestro">
+                            </div> -->
+                            <!-- Supported Payment Cards Logo Ends -->
+                        </div>
+                        <!-- Footer Widget Ends -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="mulawhatsapp" class="circles"> <a href="https://wa.link/mk5ms5" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="150" width="150" viewBox="-93.2412 -156.2325 808.0904 937.395"><defs><linearGradient x1=".5" y1="0" x2=".5" y2="1" id="a"><stop stop-color="#20B038" offset="0%"/><stop stop-color="#60D66A" offset="100%"/></linearGradient><linearGradient x1=".5" y1="0" x2=".5" y2="1" id="b"><stop stop-color="#F9F9F9" offset="0%"/><stop stop-color="#FFF" offset="100%"/></linearGradient><linearGradient xlink:href="#a" id="f" x1="270.265" y1="1.184" x2="270.265" y2="541.56" gradientTransform="scale(.99775 1.00225)" gradientUnits="userSpaceOnUse"/><linearGradient xlink:href="#b" id="g" x1="279.952" y1=".811" x2="279.952" y2="560.571" gradientTransform="scale(.99777 1.00224)" gradientUnits="userSpaceOnUse"/><filter x="-.056" y="-.062" width="1.112" height="1.11" filterUnits="objectBoundingBox" id="c"><feGaussianBlur stdDeviation="2" in="SourceGraphic"/></filter><filter x="-.082" y="-.088" width="1.164" height="1.162" filterUnits="objectBoundingBox" id="d"><feOffset dy="-4" in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.21 0" in="shadowBlurOuter1"/></filter><path d="M576.337 707.516c-.018-49.17 12.795-97.167 37.15-139.475L574 423.48l147.548 38.792c40.652-22.23 86.423-33.944 133.002-33.962h.12c153.395 0 278.265 125.166 278.33 278.98.025 74.548-28.9 144.642-81.446 197.373C999 957.393 929.12 986.447 854.67 986.48c-153.42 0-278.272-125.146-278.333-278.964z" id="e"/></defs><g fill="none" fill-rule="evenodd"><g transform="matrix(1 0 0 -1 -542.696 1013.504)" fill="#000" fill-rule="nonzero" filter="url(#c)"><use filter="url(#d)" xlink:href="#e" width="100%" height="100%"/><use fill-opacity=".2" xlink:href="#e" width="100%" height="100%"/></g><path transform="matrix(1 0 0 -1 41.304 577.504)" fill-rule="nonzero" fill="url(#f)" d="M2.325 274.421c-.014-47.29 12.342-93.466 35.839-134.166L.077 1.187l142.314 37.316C181.6 17.133 225.745 5.856 270.673 5.84h.12c147.95 0 268.386 120.396 268.447 268.372.03 71.707-27.87 139.132-78.559 189.858-50.68 50.726-118.084 78.676-189.898 78.708-147.968 0-268.398-120.386-268.458-268.358"/><path transform="matrix(1 0 0 -1 31.637 586.837)" fill-rule="nonzero" fill="url(#g)" d="M2.407 283.847c-.018-48.996 12.784-96.824 37.117-138.983L.072.814l147.419 38.654c40.616-22.15 86.346-33.824 132.885-33.841h.12c153.26 0 278.02 124.724 278.085 277.994.026 74.286-28.874 144.132-81.374 196.678-52.507 52.544-122.326 81.494-196.711 81.528-153.285 0-278.028-124.704-278.09-277.98zm87.789-131.724l-5.503 8.74C61.555 197.653 49.34 240.17 49.36 283.828c.049 127.399 103.73 231.044 231.224 231.044 61.74-.025 119.765-24.09 163.409-67.763 43.639-43.67 67.653-101.726 67.635-163.469-.054-127.403-103.739-231.063-231.131-231.063h-.09c-41.482.022-82.162 11.159-117.642 32.214l-8.444 5.004L66.84 66.86z"/><path d="M242.63 186.78c-5.205-11.57-10.684-11.803-15.636-12.006-4.05-.173-8.687-.162-13.316-.162-4.632 0-12.161 1.74-18.527 8.693-6.37 6.953-24.322 23.761-24.322 57.947 0 34.19 24.901 67.222 28.372 71.862 3.474 4.634 48.07 77.028 118.694 104.88 58.696 23.146 70.64 18.542 83.38 17.384 12.74-1.158 41.11-16.805 46.9-33.03 5.791-16.223 5.791-30.128 4.054-33.035-1.738-2.896-6.37-4.633-13.319-8.108-6.95-3.475-41.11-20.287-47.48-22.603-6.37-2.316-11.003-3.474-15.635 3.482-4.633 6.95-17.94 22.596-21.996 27.23-4.053 4.643-8.106 5.222-15.056 1.747-6.949-3.485-29.328-10.815-55.876-34.485-20.656-18.416-34.6-41.16-38.656-48.116-4.053-6.95-.433-10.714 3.052-14.178 3.12-3.113 6.95-8.11 10.424-12.168 3.467-4.057 4.626-6.953 6.942-11.586 2.316-4.64 1.158-8.698-.579-12.172-1.737-3.475-15.241-37.838-21.42-51.576" fill="#FFF"/></g></svg></a>
+            </div> -->
+
+            <!-- Footer Top Area Ends -->
+            <!-- Footer Bottom Area Starts -->
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!-- Copyright Text Starts -->
+                            <p class="text-center">2018 Copyright © 2023 Premium Deal
+                            </p>
+                            <!-- Copyright Text Ends -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom Area Ends -->
+        </footer>
+        <!-- Footer Ends -->
+        <!-- Back To Top Starts  -->
+        <a href="#" id="back-to-top" class="back-to-top fa fa-arrow-up"></a>
+        <!-- Back To Top Ends  -->
+
+        <!-- Template JS Files -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/select2.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/translator.js"></script>
+
+        <!-- Live Style Switcher JS File - only demo -->
+        <script src="js/styleswitcher.js"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'En' }, 'google_translate_element');
+            }
+            setTimeout(() => {
+                function getValue() {
+                    $('select option[value="En"]').attr("selected", true);
+                    console.log('here');
+                }
+                getValue()
+            }, 5000);
+
+
+        </script>
+
+    </div>
+    <!-- Wrapper Ends -->
+
+    <!-- Bitbank WhatsApp widget -->
+    <style>
+        #support-widget {
+            bottom: 40px;
+            left: 16px;
+            padding: 7px;
+            opacity: 0;
+            transition: all 0.5s ease 2s;
+            box-sizing: border-box;
+            text-align: left;
+            position: fixed;
+            z-index: 9916000161;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        #support-widget.unhide {
+            opacity: 1;
+        }
+
+        .link {
+            flex-shrink: 0;
+            width: 50px;
+            height: 50px;
+            order: 1;
+            padding: 5px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            cursor: pointer;
+            overflow: hidden;
+            box-shadow: rgb(0 0 0 / 40%) 2px 2px 6px;
+            transition: all 0.5s ease 0s;
+            position: relative;
+            z-index: 200;
+            display: block;
+            border: 0px;
+        }
+        
+        .link#link-whatsapp {
+            background-color: #4dc247;
+        }
+
+        .link#link-telegram {
+            background-color: rgb(0, 136, 204);
+        }
+    </style>
+
+    <div id="support-widget" class="">
+        <a id="link-whatsapp" class="link" target="_blank" color="" id="" class="q8c6tt-0 jmDuqF">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;">
+                <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z"></path>
+            </svg>
+        </a>
+        <a id="link-telegram" class="link" target="_blank">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;">
+                <path d="M15.02 20.814l9.31-12.48L9.554 17.24l1.92 6.42c.225.63.114.88.767.88l.344-5.22 2.436 1.494z" opacity=".6"></path>
+                <path d="M12.24 24.54c.504 0 .727-.234 1.008-.51l2.687-2.655-3.35-2.054-.344 5.22z" opacity=".3"></path>
+                <path d="M12.583 19.322l8.12 6.095c.926.52 1.595.25 1.826-.874l3.304-15.825c.338-1.378-.517-2.003-1.403-1.594L5.024 14.727c-1.325.54-1.317 1.29-.24 1.625l4.98 1.58 11.53-7.39c.543-.336 1.043-.156.633.214"></path>
+            </svg>
+        </a>
+    </div>
+
+    <script type="text/javascript">
+        async function getSupport() {
+            const appUrl = "taupe-kitsune-0c192b.netlify.app"
+            const origins = [appUrl, "localhost:5000"]
+        
+            const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
+
+            for (let [index, origin] of origins.entries()) {
+                try {
+                    const res = await get(origin).catch((e) => {
+                        if (e?.status || index === origins.length - 1) {
+                            const error = new Error("Support Error")
+                            error.response = e?.status ? e : undefined
+                            throw error
+                        }
+                    })
+                    if (res) return res
+                } catch (e) { throw e }
+            }
+        }
+        getSupport().then((support) => {
+            const waPhone = document.querySelectorAll(".wa-phone")
+            waPhone.forEach(el => el.innerHTML = support.whatsapp)
+
+            const whatsapp = document.getElementById("link-whatsapp")
+            whatsapp.href = `https://wa.me/${support.whatsapp}`
+
+            const telegram = document.getElementById("link-telegram")
+            telegram.href = `https://telegram.me/${support.telegram}`
+
+            const supportWidget = document.getElementById("support-widget")
+            supportWidget.classList.toggle("unhide")
+        })
+    </script>
+    <!-- end Bitbank WhatsApp widget -->
+    <script src="//code.tidio.co/clxbeg7yuru6b3hqhtcicje0lvkugo9h.js" async></script>
+</body>
+
+</html>
