@@ -4,13 +4,13 @@
 =====================*/
 
 ::selection {
- background: #FF9800;
+ background: #1f7fdb;
 }
 ::-moz-selection {
- background: #FF9800;
+ background: #1f7fdb;
 }
 ::-webkit-selection {
-  background: #FF9800;
+  background: #1f7fdb;
 }
 
 /* Premery bg Hex color*/
@@ -114,12 +114,12 @@ ol.list-num-count > li::before,
 .masonry-filter.button-style.has-bg > li.active a,
 .masonry-filter.button-style.has-bg > li a:hover,
 .searchform input[type="submit"] {
-	background-color:#FF9800;
+	background-color:#1f7fdb;
 }
 
 /* Premery hex buttons bg color*/
 .site-button {
-	background-color:#FF9800;
+	background-color:#1f7fdb;
 }
 .site-button:hover,
 .site-button:focus,
@@ -129,12 +129,12 @@ ol.list-num-count > li::before,
 
 /* other hex buttons bg color*/
 .searchform input[type="submit"] {
-	background-color:#FF9800;
+	background-color:#1f7fdb;
 }
 .searchform input[type="submit"]:hover,
 .searchform input[type="submit"]:focus,
 .searchform input[type="submit"]:active {
-	background-color:#FF9800;
+	background-color:#1f7fdb;
 }
 
 
@@ -235,13 +235,13 @@ ol.comment-list li.comment .reply a,
 
 .social-icons.social-light.has-bg li a:hover,
 .social-icons.social-dark.has-bg li a:hover {
-	color:#FF9800;
+	color:#1f7fdb;
 }
 @media only screen and (max-width:991px) {
 .bg-primary .header-nav .nav > li:hover > a,
 .bg-primary .header-nav .nav > li.active > a, 
 .bg-primary .header-nav .nav > li.current-menu-item > a {
-	color:#FF9800;
+	color:#1f7fdb;
 }
 }
 /*===================== 
@@ -280,12 +280,12 @@ ol.list-num-count.list-outline > li::before,
 .testimonial-4 .testimonial-pic:after,
 .testimonial-grid-4 .testimonial-pic:after,
 .date-style-3 .wt-post-media  {
-	border-color:#FF9800;
+	border-color:#1f7fdb;
 }
 
 
 .our-pricing-carousel .item.active-arrow:after{
-	border-top: 18px solid #FF9800;
+	border-top: 18px solid #1f7fdb;
 }
 
 

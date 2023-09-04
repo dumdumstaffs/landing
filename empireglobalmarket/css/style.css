@@ -4085,7 +4085,7 @@ a:focus.video-play-btn{
 .testimonial-2 .testimonial-detail,
 .testimonial-grid-2 .testimonial-detail {
 	padding:25px 0 20px 20px;
-	background-color: #ff9800;	
+	background-color: #1f7fdb;	
 }
 .testimonial-2 .testimonial-pic,
 .testimonial-grid-2 .testimonial-pic{
@@ -7523,7 +7523,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	color:#fff;
 }
 .latest-blog-3.post-overlay .wt-post-meta i{
-	color:#FF9800;
+	color:#1f7fdb;
 }
 .latest-blog-3.post-overlay.date-style-3 .post-date{
 	top:0px;
@@ -7547,7 +7547,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	padding:0;
 }
 .latest-blog-3.blog-md .wt-post-meta i{
-	color:#FF9800;
+	color:#1f7fdb;
 }
 .latest-blog-3.blog-md.date-style-3 .post-date{
 	bottom:-10px;
@@ -10280,7 +10280,7 @@ ol.commentlist li .star-rating{
 	font-size:18px;
 }
 .star-Rating-input .fa-star {
-	color:#FF9800;
+	color:#1f7fdb;
 }
 .star-Rating-input i:hover {
 	color:#000;
@@ -10851,7 +10851,7 @@ ol.commentlist li::after {
 	right: 100%;
 	top: -20px;
 	z-index: 1;
-	background-color:#FF9800;
+	background-color:#1f7fdb;
 	background-image:url(../file/G_/uploading-item/bitinvest-html-template/html/images/background/bg7.html);
 	background-repeat:repeat;
 }
@@ -11250,7 +11250,7 @@ ol.commentlist li::after {
 }
 
 .pro-banner-disc h3{
-	color:#ff9800;
+	color:#1f7fdb;
 }
 .pro-banner-disc a{
 	position:inherit;
