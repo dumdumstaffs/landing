@@ -1,0 +1,49 @@
+.plans-container {
+	min-height: 80vh;
+	background-size: cover;
+	background-position: fixed;
+	background-repeat: no-repeat;
+	background-image: url("../images/pexels-photo-6158761.jpg");
+}
+.plans-container .bg-transparent-dark {
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	min-height: 80vh;
+	padding-top: 2.5em;
+	background: rgba(0,0,0,.7);
+}
+.plans-container .bg-transparent-dark .container .pricing-card {
+	color: #555;
+	margin-bottom: 6px;
+	border-radius: 0 18px 0 18px;
+}
+.plans-container .bg-transparent-dark .container .pricing-card-content {
+	color: #555;
+	padding-top: 1em;
+	margin-bottom: 1.5em;
+	border-radius: 0 18px 0 18px;
+}
+.plans-container .bg-transparent-dark .container .pricing-card-content .content {
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+}
+.plans-container .bg-transparent-dark .container .pricing-card-content .content li {
+	list-style-type: none;
+	margin-bottom: 1em;
+}
+.plans-container .bg-transparent-dark .container .pricing-card-content .content li i {
+	color: #aeb;
+	font-size: 25px;
+	margin-right: 18px;
+}
+.plans-container .bg-transparent-dark .container .pricing-card-content .content .choose {
+	font-size: 18px;
+	text-align: center;
+	appearance: none;
+	text-decoration: none;
+}
+.plans-container .bg-transparent-dark .container .pricing-card-content .content .choose a:hover {
+	text-decoration: none;
+}

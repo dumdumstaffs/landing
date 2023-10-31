@@ -1,0 +1,1051 @@
+﻿<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="favicon.png" rel="icon" type="image/x-icon">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- jQuery library -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="flaticon/flaticon.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <title>FX Marking</title>
+  <link rel="manifest" href="js/manifest.json">
+  <meta name="theme-color" content="#FCB116">
+  <meta name="msapplication-navbutton-color" content="#FCB116">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FCB116">
+  <meta name="theme-color" content="#FCB116">
+  <meta name="msapplication-navbutton-color" content="#FCB116">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FCB116">
+  <link href="favicon.png" rel="icon" type="image/x-icon">
+  <link rel="icon" sizes="192x192" href="images/icon/icon-192.html">
+  <meta name="keywords" content="FX Marking, Options, Forex, Binary, Cryptocurrencies">
+  <meta property="og:image" content="images/icon/icon-310x310.png">
+  <meta name="msapplication-square310x310logo" content="images/icon/icon-310x310.png">
+  <meta name="msapplication-square70x70logo" content="images/icon/icon-70x70.png">
+  <meta name="msapplication-square150x150logo" content="images/icon/icon-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="images/icon/icon-310x150.png">
+  <link rel="apple-touch-icon-precomposed" href="images/icon/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.html">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.html">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png">
+  <meta property="og:site_name" content="FX Marking">
+  <meta property="og:title" content="Crypto Trading With FX Marking">
+  <meta name="description"
+    content="Crypto Trading With FX Marking, is totally different from its competitors trying to achieve something special starting with the...">
+  <meta property="og:description"
+    content="Crypto Trading With FX Marking, is totally different from its competitors trying to achieve something special starting with the...">
+  <meta property="og:type" content="website">
+  <link href="css/select2.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar bg-dark navbar-expand" style="background: #353535 !important;">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item pl-3">
+          <i class="fa fa-globe text-white"></i>&nbsp;
+          <select class="no-select py-1 text-white-50" style="width: 60px" id="language"
+            onchange="changeLanguageByButtonClick()">
+            <option value="af">Afrikanns</option>
+            <option value="sq">Albanian</option>
+            <option value="ar">Arabic</option>
+            <option value="hy">Armenian</option>
+            <option value="eu">Basque</option>
+            <option value="bn">Bengali</option>
+            <option value="bg">Bulgarian</option>
+            <option value="ca">Catalan</option>
+            <option value="km">Cambodian</option>
+            <option value="zh-CN">Chinese (Mandarin)</option>
+            <option value="hr">Croation</option>
+            <option value="cs">Czech</option>
+            <option value="da">Danish</option>
+            <option value="nl">Dutch</option>
+            <option value="en" selected="">English</option>
+            <option value="et">Estonian</option>
+            <option value="fj">Fiji</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="ka">Georgian</option>
+            <option value="de">German</option>
+            <option value="el">Greek</option>
+            <option value="gu">Gujarati</option>
+            <option value="he">Hebrew</option>
+            <option value="hi">Hindi</option>
+            <option value="hu">Hungarian</option>
+            <option value="is">Icelandic</option>
+            <option value="id">Indonesian</option>
+            <option value="ga">Irish</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="jw">Javanese</option>
+            <option value="ko">Korean</option>
+            <option value="la">Latin</option>
+            <option value="lv">Latvian</option>
+            <option value="lt">Lithuanian</option>
+            <option value="mk">Macedonian</option>
+            <option value="ms">Malay</option>
+            <option value="ml">Malayalam</option>
+            <option value="mt">Maltese</option>
+            <option value="mi">Maori</option>
+            <option value="mr">Marathi</option>
+            <option value="mn">Mongolian</option>
+            <option value="ne">Nepali</option>
+            <option value="no">Norwegian</option>
+            <option value="fa">Persian</option>
+            <option value="pl">Polish</option>
+            <option value="pt">Portuguese</option>
+            <option value="pa">Punjabi</option>
+            <option value="qu">Quechua</option>
+            <option value="ro">Romanian</option>
+            <option value="ru">Russian</option>
+            <option value="sm">Samoan</option>
+            <option value="sr">Serbian</option>
+            <option value="sk">Slovak</option>
+            <option value="sl">Slovenian</option>
+            <option value="es">Spanish</option>
+            <option value="sw">Swahili</option>
+            <option value="sv">Swedish </option>
+            <option value="ta">Tamil</option>
+            <option value="tt">Tatar</option>
+            <option value="te">Telugu</option>
+            <option value="th">Thai</option>
+            <option value="bo">Tibetan</option>
+            <option value="to">Tonga</option>
+            <option value="tr">Turkish</option>
+            <option value="uk">Ukranian</option>
+            <option value="ur">Urdu</option>
+            <option value="uz">Uzbek</option>
+            <option value="vi">Vietnamese</option>
+            <option value="cy">Welsh</option>
+            <option value="xh">Xhosa</option>
+          </select>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-danger" href="https://app.fxmarking.com/account/login"
+            target="_blank">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary" href="https://app.fxmarking.com/account/register"
+            target="_blank">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark text-light bg-dark sticky-top"
+    style="background: #444444 !important">
+    <div class="container">
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand" href="/" style="display: flex; gap: 10px;">
+        <img src="favicon.png" title="FX Marking" style="height: 30px">
+        <p class="text-bold">FX Marking</p>
+      </a>
+      <!-- Navbar links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item btc-price">
+          <span class="btcwdgt-price" bw-cur="usd"></span>Live Bitcoin price
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index-2.html" class="active">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+              data-toggle="dropdown">LEGAL</a>
+            <div class="dropdown-menu">
+              <a href="terms.html" class="dropdown-item">TERMS & CONDITIONS</a>
+              <a href="faqs.html" class="dropdown-item">FAQS</a>
+              <div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <style>
+    .bycwdgt,
+    .btcwdgt .btcwdgt-header,
+    .btcwdgt .btcwdgt-body,
+    .btcwdgt .btcwdgt-footer {
+      display: inline-block !important;
+    }
+
+    .btcwdgt-s-price .btcwdgt-body ul li {
+      font-size: 12px !important;
+      line-height: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+  <style>
+    .slick-dots {
+      bottom: -10px !important;
+    }
+
+    .slick-dotted.slick-slider {
+      margin-bottom: 0px;
+    }
+  </style>
+  <div class="hero-image">
+    <div class="animate1"></div>
+    <div class="animate2"></div>
+    <div class="container">
+      <div class="hero-text">
+        <h3 class="text-light">
+          <span class="wow slideInLeft" data-wow-duration="1s">Forex</span>
+          <span class="wow slideInRight" data-wow-duration="1s">Binary Options And Crypto</span><br>
+          <span class="wow slideInUp" data-wow-duration="1s">With a trusted broker</span>
+        </h3>
+        <ul>
+          <li class="wow slideInRight" data-wow-duration="1s">Secure and easy way to earn.</li>
+          <li class="wow slideInLeft" data-wow-duration="1s">230.000+ traders chose FX Marking</li>
+        </ul>
+        <a href="https://app.fxmarking.com/account/register" target="_blank"
+          class="btn btn-primary mr-2 mt-2 wow slideInLeft" data-wow-duration="1s">Create free account</a>
+
+      </div>
+    </div>
+  </div>
+  <script src="coingecko-coin-price-marquee-widget.js"></script>
+  <coingecko-coin-price-marquee-widget coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd"
+    background-color="#444444" locale="en" font-color="#c0c0c0"></coingecko-coin-price-marquee-widget>
+  <div class="ccc-widge bg-pattern">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 py-3">
+          <div class="hero-object wow slideInUp" data-wow-duration="1s">
+            <div class="d-flex justify-content-start">
+              <div class="mr-2">
+                <img src="images/icon-aroundtheclock.png">
+              </div>
+              <div>
+                <h3>Short-Term Contracts</h3>
+                <p class="desc">Trading intraday/weekly provides unique opportunities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 py-3">
+          <div class="hero-object wow slideInUp" data-wow-duration="1s">
+            <div class="d-flex justify-content-start">
+              <div class="mr-2">
+                <img src="images/icon-short-term-trading.png">
+              </div>
+              <div>
+                <h3>Trading Around the Clock</h3>
+                <p class="desc">24 hours a day, Mondays through Fridays only</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 py-3">
+          <div class="hero-object wow slideInUp" data-wow-duration="1s">
+            <div class="d-flex justify-content-start">
+              <div class="mr-2">
+                <img src="images/icon-active-markets.png">
+              </div>
+              <div>
+                <h3>Active Markets</h3>
+                <p class="desc">24 hours a day, Mondays - Fridays, with optimal earnings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 py-3">
+          <div class="hero-object wow slideInUp" data-wow-duration="1s">
+            <div class="d-flex justify-content-start">
+              <div class="mr-2">
+                <img src="images/icon-defined-risk.png">
+              </div>
+              <div>
+                <h3>Risk That You Define</h3>
+                <p class="desc">Know your maximum potential profit or loss up front.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="section_title text-center mb-5">
+      <h2 class="wow slideInUp" data-wow-duration="1s">How <span class="text-primary">it</span> work</h2>
+      <p class="title_p wow slideInUp" data-wow-duration="1s">Start earning in 3 Steps</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="work_step work_first text-center wow slideInUp" data-wow-duration="1s">
+          <div class="work_icon">
+            <i class="flaticon-money-4"></i>
+          </div>
+          <h2 class="mb_0">Register</h2>
+          <p class="mb_0">Open Account for free in just a few minutes</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="work_step work_middle text-center wow slideInUp" data-wow-duration="1s">
+          <div class="work_icon">
+            <i class="flaticon-money-6"></i>
+          </div>
+          <h2 class="mb_0">Fund Your Account</h2>
+          <p class="mb_0">Login to FX Marking and make your deposit to activate your trade.</p>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="work_step text-center wow slideInUp" data-wow-duration="1s">
+          <div class="work_icon">
+            <i class="flaticon-money-5"></i>
+          </div>
+          <h2 class="mb_0">Invest</h2>
+          <p class="mb_0">Start getting profits to your trading account once your trade is activated.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="network_area">
+    <div class="container">
+      <div class="row m0">
+        <div class="col-lg-9 p0">
+          <div class="network_content">
+            <div class="section_title text-center mb-5">
+              <h2 class="wow slideInUp text-white" data-wow-duration="1s">Testi<span class="text-primary">mony</span>
+              </h2>
+              <p class="wow slideInUp text-white-50" data-wow-duration="1s">What Our Clients say about us
+              </p>
+            </div>
+            <ul class="testimonials text-white m-0 mb-5">
+              <li class="text-center wow slideInUp" data-wow-duration="1s">
+                <p class="mb-0 p-4 bg-white rounded text-dark">I first signed up to swiftx thinking it
+                  was the beginner platform for me. I&#39;m new to crytpo currency and wanted a
+                  platform with the highest level of support to assist me with getting started. I
+                  received no communication whatsoever and when trying to use their live chat I waited
+                  almost half the day to get a message back. Long story short I was wrong about
+                  swiftx. My girlfriend recommended I try using FX Marking as they helped her
+                  set up her account and made sure she knew how to use it properly. I wish i signed up
+                  to FX Marking first. I have had no issues since and I am happy I made the
+                  change before I put my money in that smaller company.</p>
+                <div class="author my-2"><img src="uploads/small/4331613199189.png"
+                    class="rounded-pill mr-3 d-inline-block text-primary">PITA TUA&#39;ONE</div>
+              </li>
+              <li class="text-center wow slideInUp" data-wow-duration="1s">
+                <p class="mb-0 p-4 bg-white rounded text-dark">- Very easy to use
+                  - Trades &amp; withdrawals are instant (fast)
+                  - Lots of coins to choose from
+                  - Bottom line - it is an OK service but great for beginners and non-tech savvy
+                  people</p>
+                <div class="author my-2"><img src="uploads/small/8401613198744.png"
+                    class="rounded-pill mr-3 d-inline-block text-primary">Judy Czarnecki</div>
+              </li>
+              <li class="text-center wow slideInUp" data-wow-duration="1s">
+                <p class="mb-0 p-4 bg-white rounded text-dark">Just wanted to give a quick shout out to
+                  the team at FX Marking. No other crypto platform gives the thorough and
+                  personable responses like FX Marking do. Being a newbie to crypto, every
+                  question I’ve asked, whether it seems dumb or whether I need more explanation is
+                  always handled by their support team with such kindness and expertise. I always was
+                  able to get that Telsa I&#39;ve always wanted.Thank you! Will continue to recommend
+                  you to my friends and family</p>
+                <div class="author my-2"><img src="uploads/small/9051613198311.png"
+                    class="rounded-pill mr-3 d-inline-block text-primary">Alex Ramos</div>
+              </li>
+              <li class="text-center wow slideInUp" data-wow-duration="1s">
+                <p class="mb-0 p-4 bg-white rounded text-dark">I&#39;ve used various sites since 2016,
+                  FX Marking is by far the best I have used.
+                  Easy interface and anytime I have an issue I get prompt service. Highly recommend.
+                </p>
+                <div class="author my-2"><img src="uploads/small/9771613197989.png"
+                    class="rounded-pill mr-3 d-inline-block text-primary">Joakim Ronström</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 p0">
+          <div class="growing_facts">
+            <ul class="list_style">
+              <li>
+                <p class="wow slideInUp" data-wow-duration="1s">Instant and Market execution</p>
+              </li>
+              <li>
+                <p class="wow slideInUp" data-wow-duration="1s">EA/cBot Trading Facilities</p>
+              </li>
+              <li>
+                <p class="wow slideInUp" data-wow-duration="1s">Secure FX Marking Wallet</p>
+              </li>
+              <li>
+                <p class="wow slideInUp" data-wow-duration="1s">Variety of payment methods</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="why_area py-5">
+    <div class="container py-5">
+      <div class="row justify-content-end">
+        <div class="col-md-6">
+          <h1 class="mb-4 wow slideInRight">Why <span class="text-primary">Choose</span> Us</h1>
+          <p class="wow slideInLeft" data-wow-duration="1s">FX Marking strives to be worthy of our
+            client's trust by providing them with services which are economically beneficial to them and to
+            create awareness regarding reliable and highly profitable investment platform amongst our
+            clients around the globe. All you need to do is sit back and enjoy how your profits grow daily.
+          </p>
+          <div class="row">
+            <div class="col-6">
+              <ul>
+                <li class="wow slideInLeft">Professional team</li>
+                <li class="wow slideInRight">Instant payments</li>
+                <li class="wow slideInLeft">24/7 live support</li>
+                <li class="wow slideInRight">Great referral system/bonus</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li class="wow slideInLeft">DDoS security</li>
+                <li class="wow slideInRight">Unique design</li>
+                <li class="wow slideInLeft">Profitable plans</li>
+                <li class="wow slideInRight">No investment contracts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-pattern">
+    <div class="container py-5">
+      <div class="section_title text-center mb-5">
+        <h2 class="wow slideInUp text-white" data-wow-duration="1s">Cross <span class="text-primary">Rates</span></h2>
+      </div>
+      <div style="width:100%;height:500px;" class="wow slideInLeft">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <div class="tradingview-widget-copyright"><a
+              href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener"
+              target="_blank"><span class="blue-text"></span></a></div>
+          <script type="text/javascript"
+            src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+              {
+                "width": "100%",
+                  "height": "100%",
+                    "currencies": [
+                      "EUR",
+                      "USD",
+                      "JPY",
+                      "GBP",
+                      "CHF",
+                      "AUD",
+                      "CAD",
+                      "NZD",
+                      "CNY"
+                    ],
+                      "isTransparent": false,
+                        "colorTheme": "dark",
+                          "locale": "en"
+              }
+            </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </div>
+    </div>
+  </section>
+  <div class="container">
+    <div class="row about_info">
+      <div class="col-lg-4">
+        <div class="media about_item wow slideInLeft" data-wow-duration="1s">
+          <i class="flaticon-arrows"></i>
+          <div class="media-body">
+            <h3 class="mb_0">Forex</h3>
+            <p class="mb_0">Explore and trade CFDs on major, minor, and exotic currency pairs with efficient
+              spreads.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="media about_item wow slideInUp" data-wow-duration="1s">
+          <i class="flaticon-money-7"></i>
+          <div class="media-body">
+            <h3 class="mb_0">CFD STOCK</h3>
+            <p class="mb_0">Trade CFDs on stocks of leading companies and industry giants without actually
+              owning them</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="media about_item wow slideInRight" data-wow-duration="1s">
+          <i class="flaticon-technology"></i>
+          <div class="media-body">
+            <h3 class="mb_0">Indices</h3>
+            <p class="mb_0">Select from a list of CFDs on widely traded indices representing a particular
+              market sector or national economy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="currency_converter_area bg-pattern">
+    <div class="converter_left">
+      <img src="images/promo-bg.jpg" alt="">
+    </div>
+    <div class="converter_right ">
+      <div class="converter_info">
+        <div class="section_title">
+          <h2 class="wow slideInLeft" data-wow-duration="1s">Bitcoin <span class="text-primary">Currency</span>
+            Converter</h2>
+        </div>
+        <p class="wow slideInRight" data-wow-duration="1s">Bitcoin is a form of digital currency, created and
+          held electronically. No one controls it. Bitcoins aren’t printed, like dollars or euros – they’re
+          produced by people, and increasingly businesses, running computers all around the world</p>
+        <span class="bottom_line w_50 mb-5"></span>
+        <div class="coin_calculator wow slideInUp" data-wow-duration="1s">
+          <script type="text/javascript"
+            src="converter.php8216.html?layout=horizontal&amp;amount=1000&amp;tcolor=000000&amp;currency=BTC&amp;default_pair=BTC/USD"></script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="reasons">
+    <div class="container">
+      <h2 class="mb-5 wow slideInLeft" data-wow-duration="1s">WHY <span class="text-primary">TRADE</span> WITH US?
+      </h2>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon shine-icon yen">
+                <div class="default">
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+                <div class="hover">
+                  <div class="shine"></div>
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+              </div>
+              <h3 class="heading">Quick funds access</h3>
+              <p>Withdraw funds quickly and easily using a variety of methods, best suitable for you and
+                in line with our terms.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon shine-icon mobile">
+                <div class="default">
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+                <div class="hover">
+                  <div class="shine"></div>
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+              </div>
+              <h3 class="heading">Earn on the go</h3>
+              <p>Earn daily with FX Marking from your cell phone and desktop.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon two-fold">
+                <div class="">
+                  <img data-src="images/8.png" src="images/8.png" style="width: 70%;">
+                </div>
+                <div class="">
+                  <div class="shine"></div>
+                  <img src="images/8.png">
+                </div>
+              </div>
+              <h3 class="heading">Industry-best payouts</h3>
+              <p>FX Marking offers payouts of up to 90% on your initial investment! Quick and
+                secured payment system.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon shine-icon safe">
+                <div class="default">
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+                <div class="hover">
+                  <div class="shine"></div>
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+              </div>
+              <h3 class="heading">Segregated funds</h3>
+              <p>We do not use your deposits or your unrealised profits to hedge in the underlying market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon shine-icon support">
+                <div class="default">
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+                <div class="hover">
+                  <div class="shine"></div>
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+              </div>
+              <h3 class="heading">Amazing support</h3>
+              <p>Our skilled and dedicated support team are available to assist you at any time and
+                whenever you need help.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon shine-icon  aus">
+                <div class="default">
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+                <div class="hover">
+                  <div class="shine"></div>
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+              </div>
+              <h3 class="heading">Also Licensed in Australia</h3>
+              <p>FX Marking holds an AFS licence, issued by the Australian Securities &amp;
+                Investments Commission. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon shine-icon  five-k cashback-idr">
+                <div class="default">
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+                <div class="hover">
+                  <div class="shine">
+                  </div>
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+              </div>
+              <h3 class="heading">Cashback for new accounts</h3>
+              <p>Capitalise without spending your money with a cashback of $50 for all approved accounts.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 reason-wrapper">
+          <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s">
+            <div class="content">
+              <div class="icon shine-icon  expert">
+                <div class="default">
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+                <div class="hover">
+                  <div class="shine">
+                  </div>
+                  <img data-src="images/8-reasons.png" src="images/8-reasons.png">
+                </div>
+              </div>
+              <h3 class="heading">Options specialists</h3>
+              <p>With many years of experience behind us, no one understands options like FX Exchange
+                Markets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="plans-container">
+    <div class="bg-transparent-dark">
+      <div class="container">
+        <h2 class="mb-5 wow slideInLeft text-light" data-wow-duration="1s">CHOOSE FROM THE <span
+            class="text-primary">BEST</span> OF PLANS</h2>
+        <div class="row mt-3">
+
+          <div class="col-sm-12 col-md-4 col-lg-4 wow slideInLeft">
+            <div class="card pricing-card">
+              <div class="card-body">
+                <h5>Individual&nbsp; <i class="fa fa-user-circle"></i></h5>
+              </div>
+            </div>
+            <div class="card pricing-card-content">
+              <div class="card-body">
+                <ul class="content">
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Minimum Deposit: $1,000</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Passive Income: 15%</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; 5% Trade Risk</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Leverage: x10</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; 24/7 Email & Live suppport</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Maximum Deposit: $5,000</li>
+                  <li class="choose"><a href="registere85d.html?account=Individual" target="_blank">Choose &rarr;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 wow slideInRight">
+            <div class="card pricing-card">
+              <div class="card-body">
+                <h5>Co-operate&nbsp; <i class="fa fa-briefcase"></i></h5>
+              </div>
+            </div>
+            <div class="card pricing-card-content">
+              <div class="card-body">
+                <ul class="content">
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Minimum Deposit: $5,000</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Passive Income: 25%</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; 1% Trade Risk</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Leverage: x50</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; 24/7 Email & Live suppport</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Maximum Deposit: $10,000</li>
+                  <li class="choose"><a href="register5a19.html?account=cooperate" target="_blank">Choose &rarr;</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 col-lg-4 wow slideInLeft">
+            <div class="card pricing-card">
+              <div class="card-body">
+                <h5>Business&nbsp; <i class="fa fa-bank"></i></h5>
+              </div>
+            </div>
+            <div class="card pricing-card-content">
+              <div class="card-body">
+                <ul class="content">
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Minimum Deposit: $10,000</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Passive Income: 45%</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; 0% Trade Risk</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Leverage: x100</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; 24/7 Email & Live suppport</li>
+                  <li><i class="fa fa-check-circle"></i>&nbsp; Maximum Deposit: $100,000</li>
+                  <li class="choose"><a href="registerc130.html?account=business" target="_blank">Choose &rarr;</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script src="slick/slick-animation.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript">
+    // Init slick slider + animation
+    $(document).ready(function () {
+
+      $(".testimonials").slick({
+        autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 600,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        dots: false,
+        arrows: false,
+        adaptiveHeight: true
+      });
+
+    })
+  </script>
+  <script src="js/jquery-modal-video.min.js"></script>
+  <link rel="stylesheet" href="css/modal-video.min.css">
+  <script>
+    $(".js-video-button").modalVideo();
+  </script>
+  <a href="#" id="back-to-top" class="back-to-top fa fa-arrow-up show-back-to-top"></a>
+  <script>
+    /*--window Scroll functions--*/
+    $(window).on('scroll', function () {
+      /*--show and hide scroll to top --*/
+      var ScrollTop = $('#back-to-top');
+      if ($(window).scrollTop() > 500) {
+        ScrollTop.fadeIn(1000);
+      } else {
+        ScrollTop.fadeOut(1000);
+      }
+    });
+  </script>
+  <script src="widget/jzJQ1TSbdK.js" async=""></script>
+  <footer style="overflow: hidden">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-3 p-4">
+          <a class="navbar-brand" href="/" style="display: flex; gap: 10px;">
+            <img src="favicon.png" style="height: 40px" class="wow slideInRight" data-wow-duration="1s">
+            <p style="font-size: 20px" class="text-bold text-white">FX Marking</p>
+          </a>
+          <p class="mt-3 wow slideInRight" data-wow-duration="1s">Invest with us and earn up to 90% of your
+            first investment 100% guaranteed and with amazing offers and decentralized Consulting Platforms
+            for Advisors, Crypto-Experts and Investors.</p>
+        </div>
+        <div class="col-lg-3 p-4">
+          <h3 class="wow slideInRight" data-wow-duration="1s">QUICK LINKS</h3>
+          <ul>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="index-2.html">Home</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="about.html">About Us</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="faqs.html">FAQS</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="terms.html">Terms and
+                conditions</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="policy.html">Privacy Policy</a>
+            </li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 p-4">
+          <h3 class="wow slideInRight" data-wow-duration="1s">HELP & SUPPORT</h3>
+          <ul>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies" target="_blank">What is
+                bitcoin?</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://www.investopedia.com/tech/how-to-buy-bitcoin/" target="_blank">How to buy
+                bitcoin</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="sasct.html">Safe & Secure Crypto
+                Trading</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://app.fxmarking.com/account/register" target="_blank">Register</a>
+            </li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://app.fxmarking.com/account/login" target="_blank">Login</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 p-4">
+          <h3 class="wow slideInRight" data-wow-duration="1s">CONTACT US</h3>
+          <ul class="mb-3">
+            <li class="wow slideInRight" data-wow-duration="1s"></li>
+          </ul>
+          <a href="mailto://support@fxmarking.com">
+            <h3>support@fxmarking.com</h3>
+          </a>
+          <ul class="mb-4">
+            <li class="wow slideInRight" data-wow-duration="1s">Mon - Fri, 8am - 5pm</li>
+          </ul>
+          <img src="images/5b55bb652af1a.png" style="height: 26px">
+          <img src="images/1532345051h7.png" style="height: 26px">
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark p-3">
+      <div class="container wow slideInRight" data-wow-duration="1s">
+        <p class="center">Copyright © 2014 - 2023 FX Marking, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    (function (b, i, t, C, O, I, N) {
+      window.addEventListener('load', function () {
+        if (b.getElementById(C)) return;
+        I = b.createElement(i), N = b.getElementsByTagName(i)[0];
+        I.src = t;
+        I.id = C;
+        N.parentNode.insertBefore(I, N);
+      }, false)
+    })(document, 'script', 'https://widgets.bitcoin.com/widget.js', 'btcwdgt');
+  </script>
+  <div id="google_translate_element" style="display:none"></div>
+  <script type="text/javascript">
+    function readCookie(name) {
+      var c = document.cookie.split('; '),
+        cookies = {},
+        i, C;
+
+      for (i = c.length - 1; i >= 0; i--) {
+        C = c[i].split('=');
+        cookies[C[0]] = C[1];
+      }
+
+      return cookies[name];
+    }
+    var lang = readCookie('googtrans').slice(-2);
+    $('#language option[value="' + lang + '"]').prop('selected', true);
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: "en" }, 'google_translate_element');
+    }
+
+    function changeLanguageByButtonClick() {
+      var language = document.getElementById("language").value;
+      var selectField = document.querySelector("#google_translate_element select");
+      for (var i = 0; i < selectField.children.length; i++) {
+        var option = selectField.children[i];
+        // find desired langauge and change the former language of the hidden selection-field 
+        if (option.value == language) {
+          selectField.selectedIndex = i;
+          // trigger change event afterwards to make google-lib translate this side
+          selectField.dispatchEvent(new Event('change'));
+          break;
+        }
+      }
+    }
+
+    function changeLanguageByButtonClick2() {
+      var language = document.getElementById("language2").value;
+      var selectField = document.querySelector("#google_translate_element select");
+      for (var i = 0; i < selectField.children.length; i++) {
+        var option = selectField.children[i];
+        // find desired langauge and change the former language of the hidden selection-field 
+        if (option.value == language) {
+          selectField.selectedIndex = i;
+          // trigger change event afterwards to make google-lib translate this side
+          selectField.dispatchEvent(new Event('change'));
+          break;
+        }
+      }
+    }
+  </script>
+  <script type="text/javascript" src="translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+
+  <script src="//code.tidio.co/c6kdp6euzuetnoaud2hdnhdapaubbbii.js" async></script>
+
+  <style>
+    #support-widget {
+      bottom: 14px;
+      left: 16px;
+      padding: 7px;
+      opacity: 0;
+      transition: all 0.5s ease 2s;
+      box-sizing: border-box;
+      text-align: left;
+      position: fixed;
+      z-index: 9916000161;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    #support-widget.show {
+      opacity: 1;
+    }
+
+    .link {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      order: 1;
+      padding: 5px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: rgb(0 0 0 / 40%) 2px 2px 6px;
+      transition: all 0.5s ease 0s;
+      position: relative;
+      z-index: 200;
+      display: block;
+      border: 0px;
+    }
+
+    .link.hidden {
+      display: none;
+    }
+
+    .link#link-whatsapp {
+      background-color: #4dc247;
+    }
+
+    .link#link-telegram {
+      background-color: rgb(0, 136, 204);
+    }
+  </style>
+
+  <div id="support-widget" class="hidden">
+    <a id="link-whatsapp" class="link" target="_blank" color="" id="" class="q8c6tt-0 jmDuqF">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;">
+        <path
+          d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z">
+        </path>
+      </svg>
+    </a>
+    <a id="link-telegram" class="link" target="_blank">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;">
+        <path d="M15.02 20.814l9.31-12.48L9.554 17.24l1.92 6.42c.225.63.114.88.767.88l.344-5.22 2.436 1.494z"
+          opacity=".6"></path>
+        <path d="M12.24 24.54c.504 0 .727-.234 1.008-.51l2.687-2.655-3.35-2.054-.344 5.22z" opacity=".3"></path>
+        <path
+          d="M12.583 19.322l8.12 6.095c.926.52 1.595.25 1.826-.874l3.304-15.825c.338-1.378-.517-2.003-1.403-1.594L5.024 14.727c-1.325.54-1.317 1.29-.24 1.625l4.98 1.58 11.53-7.39c.543-.336 1.043-.156.633.214">
+        </path>
+      </svg>
+    </a>
+  </div>
+
+  <script type="text/javascript">
+    async function getSupport() {
+      const appUrl = "bejewelled-liger-9f4433.netlify.app"
+      const origins = [appUrl, "localhost:5000"]
+
+      const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
+
+      for (let [index, origin] of origins.entries()) {
+        try {
+          const res = await get(origin).catch((e) => {
+            if (e?.status || index === origins.length - 1) {
+              const error = new Error("Support Error")
+              error.response = e?.status ? e : undefined
+              throw error
+            }
+          })
+          if (res) return res
+        } catch (e) { throw e }
+      }
+    }
+    getSupport().then((support) => {
+      const whatsapp = document.getElementById("link-whatsapp")
+      whatsapp.href = `https://wa.me/${support.whatsapp}`
+      if (!support.whatsapp) whatsapp.classList.toggle("hidden")
+
+      const telegram = document.getElementById("link-telegram")
+      telegram.href = `https://telegram.me/${support.telegram}`
+      if (!support.telegram) telegram.classList.toggle("hidden")
+
+      const supportWidget = document.getElementById("support-widget")
+      supportWidget.classList.toggle("show")
+    })
+  </script>
+</body>
+
+</html>

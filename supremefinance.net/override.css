@@ -1,0 +1,16 @@
+@media only screen and (max-width: 991px) and (min-width: 768px) .price {
+    padding-bottom: 90px;
+}
+
+.price {
+    padding: 120px 0 120px;
+    background: whitesmoke;
+}
+
+@media (min-width: 768px) .container {
+    max-width: 720px;
+}
+
+@media (min-width: 576px) .container {
+    max-width: 540px;
+}
