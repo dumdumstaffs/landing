@@ -690,7 +690,7 @@ label {
 /*primebitContainer*/
 .primebitContainer {
 	width: 100%;
-	background: url(images/ft-logo2.png) transparent no-repeat center right;
+	background: url(images/logo2.png) transparent no-repeat center right;
 	overflow: hidden;
 }
 .primebitInner {
@@ -700,7 +700,7 @@ label {
 .primebit-left {
 	width: 50%;
 	float: left;
-	background: url(images/ft-logo2.png) #000 no-repeat center right 60px;
+	background: url(images/logo2.png) #000 no-repeat center right 60px;
 	padding: 30px 0;
 	padding-right: 260px;
 	position:  relative;
@@ -708,7 +708,7 @@ label {
 .primebit-right {
 	width: 50%;
 	float: right;
-	background: url(images/ft-logo1.png) #0f1432 no-repeat center right;
+	background: url(images/logo1.png) #0f1432 no-repeat center right;
 	padding: 30px 60px;
 	position: relative;
 	padding-right: 190px;
@@ -844,10 +844,10 @@ label {
 	width: 40%;
 	float: left;
 }
-.ft-logo {
+.logo {
 	width: 56px;
 	height: 56px;
-	background: url(images/ft-logo.png) transparent no-repeat 0 0;
+	background: url(images/logo.png) transparent no-repeat 0 0;
 	background-size: contain;
 	display: block;
 	float: left;

@@ -1,0 +1,8 @@
+body, button, input, select, textarea {
+    font-family: rakuten-sans,Roboto,sans-serif;
+    font-size: 19px;
+    line-height: 28px;
+    font-weight: 400;
+    font: 400 normal 20px/1.4 rakuten-sans,Roboto,sans-serif;
+    color: #8529cd;
+  }

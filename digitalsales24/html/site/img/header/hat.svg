@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2414" data-name="Ellipse 2414" cx="14" cy="14" r="14" transform="translate(816.75 232)" fill="#eaeff4"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_881" data-name="Mask Group 881" transform="translate(-816.75 -232)" clip-path="url(#clip-path)">
+    <g id="mortarboard" transform="translate(839.974 253.531) rotate(-180)">
+      <path id="Path_88124" data-name="Path 88124" d="M4.864,4.29a.524.524,0,0,0-.131.016L0,5.49V1.621C0,.078,4.052,0,4.864,0S9.728.078,9.728,1.621V5.49L4.995,4.307A.524.524,0,0,0,4.864,4.29Z" transform="translate(4.36 3.243)" fill="#1794c9"/>
+      <path id="Path_88125" data-name="Path 88125" d="M17.367,3.87v6.787l.671.168a.54.54,0,0,1,0,1.048L9.355,14.035a.524.524,0,0,1-.262,0L.41,11.874a.54.54,0,0,1,0-1.048L9.093,8.664a.532.532,0,0,1,.262,0l6.931,1.724V3.87L15.233.711A.554.554,0,0,1,15.745,0h2.162a.526.526,0,0,1,.431.231.524.524,0,0,1,.081.481Z" transform="translate(0)" fill="#1794c9"/>
+    </g>
+  </g>
+</svg>

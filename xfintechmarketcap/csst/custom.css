@@ -1,0 +1,432 @@
+.single-promo-block {
+    height: 315px;
+}
+
+
+
+
+
+
+/* 
+@import "https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap";
+
+@font-face {
+    font-family: gilroybold;
+    src: url(../fonts/GilroyBold.eot);
+    src: url(../fonts/GilroyBold.eot) format("embedded-opentype"), url(../fonts/GilroyBold.woff2) format("woff2"), url(../fonts/GilroyBold.woff) format("woff"), url(../fonts/GilroyBold.ttf) format("truetype"), url(../fonts/GilroyBold.svg#GilroyBold) format("svg")
+} */
+
+body {
+    font-family: karla, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    color: #81a3bb
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+img {
+    max-width: 100%
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none
+}
+
+a:focus,
+a:hover {
+    text-decoration: none
+}
+
+i,
+span,
+a {
+    display: inline-block
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* font-family: gilroybold; */
+    font-weight: 700;
+    color: #002249;
+    margin: 0
+}
+
+h1 {
+    font-size: 48px
+}
+
+h2 {
+    font-size: 36px
+}
+
+h3 {
+    font-size: 28px
+}
+
+h4 {
+    font-size: 22px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+
+
+.main-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 2px solid #0c59db;
+    padding: 0 55px;
+    font-size: 16px;
+    line-height: 60px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+    background-color: #0c59db
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, .2)
+}
+
+.main-btn.main-btn-2 {
+    background-color: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, .2)
+}
+
+.main-btn.main-btn-2:hover {
+    background-color: #0c59db;
+    border-color: #0c59db;
+    color: #fff
+}
+
+.services-plans-area {
+    padding-top: 111px;
+    padding-bottom: 120px;
+    background: #f5f9ff
+}
+
+.services-plans-area .services-title span {
+    color: #0c59db;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    color: #fff;
+}
+
+.services-plans-area .services-title span::before {
+    position: absolute;
+    content: '';
+    right: -100px;
+    top: 10px;
+    height: 2px;
+    width: 70px;
+    background: #0c59db;
+    color: #fff;
+}
+
+.services-plans-area .services-title .title {
+    font-size: 60px;
+    padding-top: 25px;
+    color: #fff;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .services-plans-area .services-title .title {
+        font-size: 50px
+    }
+}
+
+@media(max-width:767px) {
+    .services-plans-area .services-title .title {
+        font-size: 42px
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .services-plans-area .services-title .title {
+        font-size: 60px
+    }
+}
+
+.services-plans-area .plans-item {
+    position: relative;
+    z-index: 5;
+    padding: 55px 30px 60px
+}
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    .services-plans-area .plans-item {
+        padding: 55px 10px 60px
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .services-plans-area .plans-item {
+        padding: 55px 41px 60px
+    }
+}
+
+.services-plans-area .plans-item::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-item b {
+    font-weight: 700;
+    color: #0c59db;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: block;
+    padding-bottom: 10px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-item .title {
+    font-size: 16px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-item .title span {
+    font-size: 70px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-item>span {
+    color: #88a2bf;
+    font-size: 14px;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom: 33px;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-item>span::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 42px;
+    left: 50%;
+    bottom: -20px;
+    background: #cde4ff;
+    transform: translateX(-50%);
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-item p {
+    font-size: 14px;
+    color: #69a1bb;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-item a {
+    background-color: transparent;
+    border-color: #002249;
+    color: #202a76;
+    border-radius: 0;
+    font-size: 14px;
+    margin-top: 35px;
+    padding: 0;
+    width: 100%
+}
+
+.services-plans-area .plans-item:hover::before {
+    background: linear-gradient(75deg, #1a2c79 10%, #e80566a8);
+    /* background: rgba(0, 102, 255, .9) */
+}
+
+.services-plans-area .plans-item:hover b {
+    color: #fff
+}
+
+.services-plans-area .plans-item:hover .title {
+    color: #fff
+}
+
+.services-plans-area .plans-item:hover span {
+    color: #fff
+}
+
+.services-plans-area .plans-item:hover span::before {
+    width: 100px;
+    background: #fff
+}
+
+.services-plans-area .plans-item:hover p {
+    color: #fff
+}
+
+.services-plans-area .plans-item:hover a {
+    background: #f5f9ff;
+    border-color: #f5f9ff;
+    color: #002249;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}
+
+.services-plans-area .plans-tab-btn .nav {
+    background: #fff;
+    padding: 10px
+}
+
+.services-plans-area .plans-tab-btn .nav li a {
+    border-radius: 0;
+    padding: 0 35px;
+    line-height: 60px;
+    color: #69a1bb;
+    font-weight: 700
+}
+
+.services-plans-area .plans-tab-btn .nav li a.active {
+    color: #fff;
+    background: #0c59db
+}
+
+.services-plans-area.services-plans-dark-area {
+    background: #002249
+}
+
+.services-plans-area.services-plans-dark-area .services-title .title {
+    font-size: 60px;
+    padding-top: 25px;
+    color: #fff
+}
+
+.services-plans-area.services-plans-dark-area .plans-tab-btn .nav {
+    background: #002c5f
+}
+
+.services-plans-area.services-plans-dark-area .plans-item::before {
+    background: #00152e
+}
+
+.services-plans-area.services-plans-dark-area .plans-item b {
+    color: #ffc78a
+}
+
+.services-plans-area.services-plans-dark-area .plans-item b.item-2 {
+    color: #69a1bb
+}
+
+.services-plans-area.services-plans-dark-area .plans-item b.item-3 {
+    color: #ff578e
+}
+
+.services-plans-area.services-plans-dark-area .plans-item b.item-4 {
+    color: #bb72ff
+}
+
+.services-plans-area.services-plans-dark-area .plans-item .title {
+    color: #fff
+}
+
+.services-plans-area.services-plans-dark-area .plans-item>span::before {
+    background: #13335a
+}
+
+.services-plans-area.services-plans-dark-area .plans-item a {
+    border-color: #1d3d63
+}
+
+.services-plans-area.services-plans-dark-area .plans-item:hover::before {
+    background: rgba(0, 102, 255, .9)
+}
+
+.services-plans-area.services-plans-dark-area .plans-item:hover b {
+    color: #fff
+}
+
+.services-plans-area.services-plans-dark-area .plans-item:hover span::before {
+    width: 100px;
+    background: #fff
+}
+
+.services-plans-area.services-plans-dark-area .plans-item:hover p {
+    color: #fff
+}
+
+.services-plans-area.services-plans-dark-area .plans-item:hover a {
+    background: #003d95;
+    border-color: #003d95;
+    color: #fff;
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s
+}

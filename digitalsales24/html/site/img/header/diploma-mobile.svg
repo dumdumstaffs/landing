@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2426" data-name="Ellipse 2426" cx="18" cy="18" r="18" fill="#eaeff4"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_119100" data-name="Mask Group 119100" clip-path="url(#clip-path)">
+    <g id="Group_117558" data-name="Group 117558">
+      <circle id="Ellipse_2392" data-name="Ellipse 2392" cx="18" cy="18" r="18" fill="#eaeff4"/>
+      <g id="mortarboard" transform="translate(7.477 11.985)">
+        <path id="Path_88124" data-name="Path 88124" d="M126.538,210a.6.6,0,0,1-.149-.019L121,208.632v4.4c0,1.757,4.613,1.846,5.538,1.846s5.538-.089,5.538-1.846v-4.4l-5.389,1.347A.6.6,0,0,1,126.538,210Z" transform="translate(-116.036 -202.575)" fill="#5d676e"/>
+        <path id="Path_88125" data-name="Path 88125" d="M19.774,72.59V64.862l.764-.191a.615.615,0,0,0,0-1.193l-9.887-2.461a.6.6,0,0,0-.3,0L.466,63.477a.615.615,0,0,0,0,1.193l9.887,2.461a.605.605,0,0,0,.3,0l7.892-1.963V72.59l-1.2,3.6a.63.63,0,0,0,.584.81h2.461a.632.632,0,0,0,.584-.81Z" transform="translate(0 -60.997)" fill="#5d676e"/>
+      </g>
+    </g>
+  </g>
+</svg>

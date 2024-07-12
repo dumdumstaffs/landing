@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Modelica-Black';
+    font-style: normal;
+    font-weight: 700;
+    font-display: block;
+    src: url('BwModelicaSS02-Black.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('BwModelicaSS02-Blackd41d.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */ url('BwModelicaSS02-Black.woff2') format('woff2'),
+        /* Super Modern Browsers */ url('BwModelicaSS02-Black.woff') format('woff'),
+        /* Modern Browsers */ url('BwModelicaSS02-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Modelica-Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-display: block;
+    src: url('BwModelicaSS02-Medium.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('BwModelicaSS02-Mediumd41d.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */ url('BwModelicaSS02-Medium.woff2') format('woff2'),
+        /* Super Modern Browsers */ url('BwModelicaSS02-Medium.woff') format('woff'),
+        /* Modern Browsers */ url('BwModelicaSS02-Medium.ttf') format('truetype'); /* Safari, Android, iOS */
+    font-display: swap;
+}
