@@ -1,0 +1,464 @@
+/**
+ * Theme Name: Blocksy Child
+ * Description: Blocksy Child theme
+ * Author: Creative Themes
+ * Template: blocksy
+ * Text Domain: blocksy
+ */
+
+
+/* Header CSS */
+.menuBoderedBtn a {
+    border: 1px solid #FFCA29;
+    display: block;
+    padding: 0 !important;
+    height: 40px;
+    width: 100px;
+   	justify-content: center;
+    line-height: 40px !important;
+    border-radius: 8px;
+    color: #FFCA29 !important;
+    margin: 4px 8px 0 0px !important;
+}
+.menuBoderedBtn a:hover {
+    background: #ffca29;
+    color: #110F20 !important;
+}
+.menuColoredBtn a {
+    border: 1px solid #FFCA29;
+    display: block;
+    padding: 0 !important;
+    height: 40px;
+    width: 140px;
+   	justify-content: center;
+    line-height: 40px !important;
+    border-radius: 8px;
+    color: #110F20 !important;
+	background: #FFCA29;
+	margin: 4px 0px 0px 8px !important;
+}
+.menuColoredBtn a:hover {
+	background: #FFDC73 !important ;	
+}
+/*  */
+
+/* Homepage CSS Start */
+.homeHeroSec .heroImageCol {
+    position: absolute !important;
+}
+.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper {
+    background: #F5F7FD;
+    border: 1px solid #E4E5E8;
+    border-radius: 100px;
+    padding: 4px !important;
+    display: block;
+    max-width: 396px;
+	position: absolute;
+    left: 730px;
+    top: 100px;
+	z-index: 99999;
+}
+.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title.elementor-active {
+    background: #5F0AB2;
+	color: #fff;
+}
+.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {
+    height: 50px;
+    line-height: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 190px;
+    border-radius: 100px;
+}
+.homeListIconEnd ul.elementor-icon-list-items li.elementor-icon-list-item {
+    position: relative;
+}
+.homeListIconEnd ul.elementor-icon-list-items li.elementor-icon-list-item span.elementor-icon-list-icon {
+    position: absolute;
+    right: 0;
+}
+.homeListIconEnd ul.elementor-icon-list-items li.elementor-icon-list-item a {
+    color: #70707B;
+}
+.homeListIconEnd ul.elementor-icon-list-items li.elementor-icon-list-item a:hover {
+    color: #5F0AB2;
+}
+.homeListIconEnd ul.elementor-icon-list-items li.elementor-icon-list-item span.elementor-icon-list-text {
+    padding: 0;
+}
+.homeTabSec .elementor-tabs .elementor-tabs-wrapper {
+    background: #F5F7FD;
+    border: 1px solid #E4E5E8;
+    border-radius: 100px;
+    padding: 4px !important;
+    display: block;
+    max-width: 926px;
+    margin: 0 auto;
+}
+.homeTabSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title.elementor-active {
+    background: #5F0AB2;
+	color: #fff;
+}
+.homeTabSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {
+    height: 50px;
+    line-height: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 310px;
+    border-radius: 100px;
+}
+.homeTabIconBox:hover {
+    background: #F7EEFF !important;
+    border-color: #7738C8 !important;
+}
+.homeTabIconBox:hover .elementor-button-wrapper a.elementor-button {
+    color: #110F20 !important;
+    background-color: #FFCA29 !important;
+}
+.homeFaqSec {
+    padding: 0;
+}
+.homePricingSec .elementor-tabs .elementor-tabs-wrapper {
+    background: #F5F7FD;
+    border: 1px solid #E4E5E8;
+    border-radius: 100px;
+    padding: 4px !important;
+    display: block;
+    max-width: 630px;
+    margin: 0 auto;
+}
+.homePricingSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title.elementor-active {
+    background: #5F0AB2;
+	color: #fff;
+}
+.homePricingSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {
+    height: 50px;
+    line-height: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 310px;
+    border-radius: 100px;
+}
+.homeAffiliateRevenueSec .elementor-swiper-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #fff !important;
+    color: #000 !important;
+    border: 1px solid #D5D5DC;
+    text-align: center !important;
+    font-size: 16px !important;   
+}
+.homeAffiliateRevenueSec .elementor-swiper-button:hover {
+    background: #5A20B7 !important;
+    color: #fff !important; 
+}
+.homeAffiliateRevenueSec .elementor-swiper-button.elementor-swiper-button-prev {
+	left: calc(0% - 20px) !important;
+}
+.homeAffiliateRevenueSec .elementor-swiper-button.elementor-swiper-button-next {
+	right: calc(0% - 20px) !important;
+	padding: 11px !important;
+}
+body .homeAffiliateRevenueSec .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #5F0AB2 !important;
+}
+body .homeAffiliateRevenueSec .swiper-pagination .swiper-pagination-bullet {
+    background-color: #F1F1F5 !important;
+}
+.pricingIconList .elementor-widget-container ul li .elementor-icon-list-text b {
+    color: #70707B;
+    font-weight: 600;
+}
+.pricingIconList .elementor-widget-container ul li .elementor-icon-list-icon i.far.fa-times-circle {
+	color: #FF3E6E;
+}
+.hoverBtnStyle .elementor-button-wrapper a:hover {
+    transform: translate(0px, -4px);
+	box-shadow: 0px 24px 22px 0px rgba(23, 6, 100, 0.04), 0px 8.585px 8.03px 0px rgba(23, 6, 100, 0.05), 0px 4.777px 3.899px 0px rgba(23, 6, 100, 0.07), 0px 2.635px 1.911px 0px rgba(23, 6, 100, 0.08), 0px 1.159px 0.756px 0px rgba(23, 6, 100, 0.12);
+
+}
+.homeLogoSliderSec .swiper-slide img.swiper-slide-image {
+    filter: grayscale(1);
+}
+.homeLogoSliderSec .swiper-slide img.swiper-slide-image:hover {
+    filter: grayscale(0);
+	cursor: grab;
+}
+.homeTabSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title:hover {
+    background: #f7eeff;
+}
+.homeTabSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title.elementor-active:hover {
+    background: #5f0ab2;
+}
+
+html body .homeAffiliateRevenueSec .swiper .swiper-pagination .swiper-pagination-bullet {
+	background: #F1F1F5 !important;
+	background-color: #F1F1F5 !important;
+}
+html body .homeAffiliateRevenueSec .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #5F0AB2;
+    background-color: #5F0AB2 !important;
+}
+html body .monetizationMadeSimpleSec .swiper .swiper-pagination .swiper-pagination-bullet {
+	background: #F1F1F5 !important;
+	background-color: #F1F1F5 !important;
+}
+html body .monetizationMadeSimpleSec .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #5F0AB2;
+    background-color: #5F0AB2 !important;
+}
+.blogPostSlider .elementor-posts-container article.elementor-post {
+    padding: 0 10px;
+}
+.blogPostSlider .elementor-posts-container article.elementor-post .elementor-post__card {
+    min-height: 470px;
+}
+.blogPostSlider .elementor-posts-container .slick-track {
+	min-height: 500px;
+}
+.blogPostSlider .slick-dots li.slick-active button {
+	background: #5F0AB2 !important;
+}
+.homePluginVideoSec .elementor-wrapper.elementor-open-lightbox .elementor-custom-embed-play i:before {
+	background: #fff;
+    border-radius: 100px;
+}
+.premiumContentCol.elementor-sticky--active {
+	opacity: 1;
+	z-index:9999;
+}
+.premiumContentCol.review  {   
+	opacity: 1;	
+}
+.premiumContentCol {
+  	opacity: 0;
+	transition: opacity 0.3s ease-in-out;	
+}
+.premiumContentCol.general.elementor-sticky--active {    
+	transform: scale(1);	
+	transition: none;	
+}
+.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title:hover {
+    background: #f7eeff;
+}
+.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title.elementor-active:hover {
+    background: #5f0ab2;
+}
+.monetizationMadeSimpleSec .elementor-swiper-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background: #fff !important;
+    color: #000 !important;
+    border: 1px solid #D5D5DC;
+    text-align: center !important;
+    font-size: 16px !important;   
+}
+.monetizationMadeSimpleSec .elementor-swiper-button:hover {
+    background: #5A20B7 !important;
+    color: #fff !important; 
+}
+.monetizationMadeSimpleSec .elementor-swiper-button.elementor-swiper-button-prev {
+	left: calc(0% - 0px) !important;
+}
+.monetizationMadeSimpleSec .elementor-swiper-button.elementor-swiper-button-next {
+	right: calc(0% - 0px) !important;
+	padding: 11px !important;
+}
+.homePricingSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title:hover {
+    background: #f7eeff;
+}
+.homePricingSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title.elementor-active:hover {
+    background: #5f0ab2;
+}
+.homeRoundUpRow .elementor-tab-content {
+    padding: 0;
+}
+.homePluginSingleBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px #55099f;
+}
+.homePluginVideoSec .elementor-element.elementor-widget-video:hover img {
+    transform: scale(1.1);
+	border-radius: 20px;
+}
+.homePluginVideoSec .elementor-element.elementor-widget-video img {
+    transition: 0.3s;
+}
+.homePluginSingleBox a.elementor-button:hover span.elementor-button-icon svg path {
+    fill: #000;
+}
+.homeTabIconBox:hover {
+    transform: scale(1.04);
+	box-shadow: 0px 3px #55099f;
+}
+
+/* .pricingSliderSec .pricingSingleCol {
+	margin: 0 10px;
+} */
+/*  */
+
+
+
+/* Pricing Page CSS */
+.seeAllFeaturesBtn .elementor-widget-container a {
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.seeAllFeaturesBtn .elementor-widget-container a:hover { 
+	color: #FFCA29;
+}
+.seeAllFeaturesBtn .elementor-widget-container a i {
+    display: block;
+    text-align: center;
+}
+.comparePlanList {
+	border-bottom: 1px solid #E2E2EA;
+}
+.comparePlanList ul.elementor-icon-list-items li {
+    min-height: 40px;
+    padding: 0 0 0 20px;
+}
+.comparePlanList ul.elementor-icon-list-items li i.fas.fa-check {
+    color: #5F0AB2;
+}
+.comparePlanList ul.elementor-icon-list-items li i.fas.fa-times {
+    color: #FF3E6E;
+}
+/* .comparePlanSlider .comparePlanPricingCol {
+    margin: 0 5px;
+} */
+/*  */
+
+/* Contact Us Page CSS */
+.contactUsFormCol .elementor-form .elementor-field-group.elementor-field-type-submit {
+    margin-top: 20px;
+}
+.contactUsFormCol .elementor-form  .elementor-field-type-textarea textarea {
+    height: 100px;
+}
+/*  */
+
+/* Blog Page CSS */
+.blogsSideBarCol  .ct-widget.widget_categories ul li {
+    font-family: 'Poppins';
+}
+.blogsSideBarCol .ct-widget.widget_tag_cloud .tagcloud {
+    font-family: 'Poppins';
+}
+.blogsSideBarCol .elementor-posts-container article:hover h3.elementor-post__title a {
+    color: #5F0AB2 !important;
+}
+.blogArchivesTagsRow .elementor-widget-container .ct-widget.widget_categories {
+    padding-bottom: 40px;
+}
+.blogArchivesTagsRow .elementor-widget-container .ct-widget.widget_categories ul li a {
+    color: #fff;
+    background: #600cb1;
+    display: block;
+    text-align: center;
+    max-width: 180px;
+    border-radius: 54px;
+    height: 40px;
+    line-height: 40px;
+}
+.blogArchivesTagsRow .elementor-widget-container .ct-widget.widget_categories ul li a:hover {
+    background: #ffca29;
+    color: #1B2424;
+}
+.blogArchivesTagsRow .elementor-widget-container .ct-widget.widget_categories ul li {
+    margin-bottom: 8px;
+}
+.blogArchivesTagsRow .elementor-widget-container .ct-widget.widget_tag_cloud .tagcloud a {
+    font-size: 16px !important;	
+	 display: block;
+}
+.blogArchivesTagsRow .elementor-widget-container .ct-widget.widget_tag_cloud .tagcloud a:hover {	
+    color: #ffca29;
+}
+.footerNewsletterForm.blogArchive .elementor-form-fields-wrapper .elementor-field-type-email input {   
+    border: 1px solid #d29fff;
+}
+/*  */
+
+/* Contact Us Page CSS */
+.contactSocialIcons .elementor-social-icons-wrapper .elementor-grid-item a.elementor-icon:hover i {
+    color: #ffca29 !important;
+}
+/*  */
+
+
+/* Footer CSS */
+.footerNewsletterForm .elementor-form-fields-wrapper.elementor-labels- {
+    position: relative;
+}
+.footerNewsletterForm .elementor-field-group.elementor-field-type-submit {
+ 	position: absolute;
+    right: 5px;
+    justify-content: end;
+    max-width: 140px;
+    top: 5px;
+	margin: 0 !important;
+}
+.footerNewsletterForm .elementor-field-group button {
+    border-radius: 5px !important;
+}
+.footerNewsletterForm .elementor-form-fields-wrapper .elementor-field-type-email input {
+    padding: 24px 10px;
+	border-radius: 4px;
+}
+.designedByCol .elementor-element p a {
+    color: #AAA4B1;
+	font-weight: 700;
+}
+.designedByCol .elementor-element p a:hover {
+    color: #ffca29;
+}
+.footerSocialIcons .elementor-social-icons-wrapper a.elementor-icon:hover i {
+    color: #fff !important;
+}
+.footerSocialIcons .elementor-social-icons-wrapper .elementor-grid-item a.elementor-icon:hover i {
+    color: #ffca29 !important;
+}
+/*  */
+
+.elementor img {
+	width: auto;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1080px) {
+	.premiumContentCol  {
+		opacity: 1 !important;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.homeHeroSec .heroImageCol {
+		position: relative !important;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	.homePricingSec .elementor-tabs .elementor-tabs-wrapper {
+		width: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.affiliateHeroImageCol {
+		position: relative !important;
+	}
+	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {        
+        width: 50% !important;        
+    }
+	.homeTabSec .elementor-tabs .elementor-tabs-wrapper {       
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

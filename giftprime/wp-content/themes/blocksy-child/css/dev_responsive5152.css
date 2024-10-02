@@ -1,0 +1,203 @@
+@media only screen and (max-width:1380px ) {
+
+}
+@media only screen and (max-width:1200px ) {
+	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper {
+		width: 100%;
+		left: 630px;
+	}
+	.comparePlanSlider .comparePlanPricingCol {
+		margin: 0 5px;
+	}
+	.comparePlanSlider .slick-dots li.slick-active button {
+		background: #5F0AB2  !important;
+	}
+	.comparePlanSec .compareinnerFeatureHeadCol {
+    	padding-top: 94px;
+	}
+	.comparePlanList ul.elementor-icon-list-items li {
+    	min-height: 48px;    	
+	}
+	.comparePlanInnerRow .comparePlanSlider {
+		width: 71%;
+	}
+
+
+}
+@media only screen and (max-width:1080px ) {
+	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper {
+        width: 100%;
+        left: 580px;
+    }
+	.homeListIconEnd ul.elementor-icon-list-items li.elementor-icon-list-item span.elementor-icon-list-text {
+    	padding: 0 20px 0 0;
+	}
+/* 	.pricingSliderSec .slick-dots li.slick-active button {
+        background: #5F0AB2 !important;
+    } */
+
+}
+@media only screen and (max-width:991px ) {
+	.homeHeroSec .heroImageCol {
+		position: relative;
+	}
+	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper {
+		left: 10px;
+    	top: 560px;
+	}
+	.homeTabSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {
+		height: 70px;
+    	line-height: 16px;
+	}
+	.menuBoderedBtn {
+    	margin-bottom: 8px !important;
+	}
+	.menuColoredBtn {
+		margin-bottom: 20px !important;
+	}
+    .comparePlanInnerRow .comparePlanSlider {
+        width: 68%;
+    }
+}
+@media only screen and (max-width:769px ) { 
+
+}
+@media only screen and (max-width:690px ) {
+	.elementor-widget-container h1 {
+		font-size: 34px;
+		line-height: 44px;
+	}
+	.elementor-widget-container h2 {
+		font-size: 26px;
+		line-height: 34px;
+	}
+	.elementor-widget-container h3 {
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.elementor-widget-container h5 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.homePluginCtaSec .slick-dots li.slick-active button {
+		background: #5F0AB2 !important;
+	}
+	.homePluginCtaSec .slick-dots {
+		bottom: 0px;
+	}
+	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {
+		height: 40px;
+        width: auto;
+        font-size: 12px;
+        line-height: 0;
+	}
+	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper {
+		position: relative !important;
+        left: 0 !important;
+        top: 0 !important;
+        width: auto !important;
+		max-width: 100% !important;
+		display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+		margin-bottom: 10px !important;
+    }
+	.homeRoundUpRow .elementor-tab-title.elementor-tab-mobile-title {
+		display: none;
+	}
+	.homeListIconEnd ul.elementor-icon-list-items li.elementor-icon-list-item span.elementor-icon-list-text {
+		padding: 0 20px 0 0px;
+	}
+    .homeTabSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {      
+        width: 102px;
+		height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+	.homeTabSec .elementor-tabs .elementor-tabs-wrapper {        
+        width: 100%;
+    }
+	.homeTabSec .elementor-tab-title.elementor-tab-mobile-title {
+		display: none;
+	}
+	.homePricingSec .elementor-tab-title.elementor-tab-mobile-title {
+		display: none;
+	}
+	.homePricingSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {      
+        width: 156px;
+		height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .blogPostSlider .elementor-posts-container article.elementor-post .elementor-post__card {
+        min-height: 380px;
+    }
+	.blogPostSlider .elementor-posts-container .elementor-post__text a {
+		font-size: 18px !important;		
+		line-height: 26px !important;
+	}
+	.blogPostSlider .elementor-posts-container .slick-track {
+    	min-height: 400px;
+	}
+	.comparePlanInnerRow .comparePlanSlider {
+        width: 50%;
+    }
+	.comparePlanInnerRow .elementor-widget-container h4 {
+    	font-size: 14px;
+    	line-height: 20px;
+	}
+	.comparePlanList ul.elementor-icon-list-items li {
+		padding: 0 8px 0 8px;
+		justify-content: center !important;
+		min-height: 70px;
+	}
+	.comparePlanFeaturesWrap .comparePlanList ul.elementor-icon-list-items li {
+		justify-content: start !important;
+	}
+	.comparePlanPricingCol .elementor-button-wrapper a {
+    	padding: 0;
+    	margin: 0;
+    	display: block;
+    	height: 40px;
+    	line-height: 40px;
+	}
+	.comparePlanSec .compareinnerFeatureHeadCol {
+		padding-top: 88px;
+	}
+	.faqToggleRow .faqToggleContent {
+		display: none;
+	}
+	.monetizationMadeSimpleSec .elementor-swiper-button.elementor-swiper-button-prev {
+		left: calc(0% - 20px) !important;
+	}
+	.monetizationMadeSimpleSec .elementor-swiper-button.elementor-swiper-button-next {
+		right: calc(0% - 20px) !important;		
+	}
+}
+@media only screen and (max-width:480px ) {
+
+}
+@media only screen and (max-width:390px ) {
+/* 	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {      
+        width: 133px;
+        font-size: 11px;       
+    }
+	.homeRoundUpRow .elementor-tabs .elementor-tabs-wrapper {        
+     	top: 280px;
+        left: 0;
+        width: 100%;
+    } */
+	.homeHeroSec .homeHeroImage1 {
+		top: 16px !important;
+	}
+	.homeTabSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {
+		width: 98px;
+	}
+	.homePricingSec .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title {
+        width: 148px;       
+    }
+}

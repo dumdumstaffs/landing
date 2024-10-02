@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+    <defs>
+        <filter id="82cbhhhnia">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.160296 0 0 0 0 0.165580 0 0 0 0 0.176149 0 0 0 1.000000 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g filter="url(#82cbhhhnia)" transform="translate(-292 -1477)">
+            <g>
+                <g stroke="#51555C" stroke-width="1.6">
+                    <path d="M39.995 26.8L45.995 26.8 45.995 20.8 54.395 31.6 45.995 41.2 45.995 35.2 32.795 35.2M30.395 35.2L26.795 35.2M24.395 35.2L20.795 35.2M18.395 35.2L14.795 35.2M32.795 26.8L29.195 26.8M26.795 26.8L23.195 26.8M20.795 26.8L8.795 26.8 8.795 32.8.395 23.2 8.795 13.6 8.795 19.6 13.595 19.6M21.995 18.4h-4.8c0-9.94 8.059-18 18-18 9.94 0 18 8.06 18 18h-4.8" transform="translate(292 1477) translate(.8 8)"/>
+                    <path d="M38.795 19c0 1.657-1.343 3-3 3-1.658 0-3-1.343-3-3s1.342-3 3-3c1.657 0 3 1.343 3 3z" transform="translate(292 1477) translate(.8 8)"/>
+                    <path stroke-linecap="round" d="M33.194 21.804L31.422 23.071M47.755 11.394L38.794 17.8" transform="translate(292 1477) translate(.8 8)"/>
+                    <path d="M35.195 5.2L35.195.4M28.443 7.057L25.988 2.932M41.62 6.869L43.955 2.677M23.663 11.975L19.47 9.638" transform="translate(292 1477) translate(.8 8)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

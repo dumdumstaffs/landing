@@ -1,0 +1,56 @@
+.trade-popup {
+    position: fixed;
+    bottom: calc(12px + 64px + 12px);
+    left: -1000px;
+    z-index: 999;
+
+    border-radius: 30px;
+    padding: 16px;
+    padding-right: 48px;
+
+    opacity: 0.4;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    border: 1px solid rgb(48, 153, 245);
+    background-color: rgba(48, 153, 245, 0.12);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 2px, rgb(48 153 245 / 50%) 0px 0px 15px;
+    transition: box-shadow 0.5s ease 0s, background-color 0.5s ease 0s, border-color 0.5s ease 0s, color 0.5s ease 0s;
+}
+
+.trade-popup.show {
+    opacity:1;
+    left: 24px;
+}
+
+.trade-popup p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.trade-popup .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    color: #cecece;
+    width: 4px;
+}
+
+.trade-popup .close-icon:hover {
+    color: #fff;
+}
+
+@media (max-width : 480px) {
+    .trade-popup {
+        width: calc(100vw - 48px);
+        padding: 16px 32px;
+
+        bottom: -400px;
+        left: 12px;
+    }
+
+    .trade-popup.show {
+        bottom: calc(12px + 64px + 12px);
+    }
+}
