@@ -1,0 +1,135 @@
+html[lang="ar-AE"] #footer{direction: ltr;}
+#footer{padding-bottom:3px;overflow: hidden;background: #151D36;padding-bottom:80px;}
+#footer .inner{max-width: 1200px;}
+.logo-box {max-width: 190px;margin:72px auto 98px;}
+.footer-list {display:flex;flex-wrap: wrap;color: #ffffff;margin-bottom:4px;}
+.footer-list .list-title {font-weight: 700;font-size: var(--fs-18);margin-bottom:9px;position: relative;padding-bottom:10px;line-height: 1.2;}
+.footer-list li.products-detail {padding-left: 90px;padding-right: 56px;}
+
+.footer-list li.wire{width: 1px;background-color: #1E2946;margin-top: 40px;margin-bottom: 34px;}
+.footer-list li.products-detail:first-child{padding-left:0px;margin-bottom: 32px;}
+.footer-list li.products-detail:last-child{padding-right:0px;flex-wrap: wrap;padding-left: 88px;}
+.footer-list a{color: #75859F;text-decoration:none;}
+.footer-list a:hover{text-decoration: underline;}
+.footer-list .list-info {font-size: 12px;}
+.footer-list .list-info .info-item {display:flex;align-items: center;margin-bottom:10px;}
+.footer-list .list-info .info-item:hover {text-decoration: none;}
+.footer-list .info-item .icon {width: 30px;height:30px;overflow: hidden;background-image: url(/wp-content/themes/Moneta/images/public-images.svg?v=1); background-repeat: no-repeat;background-size: 1530px auto;}
+
+.footer-list .symbol-list{width: 265px;}
+.symbol-list .increase {color: #00ff6c;}
+.symbol-list .reduce {color: #ff174c;}
+.symbol-list .black-text {color:#8e9090;}
+.symbol-list .symbol {padding:0px 10px 0px 16px;min-width:100px;}
+
+.footer-list .link-list {flex: 1;max-width: 504px;}
+.link-list .link-list-top,
+.link-list .link-list-bottom {display: flex;flex-wrap: wrap;width: 100%;}
+.link-list .link-list-top {margin-bottom:58px;}
+.link-list .info-box {width: 50%;line-height: 22px;padding-right:10px;}
+.link-list .list-info li {padding-left:22px;position: relative;}
+.link-list .list-info li::after {content:'>';position: absolute;left:0px;top:0px;color: #75859F;}
+
+.footer-list .partner-list {width:360px;}
+.partner-list .list-info {max-width: 280px;margin-bottom:60px;}
+.partner-list .brand-logo li{width: 25%;margin-bottom:10px;}
+
+.website-rating {width: 100%;margin: 5px 0px;}
+.website-rating:first-child {padding-left:0px;}
+.website-rating a{text-decoration: none;}
+.website-rating .website-rating-text {text-align: center;}
+.website-rating-score-img{position: relative;display: inline-block;margin-bottom: 8px;}
+.website-rating .website-rating-img{margin-bottom:7px;margin-right:18px;width: 106px;}
+.website-rating-score-img-item-active,
+.google-active{position: absolute;top: 0;left: 0;overflow: hidden;width: 100%; z-index: 1;}
+.website-rating-score-img-item-active img,
+.google-active img{max-width: revert;}
+
+.website-rating-score-img-item img{display: block;}
+
+.website-rating .website-rating-text .website-rating-score{font-size: 12px;color: #fff;line-height: 1.2;}
+.website-rating .website-rating-text .home-row7-score-branch{ font-weight: 500;}
+.website-rating-score span {color:#fff !important;}
+
+
+.footer-middle-new{ border-top:1px solid #1E2946; padding:18px 0px 22px;display: flex;justify-content:space-between;align-items: center;    flex-direction: row-reverse;}
+.footer-middle-new ul{padding:0px;margin:8px 0px 0px;}
+.footer-middle-new.middle-2 {padding:4px 0px; flex-direction: row;}
+.footer-middle-new.middle-2 ul{margin: 0;}
+.footer-middle-new.middle-2 span {color: #75859F;font-size: 12px; vertical-align: bottom;padding-top: 8px;}
+.footer-middle-new.middle-2 span a{font-size: 12px;}
+.footer-middle-new.middle-2 span a:hover{color: inherit;text-decoration: underline;}
+.footer-middle-new ul li{padding: 0px 6px 0px 0px;margin:0px;display:inline-block;font-size:var(--fs-14);color:#75859F;line-height:1.4;position:relative;}
+.footer-middle-new ul li a{font-size:12px;color:#75859F;text-decoration:none;}
+.footer-middle-new ul li a:hover{text-decoration:underline;}
+.footer-middle-new .footer-icon-box{display:block;padding:6px 0px 0px;}
+.footer-middle-new .footer-icon-box a{display:inline-block;width:33px;height:33px;margin:0px 0px 0px 3px; vertical-align:top; font-size:var(--fs-18); color:#FFF; line-height:29px; text-align:center; background:#5e689b; border-radius:50%; text-decoration:none;}
+.footer-middle-new .footer-icon-box a:hover{ background:#cd0021; text-decoration:none;}
+.footer-middle-new .footer-icon-box span{font-size:var(--fs-14);line-height: 1;color: #75859F;padding-top: 10px;display: inline-block;margin-right: 6px;}
+.footer-middle-new .download-text{padding-left:25px;position: relative; padding-right: 34px;}
+.footer-middle-new .download-text::after{content:'';display:block;width: 17px;height:29px;position: absolute;top:50%; left:0;background:url(/wp-content/themes/Moneta/images/footer-icon9.svg?v=1)center center no-repeat;transform:translateY(-50%);}
+
+.footer-bottom ul{margin-top: 40px;}
+.footer-bottom ul li{ color:#75859F; font-size: var(--fs-12); line-height: 1.5; }
+.footer-bottom ul li a{text-decoration: underline;}
+
+
+@media (max-width:1200px) {
+.footer-list li.products-detail {padding-left: 40px;padding-right: 20px;}
+}
+
+@media (max-width:940px) {
+	.footer-list li.products-detail {width:100%;padding: 0px;}
+	.footer-list li.products-detail.symbol-list {max-width:260px;}
+	.footer-list li.products-detail.link-list .link-list-top {margin-top: 0px;}
+	.footer-list li.products-detail:last-child {margin-top: 40px;display: flex;gap: 60px; padding-left: 0px;}
+	.footer-list li.wire {display:none;}
+	.footer-list .symbol-list{width: 100%;}
+	.link-list .link-list-top{margin-top:40px;margin-bottom:0px;}
+	.link-list .info-box {width: auto;padding-right: 35px;margin-bottom:40px;}
+	.partner-list .list-info {margin-bottom:30px;}
+	.footer-middle-new,.footer-middle-new.middle-2{flex-direction: column;}
+	.footer-middle-new .download-text{margin-bottom: 20px;}
+}
+@media (max-width:768px){
+	.logo-box {margin:40px auto;}
+	.footer-middle-new.middle-2 {text-align: center;}
+	.footer-middle-new{text-align:center;}
+	.footer-middle-new ul{padding:0px;margin: 15px 0px;}
+	.footer-middle-new ul li{padding-left:5px;padding-right:5px;}
+	.footer-middle-new .footer-icon-box a{margin: 0px 0px 0px 5px;}
+	.footer-middle-new .footer-icon-box a.facebook-icon{margin: 0px 0px 0px 5px;}
+	.footer-middle-new .footer-links span{display: inline-block;margin-bottom: 10px;}
+	.footer-middle-new .footer-links span:last-child{margin: 0;}
+	.footer-middle-new .footer-links a{display: inline-block;}
+	
+}
+@media (max-width:700px){
+	.footer-list li.products-detail {width:100% !important;max-width: 100% !important; flex:1 1 100%;}
+	.footer-list li.products-detail.link-list .link-list-top {margin-top: 40px;}
+	.footer-list li.products-detail:last-child {gap: 0px;margin: 0px;}
+	.footer-list li.products-detail:last-child .partner-list-item{padding-right: 50px;}
+	#footer .inner{padding: 0 100px}
+	.footer-list .list-title{text-align: center;}
+	.footer-list .link-list .list-title{text-align: left;}
+	.link-list .link-list-top, .link-list .link-list-bottom{justify-content: space-between;}
+	.footer-list{  flex-direction: column;align-items: center;}
+	.footer-list .list-info .info-item{justify-content: space-between;}
+	.footer-list li.products-detail:last-child{flex-direction: column;align-items: center;}
+	.footer-list li.products-detail:last-child .partner-list-item{padding-right: 0;}
+	.link-list .info-box{padding-right: 0;}
+}
+@media (max-width:550px){
+	#footer .inner{padding: 0 50px}
+}
+@media (max-width:400px){
+	#footer .inner{padding: 0 20px}
+	.footer-list li.products-detail:last-child .partner-list-item{padding-right: 0px;}
+}
+
+.footer-list ul.list-info.brand-logo {max-width: 190px;display:flex;flex-wrap: wrap;}
+.footer-list .brand-logo a {width: 36px;height: 36px; display: block;}
+#footer .website-rating-text{display: flex;}
+#footer .partner-list .list-info .website-rating:nth-child(1) .website-rating-text{ padding: 24px 0;}
+#footer .partner-list .list-info .website-rating:nth-child(2) .website-rating-img{ margin-top: -7px;}
+#footer .partner-list .list-info .website-rating .website-rating-text>div{ text-align: left;}

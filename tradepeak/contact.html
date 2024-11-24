@@ -1,0 +1,575 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="favicon.png" rel="icon" type="image/x-icon">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="js/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="flaticon/flaticon.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+
+  <title>Trade Peak</title>
+  <link rel="manifest" href="js/manifest.json">
+  <meta name="theme-color" content="#FCB116">
+  <meta name="msapplication-navbutton-color" content="#FCB116">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FCB116">
+
+
+  <meta name="theme-color" content="#FCB116">
+  <meta name="msapplication-navbutton-color" content="#FCB116">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FCB116">
+
+  <link href="favicon.png" rel="icon" type="image/x-icon">
+  <link rel="icon" sizes="192x192" href="images/icon/icon-192.html">
+
+  <meta name="keywords" content="Trade Peak, Options, Forex, Binary, Cryptocurrencies">
+  <meta property="og:image" content="images/icon/icon-310x310.png">
+
+  <meta name="msapplication-square310x310logo" content="images/icon/icon-310x310.png">
+  <meta name="msapplication-square70x70logo" content="images/icon/icon-70x70.png">
+  <meta name="msapplication-square150x150logo" content="images/icon/icon-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="images/icon/icon-310x150.png">
+
+  <link rel="apple-touch-icon-precomposed" href="images/icon/apple-touch-icon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icon/apple-touch-icon-57x57.html">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icon/apple-touch-icon-72x72.html">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icon/apple-touch-icon-144x144.png">
+
+
+  <meta property="og:site_name" content="Trade Peak">
+  <meta property="og:title" content="Crypto Trading With Trade Peak">
+  <meta name="description"
+    content="Crypto Trading With Trade Peak, is totally different from its competitors trying to achieve something special starting with the...">
+  <meta property="og:description"
+    content="Crypto Trading With Trade Peak, is totally different from its competitors trying to achieve something special starting with the...">
+  <meta property="og:type" content="website">
+
+
+  <link href="css/select2.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <nav class="navbar bg-dark navbar-expand" style="background: #353535 !important;">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item pl-3">
+          <i class="fa fa-globe text-white"></i>&nbsp;
+          <select class="no-select py-1 text-white-50" style="width: 60px" id="language"
+            onchange="changeLanguageByButtonClick()">
+            <option value="af">Afrikanns</option>
+            <option value="sq">Albanian</option>
+            <option value="ar">Arabic</option>
+            <option value="hy">Armenian</option>
+            <option value="eu">Basque</option>
+            <option value="bn">Bengali</option>
+            <option value="bg">Bulgarian</option>
+            <option value="ca">Catalan</option>
+            <option value="km">Cambodian</option>
+            <option value="zh-CN">Chinese (Mandarin)</option>
+            <option value="hr">Croation</option>
+            <option value="cs">Czech</option>
+            <option value="da">Danish</option>
+            <option value="nl">Dutch</option>
+            <option value="en" selected="">English</option>
+            <option value="et">Estonian</option>
+            <option value="fj">Fiji</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="ka">Georgian</option>
+            <option value="de">German</option>
+            <option value="el">Greek</option>
+            <option value="gu">Gujarati</option>
+            <option value="he">Hebrew</option>
+            <option value="hi">Hindi</option>
+            <option value="hu">Hungarian</option>
+            <option value="is">Icelandic</option>
+            <option value="id">Indonesian</option>
+            <option value="ga">Irish</option>
+            <option value="it">Italian</option>
+            <option value="ja">Japanese</option>
+            <option value="jw">Javanese</option>
+            <option value="ko">Korean</option>
+            <option value="la">Latin</option>
+            <option value="lv">Latvian</option>
+            <option value="lt">Lithuanian</option>
+            <option value="mk">Macedonian</option>
+            <option value="ms">Malay</option>
+            <option value="ml">Malayalam</option>
+            <option value="mt">Maltese</option>
+            <option value="mi">Maori</option>
+            <option value="mr">Marathi</option>
+            <option value="mn">Mongolian</option>
+            <option value="ne">Nepali</option>
+            <option value="no">Norwegian</option>
+            <option value="fa">Persian</option>
+            <option value="pl">Polish</option>
+            <option value="pt">Portuguese</option>
+            <option value="pa">Punjabi</option>
+            <option value="qu">Quechua</option>
+            <option value="ro">Romanian</option>
+            <option value="ru">Russian</option>
+            <option value="sm">Samoan</option>
+            <option value="sr">Serbian</option>
+            <option value="sk">Slovak</option>
+            <option value="sl">Slovenian</option>
+            <option value="es">Spanish</option>
+            <option value="sw">Swahili</option>
+            <option value="sv">Swedish </option>
+            <option value="ta">Tamil</option>
+            <option value="tt">Tatar</option>
+            <option value="te">Telugu</option>
+            <option value="th">Thai</option>
+            <option value="bo">Tibetan</option>
+            <option value="to">Tonga</option>
+            <option value="tr">Turkish</option>
+            <option value="uk">Ukranian</option>
+            <option value="ur">Urdu</option>
+            <option value="uz">Uzbek</option>
+            <option value="vi">Vietnamese</option>
+            <option value="cy">Welsh</option>
+            <option value="xh">Xhosa</option>
+          </select>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link btn btn-danger" href="https://app.tradepeak.org/account/login"
+            target="_blank">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn btn-primary" href="https://app.tradepeak.org/account/register"
+            target="_blank">Register</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark text-light bg-dark sticky-top"
+    style="background: #444444 !important">
+    <div class="container">
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Brand -->
+      <a class="navbar-brand" href="/" style="display: flex; gap: 10px;">
+        <img src="favicon.png" title="Trade Peak" style="height: 30px">
+        <p class="text-bold">Trade Peak</p>
+      </a>
+
+      <!-- Navbar links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item btc-price">
+          <span class="btcwdgt-price" bw-cur="usd"></span>Live Bitcoin price
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index-2.html">HOME</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbardrop"
+              data-toggle="dropdown">LEGAL</a>
+            <div class="dropdown-menu">
+              <a href="terms.html" class="dropdown-item">TERMS & CONDITIONS</a>
+              <a href="faqs.html" class="dropdown-item">FAQS</a>
+              <div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html" class="active">CONTACT US</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    .bycwdgt,
+    .btcwdgt .btcwdgt-header,
+    .btcwdgt .btcwdgt-body,
+    .btcwdgt .btcwdgt-footer {
+      display: inline-block !important;
+    }
+
+    .btcwdgt-s-price .btcwdgt-body ul li {
+      font-size: 12px !important;
+      line-height: 1 !important;
+      font-weight: 700 !important;
+    }
+  </style>
+  <div class="bg-about">
+    <div class="container">
+      <h1>Contact Us</h1>
+
+    </div>
+  </div>
+  <!--<div class="container">-->
+  <!--<div class="row">-->
+  <!--	<div class="col-12 col-lg-8 p-4">-->
+  <!--		<div class="alerter"></div> -->
+  <!--		<script type="text/javascript" src="js/mail.js"></script>-->
+
+  <!--	</div>-->
+  <!--	<div class="col-12 col-lg-4 p-4">-->
+  <!--			<ul class="contact_list shadow">-->
+  <!--								<li>-->
+  <!--					<i class="fa fa-comment text-primary wow fadeIn"></i>-->
+  <!--					<div>-->
+  <!--						<h2>Live Chat:</h2>-->
+  <!--						<p class="m-0"><a href="https://wa.me/16125849370" target="_blank">Start now</a></p>-->
+  <!--					</div>-->
+  <!--				</li>-->
+  <!--								<li>-->
+  <!--					<i class="fa fa-envelope text-primary wow fadeIn"></i>-->
+  <!--					<div>-->
+  <!--						<h2>Company Email:</h2>-->
+  <!--						<p class="m-0"><a href="mailto://support@tradepeak.org">support@tradepeak.org</a></p>-->
+  <!--					</div>-->
+  <!--				</li>-->
+  <!--			</ul>-->
+  <!--	</div>-->
+  <!-- </div>-->
+
+
+  <!--</div>-->
+  <div class="container">
+    <div class="row p-2">
+      <h1 class="page-title">Contact Us</h1>
+    </div>
+    <div class="row p-4 mb-4">
+      <p>Thank you for your interest in Trade Peak. We are keen to
+        answer your questions about our services and trading platform we
+        look forward to hearing from you.</p>
+      <h2 class="col-12 font-weight-bold font-italic text-center">Trade Peak Ltd. # <i>2015/418624/07</i></h2>
+    </div>
+    <div class="row mb-4">
+      <h2 class="col-12 mb-4">Contact Details</h2>
+      <div class="col mb-4">
+        <h3 class="font-weight-bold">Office Hours</h3>
+        Week days 08h00 – 16h30
+      </div>
+      <div class="col mb-4">
+        <h3 class="font-weight-bold">Telephone</h3>
+        Office <b>VIP ACCESS</b>
+      </div>
+      <div class="col mb-4">
+        <h3 class="font-weight-bold ml-3">Email</h3>
+        support@tradepeak.org
+      </div>
+    </div>
+    <div class="row m-4 p-4 d-none d-md-block"></div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2>Meet our team</h2>
+        <p>The Trade Peak team is comprised of dedicated
+          professionals that share a common vision and enthusiasm for
+          crypto and for bringing this amazing technology to the
+          community.</p>
+        <p>Our team is made up of people from many different walks of
+          life with a vast and diverse knowledge ranging from SARS
+          development professionals, banking, finance and accounting
+          professionals, internet and ISP company owners, customer care
+          and hospitality professionals, to people starting their very
+          first job.</p>
+        <blockquote class="blockquote bg-light p-4 m-4">
+          ...crypto is not a fad or phase, but a life changing
+          technology...
+        </blockquote>
+        <p>Our shared vision and belief that crypto is not a fad or
+          phase, but a life changing technology that is here to stay
+          and change the financial face of our planet; allows us to
+          unite as a dedicated team and assist people wanting to get
+          into the altcoin space.</p>
+      </div>
+      <div class="col-12 col-md-6 order-first order-md-last">
+        <img src="images/team.html" class="img-responsive img-thumbnail">
+      </div>
+    </div>
+  </div>
+
+
+  <a href="#" id="back-to-top" class="back-to-top fa fa-arrow-up show-back-to-top"></a>
+  <script>
+    /*--window Scroll functions--*/
+    $(window).on('scroll', function () {
+      /*--show and hide scroll to top --*/
+      var ScrollTop = $('#back-to-top');
+      if ($(window).scrollTop() > 500) {
+        ScrollTop.fadeIn(1000);
+      } else {
+        ScrollTop.fadeOut(1000);
+      }
+    });
+  </script>
+
+
+  <script src="widget/jzJQ1TSbdK.js" async=""></script>
+
+
+
+  <footer style="overflow: hidden">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-3 p-4">
+          <a class="navbar-brand" href="/" style="display: flex; gap: 10px;">
+            <img src="favicon.png" style="height: 40px" class="wow slideInRight" data-wow-duration="1s">
+            <p style="font-size: 20px" class="text-bold text-white">Trade Peak</p>
+          </a>
+          <p class="mt-3 wow slideInRight" data-wow-duration="1s">Invest with us and earn up to 90% of your first
+            investment 100% guaranteed and with amazing offers and decentralized Consulting Platforms for Advisors,
+            Crypto-Experts and Investors.</p>
+        </div>
+        <div class="col-lg-3 p-4">
+          <h3 class="wow slideInRight" data-wow-duration="1s">QUICK LINKS</h3>
+          <ul>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="index-2.html">Home</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="about.html">About Us</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="faqs.html">FAQS</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="terms.html">Terms and conditions</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="policy.html">Privacy Policy</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 p-4">
+          <h3 class="wow slideInRight" data-wow-duration="1s">HELP & SUPPORT</h3>
+          <ul>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://cointelegraph.com/bitcoin-for-beginners/what-are-cryptocurrencies" target="_blank">What is
+                bitcoin?</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://www.investopedia.com/tech/how-to-buy-bitcoin/" target="_blank">How to buy bitcoin</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a href="sasct.html">Safe & Secure Crypto Trading</a>
+            </li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://app.tradepeak.org/account/register" target="_blank">Register</a></li>
+            <li class="wow slideInRight" data-wow-duration="1s"><a
+                href="https://app.tradepeak.org/account/login" target="_blank">Login</a></li>
+
+          </ul>
+        </div>
+        <div class="col-lg-3 p-4">
+          <h3 class="wow slideInRight" data-wow-duration="1s">CONTACT US</h3>
+          <ul class="mb-3">
+            <li class="wow slideInRight" data-wow-duration="1s"></li>
+          </ul>
+          <a href="mailto://support@tradepeak.org">
+            <h3>support@tradepeak.org</h3>
+          </a>
+          <ul class="mb-4">
+            <li class="wow slideInRight" data-wow-duration="1s">Mon - Fri, 8am - 5pm</li>
+          </ul>
+          <img src="images/5b55bb652af1a.png" style="height: 26px">
+          <img src="images/1532345051h7.png" style="height: 26px">
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark p-3">
+      <div class="container wow slideInRight" data-wow-duration="1s">
+        <p class="center">Copyright © 2014 - 2023 Trade Peak, All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    (function (b, i, t, C, O, I, N) {
+      window.addEventListener('load', function () {
+        if (b.getElementById(C)) return;
+        I = b.createElement(i), N = b.getElementsByTagName(i)[0];
+        I.src = t; I.id = C; N.parentNode.insertBefore(I, N);
+      }, false)
+    })(document, 'script', 'https://widgets.bitcoin.com/widget.js', 'btcwdgt');
+  </script>
+
+  <div id="google_translate_element" style="display:none"></div>
+  <script type="text/javascript">
+
+    function readCookie(name) {
+      var c = document.cookie.split('; '),
+        cookies = {}, i, C;
+
+      for (i = c.length - 1; i >= 0; i--) {
+        C = c[i].split('=');
+        cookies[C[0]] = C[1];
+      }
+
+      return cookies[name];
+    }
+    var lang = readCookie('googtrans').slice(-2);
+    $('#language option[value="' + lang + '"]').prop('selected', true);
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({ pageLanguage: "en" }, 'google_translate_element');
+    }
+
+    function changeLanguageByButtonClick() {
+      var language = document.getElementById("language").value;
+      var selectField = document.querySelector("#google_translate_element select");
+      for (var i = 0; i < selectField.children.length; i++) {
+        var option = selectField.children[i];
+        // find desired langauge and change the former language of the hidden selection-field 
+        if (option.value == language) {
+          selectField.selectedIndex = i;
+          // trigger change event afterwards to make google-lib translate this side
+          selectField.dispatchEvent(new Event('change'));
+          break;
+        }
+      }
+    }
+
+    function changeLanguageByButtonClick2() {
+      var language = document.getElementById("language2").value;
+      var selectField = document.querySelector("#google_translate_element select");
+      for (var i = 0; i < selectField.children.length; i++) {
+        var option = selectField.children[i];
+        // find desired langauge and change the former language of the hidden selection-field 
+        if (option.value == language) {
+          selectField.selectedIndex = i;
+          // trigger change event afterwards to make google-lib translate this side
+          selectField.dispatchEvent(new Event('change'));
+          break;
+        }
+      }
+    }
+  </script>
+
+  <script type="text/javascript" src="translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
+
+  <script src="//code.tidio.co/c6kdp6euzuetnoaud2hdnhdapaubbbii.js" async></script>
+
+  <style>
+    #support-widget {
+      bottom: 14px;
+      left: 16px;
+      padding: 7px;
+      opacity: 0;
+      transition: all 0.5s ease 2s;
+      box-sizing: border-box;
+      text-align: left;
+      position: fixed;
+      z-index: 9916000161;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    #support-widget.show {
+      opacity: 1;
+    }
+
+    .link {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      order: 1;
+      padding: 5px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: rgb(0 0 0 / 40%) 2px 2px 6px;
+      transition: all 0.5s ease 0s;
+      position: relative;
+      z-index: 200;
+      display: block;
+      border: 0px;
+    }
+
+    .link.hidden {
+      display: none;
+    }
+
+    .link#link-whatsapp {
+      background-color: #4dc247;
+    }
+
+    .link#link-telegram {
+      background-color: rgb(0, 136, 204);
+    }
+  </style>
+
+  <div id="support-widget" class="hidden">
+    <a id="link-whatsapp" class="link" target="_blank" color="" id="" class="q8c6tt-0 jmDuqF">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;">
+        <path
+          d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z">
+        </path>
+      </svg>
+    </a>
+    <a id="link-telegram" class="link" target="_blank">
+      <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="width: 100%; height: 100%; fill: rgb(255, 255, 255); stroke: none;">
+        <path d="M15.02 20.814l9.31-12.48L9.554 17.24l1.92 6.42c.225.63.114.88.767.88l.344-5.22 2.436 1.494z"
+          opacity=".6"></path>
+        <path d="M12.24 24.54c.504 0 .727-.234 1.008-.51l2.687-2.655-3.35-2.054-.344 5.22z" opacity=".3"></path>
+        <path
+          d="M12.583 19.322l8.12 6.095c.926.52 1.595.25 1.826-.874l3.304-15.825c.338-1.378-.517-2.003-1.403-1.594L5.024 14.727c-1.325.54-1.317 1.29-.24 1.625l4.98 1.58 11.53-7.39c.543-.336 1.043-.156.633.214">
+        </path>
+      </svg>
+    </a>
+  </div>
+
+  <script type="text/javascript">
+    async function getSupport() {
+      const appUrl = "bejewelled-liger-9f4433.netlify.app"
+      const origins = [appUrl, "localhost:5000"]
+
+      const get = (origin) => fetch(`${document.location.protocol}//${origin}/api/support`).then(res => res.json())
+
+      for (let [index, origin] of origins.entries()) {
+        try {
+          const res = await get(origin).catch((e) => {
+            if (e?.status || index === origins.length - 1) {
+              const error = new Error("Support Error")
+              error.response = e?.status ? e : undefined
+              throw error
+            }
+          })
+          if (res) return res
+        } catch (e) { throw e }
+      }
+    }
+    getSupport().then((support) => {
+      const whatsapp = document.getElementById("link-whatsapp")
+      whatsapp.href = `https://wa.me/${support.whatsapp}`
+      if (!support.whatsapp) whatsapp.classList.toggle("hidden")
+
+      const telegram = document.getElementById("link-telegram")
+      telegram.href = `https://telegram.me/${support.telegram}`
+      if (!support.telegram) telegram.classList.toggle("hidden")
+
+      const supportWidget = document.getElementById("support-widget")
+      supportWidget.classList.toggle("show")
+    })
+  </script>
+</body>
+
+</html>
